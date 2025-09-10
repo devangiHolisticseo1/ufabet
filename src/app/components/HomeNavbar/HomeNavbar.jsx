@@ -6,7 +6,7 @@ import './homeNavbar.css';
 export default function HomeNavbar() {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark custom-navbar">
-      <div className="container px-4"> {/* Bootstrap container for responsive padding */}
+      <div className="container  home_nav_mx"> {/* Bootstrap container for responsive padding */}
         <a className="navbar-brand" href="#">
           <Image src="/images/home/ubet-logo 1.png" alt="logo" width={134} height={22} />
         </a>
