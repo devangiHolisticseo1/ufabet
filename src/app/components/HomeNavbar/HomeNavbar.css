@@ -24,7 +24,9 @@
 }
 
 .btn-gold {
-  background-color: #d4af37;
+  /* background-color: #d4af37; */
+  background: linear-gradient(90deg, #EBC76E, #BA8C4E, #d4af37);
+
   color: #000;
   font-size: 13px;
   font-weight: 600;
@@ -42,3 +44,4 @@
 .home_nav_mx{
   margin-inline:300px;
 }
+
