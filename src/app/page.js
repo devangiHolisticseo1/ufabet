@@ -4,6 +4,9 @@ import "./page.css";
 import HomeNavbar from "./components/HomeNavbar/HomeNavbar";
 import Image from "next/image";
 import { FaAngleRight, FaAngleLeft } from "react-icons/fa6";
+ 
+import Sec4P1 from './components/sec4/sec4_p1.jsx';
+
 
 const home_sec2_p3_cards = [
   {
@@ -272,7 +275,7 @@ export default function Home() {
         {/* sec-3 */}
         <section>
           <div className='home_sec3 container'>
-            <h3 className='home_sec2_title'>Why is Ufabet Better than SBOBET for แทงบอล?</h3>
+            <h2 className='home_sec2_title'>Why is Ufabet Better than SBOBET for แทงบอล?</h2>
             <p className='home_sec2_p my-3'>Both UFABET and SBOBET are trusted platforms for football betting, but UFABET offers unique advantages that make it the top choice for many players.</p>
 
 
@@ -439,7 +442,7 @@ export default function Home() {
               </div>
 
               {/* Right Section - Login Card */}
-               <div className='home_sec3_login-card'>
+              <div className='home_sec3_login-card'>
                 {/* <h2 className='home_sec3_login-title'>UFABET</h2> */}
                 <Image src="/images/home/ubet-logo 1.png" alt="logo" className='img-fluid mx-auto home_sec3_logo_img' width={116} height={27} />
                 <div className='home_sec3_input-group'>
@@ -461,7 +464,76 @@ export default function Home() {
 
 
 
+          </div>
+        </section>
 
+
+
+
+
+        <section style={{ background: '#313131' }}>
+          {/* sec-4 */}
+          <div className='container'>
+            <h2 className='home_sec2_title'>See แทงบอล Odds for Over/Under</h2>
+            <p className='home_sec2_p'>Over/Under betting is one of the most popular ways to แทงบอล. It lets you predict whether the total goals in a match will be above or below a set number. Here’s how it works:</p>
+
+
+            <div className="row g-4 justify-content-center">
+
+              <div className="col-12 col-md-6 col-lg-4">
+                <div className="card home_sec4_card h-100">
+                  <div className="card-body">
+                    <h5 className="home_sec4_title"><u>ODDS</u></h5>
+                    <p className="home_sec4_text">
+                      Odds show the potential payout of your bet. For example, 1.90 means you win 190 for every 100 wagered. Direct websites like UFABET and SBOBET always display odds in real time.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="col-12 col-md-6 col-lg-4">
+                <div className="card home_sec4_card h-100">
+                  <div className="card-body">
+                    <h5 className="home_sec4_title"><u>OVER</u></h5>
+                    <p className="home_sec4_text">
+                      If you bet Over, you are predicting the total number of goals in the match will be higher than the set line (e.g., Over 2.5 means 3 or more goals are needed).
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="col-12 col-md-6 col-lg-4">
+                <div className="card home_sec4_card h-100">
+                  <div className="card-body">
+                    <h5 className="home_sec4_title"><u>UNDER</u></h5>
+                    <p className="home_sec4_text">
+                      If you bet Under, you are predicting the total goals scored will be lower than the set line (e.g., Under 2.5 means 2 or fewer goals).
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+
+            <p>How to take advantage?</p>
+            <ul className='home_sec3_list'>
+              <li>Use direct football betting websites like UFABET or SBOBET for accurate, real-time odds.</li>
+              <li>Compare Over/Under odds across leagues and teams.</li>
+              <li>Use mobile, tablet, or desktop without extra apps.</li>
+              <li>Focus on recent scoring trends, match stats, and betting lines.</li>
+            </ul>
+
+
+            <div>
+
+              <h1>Football Betting ODDS</h1>
+              <p>24-Hour Over/Under Markets</p>
+              <div>
+
+                <Sec4P1 />
+              </div>
+            </div>
 
 
           </div>
