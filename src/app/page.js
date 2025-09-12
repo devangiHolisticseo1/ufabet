@@ -13,6 +13,8 @@ import HomeSec6P3 from './components/sec6/home_sec6_p3';
 import HomeSec6P4 from './components/sec6/home_sec6_p4';
 import HomeSec10 from './components/sec10/home_sec10';
 import HomeSec11 from './components/sec11/home_sec11';
+import HomeSec12 from './components/sec12/home_sec12';
+import HomeSec9 from './components/sec9/home_sec9';
 
 
 const home_sec2_p3_cards = [
@@ -968,7 +970,7 @@ export default function Home() {
             </div>
           </div>
 
- 
+
         </section>
 
 
@@ -1158,16 +1160,23 @@ export default function Home() {
         </section>
 
         {/* sec-9 */}
-      
+                    <section>
+                      <HomeSec9 />
+                    </section>
 
         {/* sec-10 */}
         <section>
           <HomeSec10 />
         </section>
 
-                    {/* sec-11 */}
+        {/* sec-11 */}
         <section>
           <HomeSec11 />
+        </section>
+
+        {/* sec-12 */}
+        <section>
+          <HomeSec12 />
         </section>
       </main>
     </div>

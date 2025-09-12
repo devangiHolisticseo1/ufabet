@@ -1,0 +1,100 @@
+/* styles/home_sec12.css */
+
+.home_sec12_section {
+  
+  margin-top: 100px;
+}
+
+.home_sec12_sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.home_sec12_sidebar_item {
+  background: transparent;
+  border: none;
+  text-align: left;
+  padding: 10px 15px;
+  color: white;
+  border-left: 4px solid transparent;
+  transition: all 0.3s;
+  font-weight: 500;
+}
+
+.home_sec12_sidebar_item.active {
+  background-color: rgba(255, 221, 144, 0.05);
+  border-left: 4px solid #f0c75e;
+  color: #f0c75e;
+}
+
+.home_sec12_sidebar_item:hover {
+  background-color: rgba(255, 221, 144, 0.1);
+}
+
+.home_sec12_content {
+  background-color: #1e1e1e;
+  border: 1px solid #f0c75e;
+  border-radius: 6px;
+  min-height: 400px;
+}
+
+.home_sec12_header h5 {
+  font-size: 1.25rem;
+}
+
+.home_sec12_list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.home_sec12_list li {
+  padding-left: 1.25rem;
+  position: relative;
+  margin-bottom: 0.75rem;
+}
+
+.home_sec12_list li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: #f0c75e;
+  font-size: 1.2rem;
+  line-height: 1;
+}
+
+.accordion-button {
+  font-size: 0.95rem;
+}
+
+/* .accordion-button::after {
+  filter: invert(1);
+} */
+
+
+/* Remove Bootstrap default caret */
+.accordion-button::after {
+  display: none !important;
+}
+
+.accordion-button i {
+  font-size: 1.2rem;
+  color: #f0c75e;
+}
+
+
+.accordion-button {
+  box-shadow: none !important;
+  font-size: 0.95rem;
+  padding: 12px 16px;
+}
+
+.accordion-item {
+  border: none;
+}
+
+.accordion-body {
+  background: transparent;
+  border-top: 1px solid #333;
+}
+

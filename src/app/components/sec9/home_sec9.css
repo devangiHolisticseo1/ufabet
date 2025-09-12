@@ -1,0 +1,274 @@
+ .home_sec9_container {
+     
+     padding: 0;
+     
+ }
+
+ .home_sec9_sidebar {
+     background: #1a1a1a;
+     min-height: 100vh;
+     padding: 0;
+     border-right: 1px solid #333;
+ }
+
+ .home_sec9_sidebar_header {
+     padding: 15px 20px;
+     border-bottom: 1px solid #333;
+ }
+
+ .home_sec9_sidebar_title {
+     color: #888;
+     font-size: 0.85rem;
+     margin: 0;
+     text-transform: lowercase;
+ }
+
+ .home_sec9_betting_list {
+     display: flex;
+     flex-direction: column;
+ }
+
+ .home_sec9_betting_item {
+     background: transparent;
+     border: none;
+     color: #fff;
+     padding: 12px 20px;
+     text-align: left;
+     cursor: pointer;
+     font-size: 0.9rem;
+     border-bottom: 1px solid #333;
+     transition: all 0.2s ease;
+     
+ }
+
+ .home_sec9_betting_item:hover {
+     background: #333;
+ }
+
+ .home_sec9_betting_item.home_sec9_active {
+     background: #444;
+     color: #f0c040;
+     border-left: 3px solid #f0c040;
+ }
+
+ .home_sec9_main_content {
+     padding: 0;
+ }
+
+ .home_sec9_content_wrapper {
+     background: #fff;
+     margin:0px  20px;
+     border-radius: 8px;
+     overflow: hidden;
+ }
+
+ .home_sec9_header {
+     background: #f8f9fa;
+     padding: 15px 25px;
+     border-bottom: 1px solid #e9ecef;
+ }
+
+ .home_sec9_content_title {
+     color: #d4af37;
+     font-size: 1.2rem;
+     font-weight: 600;
+     margin: 0;
+ }
+
+ .home_sec9_content_body {
+     padding: 25px;
+ }
+
+ .home_sec9_description {
+     color: #333;
+     font-size: 0.95rem;
+     line-height: 1.6;
+     margin-bottom: 25px;
+ }
+
+ .home_sec9_types_section {
+     margin-bottom: 25px;
+ }
+
+ .home_sec9_section_title {
+     color: #333;
+     font-size: 1.1rem;
+     font-weight: 600;
+     margin-bottom: 15px;
+     display: flex;
+     align-items: center;
+ }
+
+ .home_sec9_section_title::after {
+     content: '';
+     flex: 1;
+     height: 1px;
+     background: #ddd;
+     margin-left: 15px;
+ }
+
+ .home_sec9_types_intro {
+     color: #555;
+     font-size: 0.9rem;
+     margin-bottom: 20px;
+ }
+
+ .home_sec9_types_list {
+     display: flex;
+     flex-direction: column;
+     gap: 15px;
+ }
+
+ .home_sec9_type_item {
+     /* background: #f8f9fa;
+     padding: 15px;
+     border-radius: 6px;
+     border-left: 3px solid #d4af37; */
+ }
+
+ .home_sec9_type_name {
+     color: #333;
+     font-size: 0.95rem;
+     font-weight: 600;
+     margin-bottom: 8px;
+ }
+
+ .home_sec9_type_description {
+     color: #555;
+     font-size: 0.9rem;
+     line-height: 1.5;
+     margin: 0;
+ }
+
+ .home_sec9_expandable_sections {
+     margin: 25px 0;
+ }
+
+ .home_sec9_expandable_item {
+     border: 1px solid #e9ecef;
+     border-radius: 6px;
+     margin-bottom: 10px;
+ }
+
+ .home_sec9_expandable_header {
+     width: 100%;
+     background: #333;
+     color: #fff;
+     border: none;
+     padding: 12px 20px;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     cursor: pointer;
+     font-size: 0.95rem;
+     font-weight: 500;
+ }
+
+ .home_sec9_expand_icon {
+     font-size: 1.2rem;
+     font-weight: 600;
+ }
+
+ .home_sec9_expandable_content {
+     padding: 15px 20px;
+     background: #f8f9fa;
+     border-top: 1px solid #e9ecef;
+ }
+
+ .home_sec9_expandable_content p {
+     color: #555;
+     font-size: 0.9rem;
+     line-height: 1.5;
+     margin: 0;
+ }
+
+ .home_sec9_when_section {
+     /* margin: 25px 0;
+     background: #fff3cd;
+     padding: 20px;
+     border-radius: 6px;
+     border-left: 4px solid #ffc107; */
+ }
+
+ .home_sec9_when_content {
+     color: #664d03;
+     font-size: 0.9rem;
+     line-height: 1.6;
+     margin: 0;
+ }
+
+ .home_sec9_example_section {
+     /* margin: 25px 0;
+     background: #d1ecf1;
+     padding: 20px;
+     border-radius: 6px;
+     border-left: 4px solid #17a2b8; */
+ }
+
+ .home_sec9_example_title {
+     color: #0c5460;
+     font-size: 1rem;
+     font-weight: 600;
+     margin-bottom: 10px;
+ }
+
+ .home_sec9_example_content {
+     color: #333;
+     font-size: 0.9rem;
+     line-height: 1.5;
+     margin-bottom: 15px;
+ }
+
+ .home_sec9_scenario_list {
+     margin: 15px 0;
+     padding-left: 20px;
+ }
+
+ .home_sec9_scenario_item {
+     color: #333;
+     font-size: 0.9rem;
+     margin-bottom: 5px;
+ }
+
+ .home_sec9_explanation {
+     color: #333;
+     font-size: 0.9rem;
+     line-height: 1.5;
+     margin-top: 15px;
+     margin-bottom: 0;
+ }
+
+ .home_sec9_takeaway_section {
+     margin: 25px 0 0 0;
+ }
+
+ .home_sec9_takeaway_title {
+     color: #d4af37;
+     font-size: 1rem;
+     font-weight: 600;
+     margin-bottom: 15px;
+ }
+
+ .home_sec9_takeaway_content {
+     color: #333;
+     font-size: 0.9rem;
+     line-height: 1.6;
+     margin: 0;
+ }
+
+
+
+ .home_sec9_title{
+
+    color: #BA8C4E;
+    font-size: 1.875rem;
+    font-weight: 500;
+    margin-top: 60px;
+ }
+
+ .home_sec9_title_p{
+    color:#FFF3D5;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    margin-top: 35px;
+ }
