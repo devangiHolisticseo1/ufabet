@@ -4,7 +4,7 @@ import './home_sec6_p4.css';
 
 export default function HomeSec6P3() {
   return (
-    <div className="home_sec6_p4_container py-5">
+    <div className="home_sec6_p4_container ">
       <div className="text-center text-white">
         <h2 className="home_sec6_p4_heading">
          Watch VIP Football for Accurate<span> แทงบอล</span>

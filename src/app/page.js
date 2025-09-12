@@ -659,10 +659,10 @@ export default function Home() {
         <section>
 
           <div className="container home_sec7">
-            <div className="row g-4 justify-content-center">
+            <div className="row g-4 justify-content-center home_sec7_row_gap">
               <div className="col-md-6">
-                <div className="home_sec7_card p-4 text-center text-white rounded">
-                  <h3 className="home_sec7_title mb-3">
+                <div className="home_sec7_card   text-center text-white rounded">
+                  <h3 className="home_sec7_title  ">
                     Football Betting Website with A Minimum Bet of 10 Baht
                   </h3>
                   <p className="home_sec7_text">
@@ -671,8 +671,8 @@ export default function Home() {
                 </div>
               </div>
               <div className="col-md-6">
-                <div className="home_sec7_card p-4 text-center text-white rounded">
-                  <h3 className="home_sec7_title mb-3">
+                <div className="home_sec7_card   text-center text-white rounded">
+                  <h3 className="home_sec7_title  ">
                     Football Betting Website with No Minimum Deposit or Withdrawal
                   </h3>
                   <p className="home_sec7_text">
@@ -684,7 +684,7 @@ export default function Home() {
           </div>
 
 
-          <div className="container my-5 home_sec7_accordion_container">
+          <div className="container   home_sec7_accordion_container">
             <div className="accordion home_sec7_accordion" id="homeSec7Accordion">
 
               {/* Accordion Item 1 */}
@@ -805,15 +805,15 @@ export default function Home() {
 
 
 
-          <div className="home_sec7_p2_section container text-center py-5">
-            <h2 className="home_sec7_p2_title mb-2">แทงบอล <strong>Direct Website without Agent</strong></h2>
-            <p className="home_sec7_p2_subtitle mb-4">
+          <div className="home_sec7_p2_section container text-center  ">
+            <h2 className="home_sec7_p2_title  ">แทงบอล <strong>Direct Website without Agent</strong></h2>
+            <p className="home_sec7_p2_subtitle  ">
               “แทงบอล without Agent” (Football Betting Without Agent) means placing bets directly with an official,
               licensed betting website (เช่น UFABET หรือ SBOBET) instead of using a middleman (agent) to handle registration,
               deposits, withdrawals, and payouts.
             </p>
 
-            <h3 className="home_sec7_p2_question mb-5">What does "แทงบอล without Agent" mean?</h3>
+            <h3 className="home_sec7_p2_question  ">What does "แทงบอล without Agent" mean?</h3>
 
             <div className="row g-4 justify-content-center">
 
@@ -886,7 +886,8 @@ export default function Home() {
                       What is the advantage of betting without Agent on Football?
                     </h2>
                     <p class="home_sec7_p3_description">
-                      The advantage of betting without an agent on football (แทงบอล อันตราย ไม่น่าเอาเยิ่ง) is that you place bets directly with the platform (UFABET, SBOBET, etc.), which guarantees safety, fairness, and faster transactions, without middleman risks or hidden costs.
+                      The advantage of betting without an agent on football (แทงบอล เว็บตรง ไม่ผ่านเอเย่นต์) is that you place bets directly with the platform (UFABET, SBOBET, etc.), which guarantees safety, fairness, and faster transactions, without middleman risks or hidden costs.
+                   
                     </p>
                   </div>
                 </div>
