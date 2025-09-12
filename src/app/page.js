@@ -4,8 +4,13 @@ import "./page.css";
 import HomeNavbar from "./components/HomeNavbar/HomeNavbar";
 import Image from "next/image";
 import { FaAngleRight, FaAngleLeft } from "react-icons/fa6";
- 
+
 import Sec4P1 from './components/sec4/sec4_p1.jsx';
+import HomeSec5P2 from './components/sec5/home_sec5_p2';
+import HomeSec6P1 from './components/sec6/home_sec6_p1';
+import HomeSec6P2 from './components/sec6/home_sec6_p2';
+import HomeSec6P3 from './components/sec6/home_sec6_p3';
+import HomeSec6P4 from './components/sec6/home_sec6_p4';
 
 
 const home_sec2_p3_cards = [
@@ -73,6 +78,20 @@ export default function Home() {
     setTouchStartX(null);
     setTouchEndX(null);
   };
+
+
+  // const [is_home_sec8_Open, setIs_home_sec8_Open] = useState(false);
+
+  // const toggleAccordion = () => {
+  //   setIs_home_sec8_Open(!is_home_sec8_Open);
+  // };
+
+  const [openAccordion, setOpenAccordion] = useState(null);
+
+  const toggleAccordion = (index) => {
+    setOpenAccordion(openAccordion === index ? null : index);
+  };
+
 
 
 
@@ -471,14 +490,14 @@ export default function Home() {
 
 
 
-        <section style={{ background: '#313131' }}>
-          {/* sec-4 */}
+        {/* sec-4 */}
+        <section style={{ background: '#313131' }} className='home_sec2_sec'>
           <div className='container'>
             <h2 className='home_sec2_title'>See แทงบอล Odds for Over/Under</h2>
             <p className='home_sec2_p'>Over/Under betting is one of the most popular ways to แทงบอล. It lets you predict whether the total goals in a match will be above or below a set number. Here’s how it works:</p>
 
 
-            <div className="row g-4 justify-content-center">
+            <div className="row g-4 justify-content-center home_sec2_row_div">
 
               <div className="col-12 col-md-6 col-lg-4">
                 <div className="card home_sec4_card h-100">
@@ -516,7 +535,7 @@ export default function Home() {
             </div>
 
 
-            <p>How to take advantage?</p>
+            <p className='home_sec3_take_advantage fw-medium'>How to take advantage?</p>
             <ul className='home_sec3_list'>
               <li>Use direct football betting websites like UFABET or SBOBET for accurate, real-time odds.</li>
               <li>Compare Over/Under odds across leagues and teams.</li>
@@ -527,8 +546,8 @@ export default function Home() {
 
             <div>
 
-              <h1>Football Betting ODDS</h1>
-              <p>24-Hour Over/Under Markets</p>
+              <h1 className='home_sec3_h1'>Football Betting ODDS</h1>
+              <p className='home_sec3_p_24_hour'>24-Hour Over/Under Markets</p>
               <div>
 
                 <Sec4P1 />
@@ -536,7 +555,608 @@ export default function Home() {
             </div>
 
 
+
+
+
+
+
           </div>
+        </section>
+
+        {/* sec-5 */}
+        <section>
+
+          <div className='container home_sec5'>
+            <h1 className='home_sec2_title fw-medium'>Today's Football Accumulator</h1>
+            <p className='home_sec2_p'>Boost your chances of winning by combining multiple bets into one! An accumulator (or "acca") links several selections together, with all results needing to win for you to land a payout.</p>
+
+            <div className='home_sec5_p1'>
+              <h3 className='home_sec5_title_h3'>What is an Accumulator?</h3>
+              <p style={{ color: '#FFFFFF' }}>An accumulator is a single bet that combines two or more selections. The odds multiply together, giving you the chance for higher returns from a small stake. However, every selection must win for your bet to be successful.</p>
+
+              <h3 className='home_sec5_title_h3'>Example :</h3>
+              <p style={{ color: '#FFFFFF' }}>Match 1 : Liverpool to Win – Odds 1.80</p>
+              <p style={{ color: '#FFFFFF' }}>Match 2 : Barcelona Over 2.5 Goals – Odds 1.90</p>
+              <p style={{ color: '#FFFFFF' }}>Match 3 : Bayern Munich Both Teams to Score – Odds 1.70</p>
+
+              <h3 className='home_sec5_title_h3 fw-medium'>How to Use It :</h3>
+
+
+
+              <div className="row g-3 justify-content-center">
+                <div className="col-12 col-md-6 col-lg-3">
+                  <div className="home_sec5_step_box p-3 rounded">
+                    <h6 className="home_sec5_step_title mb-2">Step 1:</h6>
+                    <p className="home_sec5_step_desc mb-0">
+                      Select your favorite matches and betting markets (e.g., win, goals, both teams to score).
+                    </p>
+                  </div>
+                </div>
+                <div className="col-12 col-md-6 col-lg-3">
+                  <div className="home_sec5_step_box p-3 rounded">
+                    <h6 className="home_sec5_step_title mb-2">Step 2:</h6>
+                    <p className="home_sec5_step_desc mb-0">
+                      Add them to your accumulator slip.
+                    </p>
+                  </div>
+                </div>
+                <div className="col-12 col-md-6 col-lg-3">
+                  <div className="home_sec5_step_box p-3 rounded">
+                    <h6 className="home_sec5_step_title mb-2">Step 3 :</h6>
+                    <p className="home_sec5_step_desc mb-0">
+                      View the combined odds and your potential payout.
+                    </p>
+                  </div>
+                </div>
+                <div className="col-12 col-md-6 col-lg-3">
+                  <div className="home_sec5_step_box p-3 rounded">
+                    <h6 className="home_sec5_step_title mb-2">Step 4 :</h6>
+                    <p className="home_sec5_step_desc mb-0">
+                      Place your bet on the bookmaker’s platform and watch the action unfold!
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+
+
+
+
+
+
+            </div>
+            <div>
+
+              <HomeSec5P2 />
+            </div>
+
+          </div>
+        </section>
+
+        {/* sect-6 */}
+        <section>
+          <div className='HomeSec6P1_my'>
+            <HomeSec6P1 />
+          </div>
+          <div className='HomeSec6P1_my'>
+            <HomeSec6P2 />
+          </div>
+          <div className='HomeSec6P1_my'>
+            <HomeSec6P3 />
+          </div>
+          <div className='HomeSec6P1_my'>
+            <HomeSec6P4 />
+          </div>
+
+
+
+
+
+
+        </section>
+
+        {/* sec-7 */}
+        <section>
+
+          <div className="container home_sec7">
+            <div className="row g-4 justify-content-center">
+              <div className="col-md-6">
+                <div className="home_sec7_card p-4 text-center text-white rounded">
+                  <h3 className="home_sec7_title mb-3">
+                    Football Betting Website with A Minimum Bet of 10 Baht
+                  </h3>
+                  <p className="home_sec7_text">
+                    Start your betting journey with as little as 10 Baht. Accessible for everyone!
+                  </p>
+                </div>
+              </div>
+              <div className="col-md-6">
+                <div className="home_sec7_card p-4 text-center text-white rounded">
+                  <h3 className="home_sec7_title mb-3">
+                    Football Betting Website with No Minimum Deposit or Withdrawal
+                  </h3>
+                  <p className="home_sec7_text">
+                    Enjoy the freedom of managing your funds with no restrictions on deposit or withdrawal amounts.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div className="container my-5 home_sec7_accordion_container">
+            <div className="accordion home_sec7_accordion" id="homeSec7Accordion">
+
+              {/* Accordion Item 1 */}
+              <div className="accordion-item home_sec7_item">
+                <h2 className="accordion-header" id="headingOne">
+                  <button
+                    className="accordion-button home_sec7_button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne"
+                    aria-expanded="true"
+                    aria-controls="collapseOne"
+                  >
+                    What are the Deposit Conditions for แทงบอล?
+                  </button>
+                </h2>
+                <div
+                  id="collapseOne"
+                  className="accordion-collapse collapse show"
+                  aria-labelledby="headingOne"
+                  data-bs-parent="#homeSec7Accordion"
+                >
+                  <div className="accordion-body home_sec7_body text-white">
+                    <p>Our deposit conditions are designed for your convenience:</p>
+                    <ul className="home_sec7_list">
+                      <li><strong>Instant Processing</strong>: Deposits are processed instantly, so you can start betting without delay.</li>
+                      <li><strong>Multiple Payment Gateways</strong>: We support various payment methods including bank transfers, e-wallets, and QR payments.</li>
+                      <li><strong>No Hidden Fees</strong>: We believe in transparency; there are no hidden fees on deposits.</li>
+                      <li><strong>24/7 Support</strong>: Our customer service is available around the clock to assist with any deposit-related queries.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              {/* Accordion Item 2 */}
+              <div className="accordion-item home_sec7_item">
+                <h2 className="accordion-header" id="headingTwo">
+                  <button
+                    className="accordion-button collapsed home_sec7_button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo"
+                  >
+                    What are the Withdrawal Conditions for แทงบอล?
+                  </button>
+                </h2>
+                <div
+                  id="collapseTwo"
+                  className="accordion-collapse collapse"
+                  aria-labelledby="headingTwo"
+                  data-bs-parent="#homeSec7Accordion"
+                >
+                  <div className="accordion-body home_sec7_body text-white">
+                    <p>Withdrawal conditions info goes here...</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Accordion Item 3 */}
+              <div className="accordion-item home_sec7_item">
+                <h2 className="accordion-header" id="headingThree">
+                  <button
+                    className="accordion-button collapsed home_sec7_button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree"
+                    aria-expanded="false"
+                    aria-controls="collapseThree"
+                  >
+                    What are the Payment Options for แทงบอล?
+                  </button>
+                </h2>
+                <div
+                  id="collapseThree"
+                  className="accordion-collapse collapse"
+                  aria-labelledby="headingThree"
+                  data-bs-parent="#homeSec7Accordion"
+                >
+                  <div className="accordion-body home_sec7_body text-white">
+                    <p>Payment options info goes here...</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Accordion Item 4 */}
+              <div className="accordion-item home_sec7_item">
+                <h2 className="accordion-header" id="headingFour">
+                  <button
+                    className="accordion-button collapsed home_sec7_button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseFour"
+                    aria-expanded="false"
+                    aria-controls="collapseFour"
+                  >
+                    What is the Payment Duration for แทงบอล?
+                  </button>
+                </h2>
+                <div
+                  id="collapseFour"
+                  className="accordion-collapse collapse"
+                  aria-labelledby="headingFour"
+                  data-bs-parent="#homeSec7Accordion"
+                >
+                  <div className="accordion-body home_sec7_body text-white">
+                    <p>Payment duration info goes here...</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+
+
+
+
+
+          <div className="home_sec7_p2_section container text-center py-5">
+            <h2 className="home_sec7_p2_title mb-2">แทงบอล <strong>Direct Website without Agent</strong></h2>
+            <p className="home_sec7_p2_subtitle mb-4">
+              “แทงบอล without Agent” (Football Betting Without Agent) means placing bets directly with an official,
+              licensed betting website (เช่น UFABET หรือ SBOBET) instead of using a middleman (agent) to handle registration,
+              deposits, withdrawals, and payouts.
+            </p>
+
+            <h3 className="home_sec7_p2_question mb-5">What does "แทงบอล without Agent" mean?</h3>
+
+            <div className="row g-4 justify-content-center">
+
+              {/* Item 1 */}
+              <div className="col-md-4">
+                <div className="home_sec7_p2_card">
+                  <h4><span className="home_sec7_p2_number">1.</span> Transparency in Transactions</h4>
+                  <p>
+                    When you bet through a direct website, every deposit, withdrawal, and payout is automated.
+                    There are no hidden fees or deductions that agents might take.
+                  </p>
+                </div>
+              </div>
+
+              {/* Item 2 */}
+              <div className="col-md-4">
+                <div className="home_sec7_p2_card">
+                  <h4><span className="home_sec7_p2_number">2.</span> Faster Deposits & Withdrawals</h4>
+                  <p>
+                    Agents often delay withdrawals or set limits. Direct sites process transactions instantly
+                    through secure banking systems or e-wallets.
+                  </p>
+                </div>
+              </div>
+
+              {/* Item 3 */}
+              <div className="col-md-4">
+                <div className="home_sec7_p2_card">
+                  <h4><span className="home_sec7_p2_number">3.</span> Better Security & Reliability</h4>
+                  <p>
+                    Agents sometimes disappear or manipulate accounts. Betting without an agent means your
+                    funds are protected by the platform’s official license and encrypted systems.
+                  </p>
+                </div>
+              </div>
+
+              {/* Item 4 */}
+              <div className="col-md-4">
+                <div className="home_sec7_p2_card">
+                  <h4><span className="home_sec7_p2_number">4.</span> Real-Time Odds & Updates</h4>
+                  <p>
+                    Direct platforms provide live odds and instant updates from global markets, while agents may
+                    alter odds or limit options.
+                  </p>
+                </div>
+              </div>
+
+              {/* Item 5 */}
+              <div className="col-md-4">
+                <div className="home_sec7_p2_card">
+                  <h4><span className="home_sec7_p2_number">5.</span> 24/7 Customer Support</h4>
+                  <p>
+                    Instead of relying on an unreliable agent, you get official support from the platform itself,
+                    available anytime.
+                  </p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class=" container">
+
+            <div class="home_sec7_p3_main_wrapper">
+              <div class="row ">
+                {/* <!-- Left Column - Title and Description --> */}
+                <div class="col-lg-5 col-md-12">
+                  <div class="home_sec7_p3_content_wrapper">
+                    <h2 class="home_sec7_p3_main_title">
+                      What is the advantage of betting without Agent on Football?
+                    </h2>
+                    <p class="home_sec7_p3_description">
+                      The advantage of betting without an agent on football (แทงบอล อันตราย ไม่น่าเอาเยิ่ง) is that you place bets directly with the platform (UFABET, SBOBET, etc.), which guarantees safety, fairness, and faster transactions, without middleman risks or hidden costs.
+                    </p>
+                  </div>
+                </div>
+
+                {/* <!-- Right Column - Advantages List --> */}
+                <div class="col-lg-7 col-md-12">
+                  <div class="home_sec7_p3_advantages_wrapper">
+                    <div class="home_sec7_p3_advantage_item">
+                      <span class="home_sec7_p3_advantage_number">1.</span>
+                      <span class="home_sec7_p3_advantage_title">Transparency :</span>
+                      <span class="home_sec7_p3_advantage_text">No commissions or hidden charges from agents.</span>
+                    </div>
+
+                    <div class="home_sec7_p3_advantage_item">
+                      <span class="home_sec7_p3_advantage_number">2.</span>
+                      <span class="home_sec7_p3_advantage_title">Faster Transactions :</span>
+                      <span class="home_sec7_p3_advantage_text">Instant deposits and withdrawals directly with the website.</span>
+                    </div>
+
+                    <div class="home_sec7_p3_advantage_item">
+                      <span class="home_sec7_p3_advantage_number">3.</span>
+                      <span class="home_sec7_p3_advantage_title">Better Security :</span>
+                      <span class="home_sec7_p3_advantage_text">Funds and data protected by official licensing and encryption.</span>
+                    </div>
+
+                    <div class="home_sec7_p3_advantage_item">
+                      <span class="home_sec7_p3_advantage_number">4.</span>
+                      <span class="home_sec7_p3_advantage_title">Real-Time Odds :</span>
+                      <span class="home_sec7_p3_advantage_text">Direct access to live markets with updated odds.</span>
+                    </div>
+
+                    <div class="home_sec7_p3_advantage_item">
+                      <span class="home_sec7_p3_advantage_number">5.</span>
+                      <span class="home_sec7_p3_advantage_title">Higher Trust :</span>
+                      <span class="home_sec7_p3_advantage_text">Eliminates fraud risks, your account is under your full control.</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+          <div className='home_sec7_p4'>
+            <div className='container home_sec7_p4_inner'>
+
+              {/* Left Box */}
+              <div className='home_sec7_p4_box'>
+                <h3>Football betting website with TrueWallet</h3>
+                <p>
+                  A football betting website with TrueWallet means players can deposit and withdraw money directly using the TrueMoney Wallet app, instead of only using traditional banking.
+                </p>
+                <ul>
+                  <li>TrueWallet is one of Thailand’s most widely used e-wallets.</li>
+                  <li>It allows instant deposits 24/7, even without a bank account.</li>
+                  <li>Many direct websites like UFABET now accept TrueWallet to make แทงบอล faster, safer, and more accessible for all users.</li>
+                  <li>Especially popular for younger users who prefer digital wallets over bank transfers.</li>
+                </ul>
+              </div>
+
+              {/* Right Box */}
+              <div className='home_sec7_p4_box'>
+                <h3>Use QR Code Online Banking for UFABET</h3>
+                <p>
+                  Using QR Code Online Banking for UFABET means players can scan a QR code with their mobile banking app to make fast deposits or withdrawals.
+                </p>
+                <ul>
+                  <li>This removes the need to copy long account numbers.</li>
+                  <li>Transactions are instant and auto-updated in your UFABET betting balance.</li>
+                  <li>Secure, as it uses verified bank apps like Krungthai NEXT, SCB Easy, or KBank.</li>
+                  <li>Great for players who prefer banking apps over wallets like TrueWallet.</li>
+                </ul>
+              </div>
+
+            </div>
+          </div>
+
+
+
+
+
+
+
+        </section>
+
+
+        {/* sec-8 */}
+        <section>
+          <div className="container home_home_sec8_accordion">
+            <div className="accordion" id="accordionExample">
+              {/* Accordion 1 */}
+              <div className="accordion-item">
+                <h2 className="accordion-header" id="headingOne">
+                  <button
+                    className={`accordion-button d-flex justify-content-between align-items-center ${openAccordion === 1 ? "" : "collapsed"
+                      }`}
+                    type="button"
+                    onClick={() => toggleAccordion(1)}
+                  >
+                    How to bet on football?
+                    <i className={`bi ${openAccordion === 1 ? "bi-dash" : "bi-plus"}`}></i>
+                  </button>
+                </h2>
+                <div
+                  id="collapseOne"
+                  className={`accordion-collapse collapse ${openAccordion === 1 ? "show" : ""
+                    }`}
+                >
+                  <div className="accordion-body">
+                    <p>
+                      <strong>1. Choose a Trusted Bookmaker / Direct Website</strong>
+                      Start by selecting a reliable and licensed platform such as UFABET
+                      or SBOBET. Always go for the official or direct website instead of
+                      third-party agents to ensure:
+                    </p>
+                    <ul>
+                      <li>Secure transactions</li>
+                      <li>Fair play and transparent odds</li>
+                      <li>Quick withdrawals without hidden fees</li>
+                    </ul>
+
+                    <p>
+                      <strong>2. Register and Verify Account</strong>
+                      Create a new account by entering your personal details (name, phone
+                      number, email). Some platforms may require ID verification to
+                      ensure safety and prevent fraud. Once registered, log in with your
+                      credentials.
+                    </p>
+
+                    <p>
+                      <strong>3. Deposit Funds</strong>
+                      Top up your account using safe payment methods such as:
+                    </p>
+                    <ul>
+                      <li>TrueWallet</li>
+                      <li>QR Code Online Banking</li>
+                      <li>Bank Transfer / Credit Card</li>
+                    </ul>
+                    <p>
+                      Deposits usually reflect instantly, letting you start betting right
+                      away.
+                    </p>
+
+                    <p>
+                      <strong>4. Select Football Section</strong>
+                      Browse through popular options like:
+                    </p>
+                    <ul>
+                      <li>Premier League</li>
+                      <li>La Liga</li>
+                      <li>Champions League</li>
+                      <li>World Cup Qualifiers</li>
+                    </ul>
+                    <p>Select the exact match or competition you want to bet on.</p>
+
+                    <p>
+                      <strong>6. Compare Odds and Markets</strong>
+                      Each bookmaker offers slightly different odds. Higher odds mean
+                      higher potential payouts. Compare markets such as:
+                    </p>
+                    <ul>
+                      <li>Match Result (1x2)</li>
+                      <li>Over/Under Goals</li>
+                      <li>Asian Handicap</li>
+                      <li>Half-time/Full-time</li>
+                      <li>Special bets (corners, red cards, first goalscorer, etc.)</li>
+                    </ul>
+
+                    <p>
+                      <strong>7. Choose Bet Type</strong>
+                      Pick the betting format that suits your strategy:
+                    </p>
+                    <ul>
+                      <li>1X2 → Home win, draw, or away win.</li>
+                      <li>
+                        Over/Under → Predict if total goals will be higher or lower than
+                        a given number.
+                      </li>
+                      <li>
+                        Handicap → One team starts with a virtual advantage/disadvantage.
+                      </li>
+                    </ul>
+
+                    <p>
+                      <strong>8. Enter Stake Amount</strong>
+                      Decide how much money you want to bet. The bet slip will
+                      automatically show your potential payout based on the odds.
+                    </p>
+
+                    <p>
+                      <strong>9. Confirm Bet Slip</strong>
+                      Double-check your selections (team, odds, bet type, stake). Once
+                      you’re satisfied, click Confirm Bet. Your wager is now placed and
+                      locked in.
+                    </p>
+
+                    <p>
+                      <strong>10. Track Match and Outcome</strong>
+                      Watch the game live or follow updates. Many platforms also provide
+                      live betting options, allowing you to place new bets during the
+                      match.
+                    </p>
+
+                    <p>
+                      <strong>11. Withdraw Winnings</strong>
+                      If your prediction is correct, winnings will be added to your
+                      account. You can withdraw instantly via:
+                    </p>
+                    <ul>
+                      <li>TrueWallet</li>
+                      <li>Online Banking</li>
+                      <li>Other payment options offered by the bookmaker</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              {/* Accordion 2 */}
+              <div className="accordion-item">
+                <h2 className="accordion-header" id="headingTwo">
+                  <button
+                    className={`accordion-button d-flex justify-content-between align-items-center ${openAccordion === 2 ? "" : "collapsed"
+                      }`}
+                    type="button"
+                    onClick={() => toggleAccordion(2)}
+                  >
+                    How to perform Team Analysis before playing on Football Betting?
+                    <i className={`bi ${openAccordion === 2 ? "bi-dash" : "bi-plus"}`}></i>
+                  </button>
+                </h2>
+                <div
+                  id="collapseTwo"
+                  className={`accordion-collapse collapse ${openAccordion === 2 ? "show" : ""
+                    }`}
+                >
+                  <div className="accordion-body">
+                    Content for accordion 2 goes here...
+                  </div>
+                </div>
+              </div>
+
+              {/* Accordion 3 */}
+              <div className="accordion-item">
+                <h2 className="accordion-header" id="headingThree">
+                  <button
+                    className={`accordion-button d-flex justify-content-between align-items-center ${openAccordion === 3 ? "" : "collapsed"
+                      }`}
+                    type="button"
+                    onClick={() => toggleAccordion(3)}
+                  >
+                    How are Football Betting Odds Calculated on The Direct Football Betting Website?
+                    <i className={`bi ${openAccordion === 3 ? "bi-dash" : "bi-plus"}`}></i>
+                  </button>
+                </h2>
+                <div
+                  id="collapseThree"
+                  className={`accordion-collapse collapse ${openAccordion === 3 ? "show" : ""
+                    }`}
+                >
+                  <div className="accordion-body">
+                    Content for accordion 3 goes here...
+                  </div>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+
         </section>
       </main>
     </div>

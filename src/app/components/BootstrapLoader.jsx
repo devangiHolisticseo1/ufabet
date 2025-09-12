@@ -9,6 +9,10 @@ export default function BootstrapLoader() {
 
     // Dynamically import Bootstrap CSS
     import("bootstrap/dist/css/bootstrap.min.css");
+    
+    // Dynamically import Bootstrap Icons CSS
+    import("bootstrap-icons/font/bootstrap-icons.css");
+
   }, []);
 
   return null;

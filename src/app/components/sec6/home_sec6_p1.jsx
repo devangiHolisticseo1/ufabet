@@ -1,0 +1,140 @@
+import React, { useState } from "react";
+import { Container, Row, Col, ListGroup, Card } from "react-bootstrap";
+import "./home_sec6_p1.css";
+const categories = [
+    {
+        title: "แทงบอล for World Cup",
+        key: "world_cup",
+        description1:
+            "The FIFA World Cup is the pinnacle of international football, held every four years. It brings together the best national teams from around the globe to compete for the most prestigious trophy in sports.",
+        description2:
+            "Betting on the World Cup offers an unparalleled experience, with numerous markets available from group stage matches to the grand final. You can place wagers on match winners, total goals, goal scorers, handicaps, and outright tournament winners.",
+        description3:
+            'Instructional Definition: แทงบอล (Tang Ball) literally translates to "bet on football" in Thai. It refers to the act of placing wagers on football matches, encompassing various types of bets and markets offered by bookmakers.',
+        image: "/images/home/sec6/world_cup_goal.png",
+        tips: [
+            "Research team forms and player injuries meticulously.",
+            "Consider historical performance in previous World Cups.",
+            "Look for value in underdog matches during the group stages.",
+            "Pay attention to host nation advantages.",
+        ],
+    },
+    {
+        title: "แทงบอล for Euro",
+        key: "euro",
+        description1:
+            "From last-minute strikes to penalty shootout drama, explore unforgettable moments from Euro Finals.",
+        description2:
+            "Betting on the World Cup offers an unparalleled experience, with numerous markets available from group stage matches to the grand final. You can place wagers on match winners, total goals, goal scorers, handicaps, and outright tournament winners.",
+        description3:
+            'Instructional Definition: แทงบอล (Tang Ball) literally translates to "bet on football" in Thai. It refers to the act of placing wagers on football matches, encompassing various types of bets and markets offered by bookmakers.',
+
+        image: "/images/home/sec6/euro_moments.png",
+        tips: [
+            "Compare final moments across different years.",
+            "Focus on crowd energy and reactions.",
+            "Identify game-changing substitutions.",
+        ],
+    },
+    {
+        title: "แทงบอล for AFC Cup",
+        key: "afc_cup",
+        description1:
+            "Dive into the highlights of Asia's top tournament, where underdogs rose and giants clashed.",
+        description2:
+            "Betting on the World Cup offers an unparalleled experience, with numerous markets available from group stage matches to the grand final. You can place wagers on match winners, total goals, goal scorers, handicaps, and outright tournament winners.",
+        description3:
+            'Instructional Definition: แทงบอล (Tang Ball) literally translates to "bet on football" in Thai. It refers to the act of placing wagers on football matches, encompassing various types of bets and markets offered by bookmakers.',
+
+        image: "/images/home/sec6/afc_cup_match.png",
+        tips: [
+            "Study tactics used by dominant teams.",
+            "Appreciate technical finesse in midfield battles.",
+            "Look for surprising upsets and their turning points.",
+        ],
+    },
+];
+
+const HomeSec6P1 = () => {
+    const [selected, setSelected] = useState(categories[0]);
+
+    return (
+        <div className="container">
+            <h2 className="home_sec6_p1_title">แทงบอล for Football Tournaments</h2>
+
+            <p className="home_sec6_p1_p">Your ultimate guide to football betting with trusted strategies and insights.</p>
+
+
+            <Container fluid className="home_sec6_p1_container ">
+
+                <Row>
+                    {/* Sidebar */}
+                    <Col md={3} className="home_sec6_p1_sidebar">
+                        <h5 className="home_sec6_p1_sidebar_title">Select Tournament</h5>
+                        <hr className="home_sec6_p1_sidebar_divider" />
+                        <ListGroup variant="flush">
+                            {categories.map((item, idx) => (
+                                <ListGroup.Item
+                                    key={idx}
+                                    action
+                                    className={`home_sec6_p1_menu_item ${item.key === selected.key ? "active" : ""
+                                        } d-flex justify-content-between align-items-center`}
+                                    onClick={() => setSelected(item)}
+                                >
+                                    {item.title}
+                                    <span className="home_sec6_p1_arrow">{">"}</span>
+                                </ListGroup.Item>
+                            ))}
+                        </ListGroup>
+                    </Col>
+
+                    {/* Main Content */}
+                    <Col md={9} className="home_sec6_p1_main">
+                        <h3 className="home_sec6_p1_heading"> แทงบอล for {selected.title}</h3>
+                        {/* <p className="home_sec6_p1_description">{selected.description}</p> */}
+                        {selected.description1 && (
+                            <p className="home_sec6_p1_description">{selected.description1}</p>
+                        )}
+                        {selected.description2 && (
+                            <p className="home_sec6_p1_description">{selected.description2}</p>
+                        )}
+
+
+
+
+                        <Card className="home_sec6_p1_card">
+
+                            {/* <Col md={4}>
+                                <img
+                                    src={selected.image}
+                                    alt={selected.title}
+                                    className="home_sec6_p1_image"
+                                />
+                            </Col> */}
+
+                            <Card.Body>
+                                <Card.Title className="home_sec6_p1_card_title">
+                                    Key Insights:
+                                </Card.Title>
+                                <ul className="home_sec6_p1_list">
+                                    {selected.tips.map((tip, i) => (
+                                        <li key={i}>{tip}</li>
+                                    ))}
+                                </ul>
+                            </Card.Body>
+
+
+                        </Card>
+
+                        {selected.description3 && (
+                            <p className="home_sec6_p1_description">{selected.description3}</p>
+                        )}
+
+                    </Col>
+                </Row>
+            </Container>
+        </div>
+    );
+};
+
+export default HomeSec6P1;

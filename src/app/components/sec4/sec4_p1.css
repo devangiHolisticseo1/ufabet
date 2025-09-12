@@ -1,17 +1,11 @@
 
-.home_sec4_p1_container {
+/* .home_sec4_p1_container {
   background-color: #2c2c2c;
   min-height: 100vh;
   padding: 20px 0;
   font-family: Arial, sans-serif;
-}
-
-.home_sec4_p1_header {
-  text-align: center;
-  color: #ccc;
-  font-size: 14px;
-  margin-bottom: 20px;
-}
+} */
+ 
 
 .home_sec4_p1_filters {
   gap: 8px;
@@ -52,7 +46,7 @@
 } */
 
 .home_sec4_p1_filter_btn {
-  background-color: #fdf9f2; /* light background */
+  background-color: #FFFCF6; /* light background */
   color: #1a1a1a; /* dark text */
   border: none;
   border-radius: 10px;
@@ -73,8 +67,8 @@
 }
 
 .home_sec4_p1_filter_btn.active {
-  background-color: #d4a574; /* gold brown */
-  color: #fff;
+  background-color: #BA8C4E; /* gold brown */
+  color: #FFFFFF;
 }
 
 .home_sec4_p1_filter_btn.active:hover {
@@ -96,23 +90,44 @@
 
  
 
-.home_sec4_p1_match_card {
+/* .home_sec4_p1_match_card {
   background-color: #3a3a3a;
   border-radius: 12px;
   border: 1px solid #4a4a4a;
   overflow: hidden;
+} */
+ .home_sec4_p1_match_card {
+  background: #5a5a5a;
+  border-radius: 12px;
+  border: 1px solid #d4a574; /* GOLDEN BORDER */
+  overflow: hidden;
+  padding: 20px;
 }
 
-.home_sec4_p1_match_header {
+
+/* .home_sec4_p1_match_header {
   border-bottom-color: #4a4a4a !important;
+} */
+ .home_sec4_p1_match_header {
+  /* border-bottom: 1px solid #d4a574; */
+  padding: 12px 16px;
 }
 
+/* 
 .home_sec4_p1_team_logo {
   width: 32px;
   height: 32px;
   background-color: #d4a574;
   font-size: 16px;
+} */
+ .home_sec4_p1_team_logo {
+  width: 32px;
+  height: 32px;
+  background-color: transparent;
+  border-radius: 50%;
+  overflow: hidden;
 }
+
 
 .home_sec4_p1_team_name {
   color: #d4a574;
@@ -130,12 +145,19 @@
   font-size: 14px;
 }
 
-.home_sec4_p1_opponent {
+/* .home_sec4_p1_opponent {
   color: #ccc;
   font-size: 14px;
   border-bottom-color: #4a4a4a !important;
+} */
+ .home_sec4_p1_opponent {
+  color: #ccc;
+  font-size: 13px;
+  padding: 4px 16px;
+  /* border-bottom: 1px solid #d4a574; */
 }
 
+/* 
 .home_sec4_p1_odds_section {
   height: 100px;
 }
@@ -153,8 +175,37 @@
 
 .home_sec4_p1_odds_box:hover {
   background-color: #454545;
+} */
+ .home_sec4_p1_odds_section {
+  height: 100px;
+  display: flex;
 }
 
+.home_sec4_p1_odds_box {
+  flex: 1;
+  background-color: #606060; /* soft dark */
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  border-radius: 6px;
+  margin: 8px;
+  position: relative;
+}
+
+.home_sec4_p1_over_box {
+  margin-right: 4px;
+ border:  1px solid #F9F9F9;
+}
+
+.home_sec4_p1_under_box {
+  margin-left: 4px;
+  border:  1px solid #F9F9F9;
+}
+
+.home_sec4_p1_odds_box:hover {
+  background-color: #707070;
+}
+
+/* 
 .home_sec4_p1_odds_label {
   top: 12px;
   left: 20px;
@@ -179,7 +230,33 @@
 .home_sec4_p1_odds_rate {
   color: #fff;
   font-size: 20px;
+} */
+.home_sec4_p1_odds_label {
+  position: absolute;
+  top: 10px;
+  left: 14px;
+  font-size: 11px;
+  font-weight: 600;
+  color: #fff;
 }
+
+.home_sec4_p1_odds_trend {
+  position: absolute;
+  top: 10px;
+  right: 14px;
+}
+
+.home_sec4_p1_odds_value {
+  font-size: 16px;
+  color: #fff;
+}
+
+.home_sec4_p1_odds_rate {
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+}
+
 
 .home_sec4_p1_no_matches {
   font-size: 16px;

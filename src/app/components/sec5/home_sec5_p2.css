@@ -1,0 +1,157 @@
+/* Container */
+.home_sec5_p2_container {
+  background-color: #313131;
+  min-height: 100vh;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+/* Sidebar */
+.home_sec5_p2_sidebar {
+  background-color: #C9A646;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.home_sec5_p2_sidebar_title {
+  color: #423a12;
+  font-weight: 700;
+}
+
+.home_sec5_p2_sidebar_divider {
+  border-color: #fff;
+}
+
+/* .home_sec5_p2_menu_item {
+  background-color: transparent;
+  border: none;
+  color: #423a12;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.home_sec5_p2_menu_item:hover {
+  background-color: #3c3b3b;
+  color: #fff;
+}
+
+.home_sec5_p2_menu_item.active{
+    background-color: #EBC76E !important;
+} */
+ .home_sec5_p2_menu_item {
+  background-color: transparent;
+  border: none;
+  color: #FFFFFF;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.home_sec5_p2_menu_item:hover {
+  background-color: #3c3b3b;
+  color: #fff;
+}
+
+.home_sec5_p2_menu_item.active {
+  background-color: #EBC76E !important;
+  color: #000 !important;
+}
+
+
+.home_sec5_p2_arrow {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* Main content */
+.home_sec5_p2_main {
+  padding: 20px;
+}
+
+.home_sec5_p2_heading {
+  color: #bfa75a;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.home_sec5_p2_subheading {
+  color: #bfb998;
+  margin-bottom: 20px;
+}
+
+/* Cards */
+.home_sec5_p2_card {
+  margin-bottom: 20px;
+}
+
+.home_sec5_p2_vs {
+  font-weight: 600;
+}
+
+/* Odds */
+.home_sec5_p2_odds_label {
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #6c757d;
+}
+
+.home_sec5_p2_odds_value {
+  font-weight: 700;
+  font-size: 16px;
+}
+
+
+
+
+
+
+
+
+
+
+.home_sec5_p2_card {
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  box-shadow: none;
+}
+
+.home_sec5_p2_vs {
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.home_sec5_p2_odds_btn {
+  background-color: #1f1f1f;
+  border: 2px solid #ebc76e;
+  color: #fff;
+  width: 100%;
+  padding: 12px;
+  border-radius: 5px;
+  font-weight: 600;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.home_sec5_p2_odds_btn .label {
+  font-size: 0.85rem;
+  opacity: 0.8;
+}
+
+.home_sec5_p2_odds_btn .odd {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.home_sec5_p2_odds_btn:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+.home_sec5_p2_cta_btn {
+  font-weight: 500;
+  padding: 8px 20px;
+  font-size: 0.95rem;
+  border-radius: 5px;
+}

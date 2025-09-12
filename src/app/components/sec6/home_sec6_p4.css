@@ -1,0 +1,26 @@
+.home_sec6_p4_container {
+  background-color: #2d2d2d; /* Dark gray background */
+}
+
+.home_sec6_p4_heading {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #f6c453;
+}
+
+.home_sec6_p4_highlight {
+  color: #f6c453;
+}
+
+.home_sec6_p4_subheading {
+  font-size: 1.1rem;
+  color: #f5f5f5;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.home_sec6_p4_button {
+  font-size: 0.95rem;
+  padding: 10px 20px;
+  border-radius: 6px;
+}

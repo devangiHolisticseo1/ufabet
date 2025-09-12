@@ -19,7 +19,7 @@ const matchData = [
     time: '20:00',
     over: '1.85',
     under: '1.95',
-    logo: '⚽'
+    logo: '/images/home/sec4/Image 132.png'
   },
   {
     id: 2,
@@ -30,7 +30,7 @@ const matchData = [
     time: '20:00',
     over: '1.85',
     under: '1.95',
-    logo: '⚽'
+    logo: '/images/home/sec4/Image 132 (1).png'
   },
   {
     id: 3,
@@ -41,7 +41,7 @@ const matchData = [
     time: '20:00',
     over: '1.85',
     under: '1.95',
-    logo: '⚽'
+    logo: '/images/home/sec4/Image 133.png'
   },
 ];
 
@@ -74,10 +74,7 @@ function Sec4P1() {
 
   return (
     <div className="home_sec4_p1_container">
-      {/* Header */}
-      <div className="home_sec4_p1_header">
-        24-Hour Over/Under Markets
-      </div>
+     
 
       {/* Filter Buttons */}
       <div className="home_sec4_p1_filters d-flex justify-content-center mb-4">
@@ -98,10 +95,17 @@ function Sec4P1() {
         {filteredMatches.map(match => (
           <div key={match.id} className="home_sec4_p1_match_card card mb-3">
             {/* Match Header */}
-            <div className="home_sec4_p1_match_header d-flex justify-content-between align-items-center p-3 border-bottom">
+            <div className="home_sec4_p1_match_header d-flex justify-content-between align-items-center p-3  ">
               <div className="d-flex align-items-center">
                 <div className="home_sec4_p1_team_logo d-flex align-items-center justify-content-center rounded-circle me-3">
-                  {match.logo}
+                  {/* {match.logo} */}
+                  <Image
+                    src={match.logo}
+                    alt={`${match.team} logo`}
+                    width={32}
+                    height={32}
+                    className="rounded-circle img-fluid"
+                  />
                 </div>
                 <div>
                   <div className="home_sec4_p1_team_name fw-bold mb-1">
@@ -118,7 +122,7 @@ function Sec4P1() {
             </div>
 
             {/* Opponent */}
-            <div className="home_sec4_p1_opponent p-2 px-3 border-bottom small">
+            <div className="home_sec4_p1_opponent p-2 px-3  ">
               vs {match.opponent}
             </div>
 
