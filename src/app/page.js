@@ -11,6 +11,8 @@ import HomeSec6P1 from './components/sec6/home_sec6_p1';
 import HomeSec6P2 from './components/sec6/home_sec6_p2';
 import HomeSec6P3 from './components/sec6/home_sec6_p3';
 import HomeSec6P4 from './components/sec6/home_sec6_p4';
+import HomeSec10 from './components/sec10/home_sec10';
+import HomeSec11 from './components/sec11/home_sec11';
 
 
 const home_sec2_p3_cards = [
@@ -875,54 +877,54 @@ export default function Home() {
             </div>
           </div>
 
-          <div class=" container">
+          <div className=" container">
 
-            <div class="home_sec7_p3_main_wrapper">
-              <div class="row ">
+            <div className="home_sec7_p3_main_wrapper">
+              <div className="row ">
                 {/* <!-- Left Column - Title and Description --> */}
-                <div class="col-lg-5 col-md-12">
-                  <div class="home_sec7_p3_content_wrapper">
-                    <h2 class="home_sec7_p3_main_title">
+                <div className="col-lg-5 col-md-12">
+                  <div className="home_sec7_p3_content_wrapper">
+                    <h2 className="home_sec7_p3_main_title">
                       What is the advantage of betting without Agent on Football?
                     </h2>
-                    <p class="home_sec7_p3_description">
+                    <p className="home_sec7_p3_description">
                       The advantage of betting without an agent on football (แทงบอล เว็บตรง ไม่ผ่านเอเย่นต์) is that you place bets directly with the platform (UFABET, SBOBET, etc.), which guarantees safety, fairness, and faster transactions, without middleman risks or hidden costs.
-                   
+
                     </p>
                   </div>
                 </div>
 
                 {/* <!-- Right Column - Advantages List --> */}
-                <div class="col-lg-7 col-md-12">
-                  <div class="home_sec7_p3_advantages_wrapper">
-                    <div class="home_sec7_p3_advantage_item">
-                      <span class="home_sec7_p3_advantage_number">1.</span>
-                      <span class="home_sec7_p3_advantage_title">Transparency :</span>
-                      <span class="home_sec7_p3_advantage_text">No commissions or hidden charges from agents.</span>
+                <div className="col-lg-7 col-md-12">
+                  <div className="home_sec7_p3_advantages_wrapper">
+                    <div className="home_sec7_p3_advantage_item">
+                      <span className="home_sec7_p3_advantage_number">1.</span>
+                      <span className="home_sec7_p3_advantage_title">Transparency :</span>
+                      <span className="home_sec7_p3_advantage_text">No commissions or hidden charges from agents.</span>
                     </div>
 
-                    <div class="home_sec7_p3_advantage_item">
-                      <span class="home_sec7_p3_advantage_number">2.</span>
-                      <span class="home_sec7_p3_advantage_title">Faster Transactions :</span>
-                      <span class="home_sec7_p3_advantage_text">Instant deposits and withdrawals directly with the website.</span>
+                    <div className="home_sec7_p3_advantage_item">
+                      <span className="home_sec7_p3_advantage_number">2.</span>
+                      <span className="home_sec7_p3_advantage_title">Faster Transactions :</span>
+                      <span className="home_sec7_p3_advantage_text">Instant deposits and withdrawals directly with the website.</span>
                     </div>
 
-                    <div class="home_sec7_p3_advantage_item">
-                      <span class="home_sec7_p3_advantage_number">3.</span>
-                      <span class="home_sec7_p3_advantage_title">Better Security :</span>
-                      <span class="home_sec7_p3_advantage_text">Funds and data protected by official licensing and encryption.</span>
+                    <div className="home_sec7_p3_advantage_item">
+                      <span className="home_sec7_p3_advantage_number">3.</span>
+                      <span className="home_sec7_p3_advantage_title">Better Security :</span>
+                      <span className="home_sec7_p3_advantage_text">Funds and data protected by official licensing and encryption.</span>
                     </div>
 
-                    <div class="home_sec7_p3_advantage_item">
-                      <span class="home_sec7_p3_advantage_number">4.</span>
-                      <span class="home_sec7_p3_advantage_title">Real-Time Odds :</span>
-                      <span class="home_sec7_p3_advantage_text">Direct access to live markets with updated odds.</span>
+                    <div className="home_sec7_p3_advantage_item">
+                      <span className="home_sec7_p3_advantage_number">4.</span>
+                      <span className="home_sec7_p3_advantage_title">Real-Time Odds :</span>
+                      <span className="home_sec7_p3_advantage_text">Direct access to live markets with updated odds.</span>
                     </div>
 
-                    <div class="home_sec7_p3_advantage_item">
-                      <span class="home_sec7_p3_advantage_number">5.</span>
-                      <span class="home_sec7_p3_advantage_title">Higher Trust :</span>
-                      <span class="home_sec7_p3_advantage_text">Eliminates fraud risks, your account is under your full control.</span>
+                    <div className="home_sec7_p3_advantage_item">
+                      <span className="home_sec7_p3_advantage_number">5.</span>
+                      <span className="home_sec7_p3_advantage_title">Higher Trust :</span>
+                      <span className="home_sec7_p3_advantage_text">Eliminates fraud risks, your account is under your full control.</span>
                     </div>
                   </div>
                 </div>
@@ -966,12 +968,7 @@ export default function Home() {
             </div>
           </div>
 
-
-
-
-
-
-
+ 
         </section>
 
 
@@ -1158,6 +1155,19 @@ export default function Home() {
             </div>
           </div>
 
+        </section>
+
+        {/* sec-9 */}
+      
+
+        {/* sec-10 */}
+        <section>
+          <HomeSec10 />
+        </section>
+
+                    {/* sec-11 */}
+        <section>
+          <HomeSec11 />
         </section>
       </main>
     </div>

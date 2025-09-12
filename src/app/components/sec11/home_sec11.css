@@ -1,0 +1,82 @@
+.home_sec11_section {
+  background-color: #111111;
+  color: #fff;
+}
+
+.home_sec11_tabs .nav-link {
+  color: #fff;
+  font-weight: 500;
+  border: none;
+  background: transparent;
+}
+
+.home_sec11_tabs .nav-link.active {
+  border-bottom: 2px solid #f2cb6c;
+  color: #f2cb6c;
+}
+
+.home_sec11_wallet_card {
+  background-color: #1c1c1c;
+  border-radius: 6px;
+  overflow: hidden;
+  border: 1px solid #2d2d2d;
+}
+
+.home_sec11_tab_content {
+  background-color: #111;
+  padding: 1rem;
+}
+
+.home_sec11_balance_box {
+  background-color: #000;
+  color: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  text-align: center;
+  position: relative;
+}
+
+.home_sec11_balance_label {
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: #ccc;
+}
+
+.home_sec11_balance_value {
+  font-size: 36px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.home_sec11_wallet_icon {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  font-size: 2rem;
+  color: #f2cb6c;
+}
+
+.home_sec11_advantages_title {
+  color: #f2cb6c;
+}
+
+.home_sec11_advantage_box {
+  background-color: #fdfaf3;
+  border: 1px solid #f2cb6c;
+  border-radius: 8px;
+  padding: 1.2rem;
+  color: #111;
+  height: 100%;
+}
+
+.home_sec11_advantage_box i {
+  font-size: 1.6rem;
+  color: #111;
+  margin-bottom: 0.5rem;
+  display: inline-block;
+}
+
+.home_sec11_advantage_box_gap{
+  gap:10px;
+  margin-bottom: 14px;
+}

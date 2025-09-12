@@ -50,11 +50,15 @@
   border-radius: 4px;
   font-weight: 600;
   z-index: 1;
-  transition: background-color 0.3s ease;
+ 
 }
 
 .home_sec1_button:hover {
-  background-color: #d6b45f;
+  /* background-color: #d6b45f; */
+    background: transparent;
+  color: #FFFFFF;
+  border: 1px solid #EBC76E;
+
 }
 
 
@@ -875,6 +879,7 @@
 /* Accordion Icon */
 .home_sec7_button::after {
   filter: brightness(0) saturate(100%) invert(89%) sepia(77%) saturate(723%) hue-rotate(1deg) brightness(94%) contrast(87%);
+  color: #ffffff;
 }
 
 /* Accordion Body */
@@ -1128,7 +1133,7 @@
 }
 
 .home_home_sec8_accordion .accordion-item {
-  background-color: #fdfaf3;
+  background-color: #FFFCF6;
   border: 1px solid #f2cb6c;
   border-radius: 6px;
   margin-bottom: 1.25rem;
@@ -1154,7 +1159,7 @@
 }
 
 .home_home_sec8_accordion .accordion-body {
-  background-color: #fffdf6;
+  background-color: #FFFFFF;
   color: #000;
   font-size: 14.5px;
   /* padding: 1.5rem 1.5rem 2rem 1.5rem; */

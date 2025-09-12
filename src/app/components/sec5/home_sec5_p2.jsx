@@ -9,6 +9,15 @@ const menuItems = [
   "แทงบอล for Serie A",
   "แทงบอล for Bundesliga",
   "แทงบอล for Ligue 1",
+  "แทงบอล for Europa League",
+  "แทงบอล for Thai League 1",
+  "แทงบอล for FA Cup",
+  "แทงบอล for EFL Cup",
+  "แทงบอล for World Cup",
+  "แทงบอล for UEFA European Championship",
+  "แทงบอล for Copa América",
+  "แทงบอล for AFC Champions League",
+  "แทงบอล for Chinese Super League",
 ];
 
 const matches = [
@@ -89,9 +98,8 @@ const HomeSec5P2 = () => {
               <ListGroup.Item
                 key={idx}
                 action
-                className={`home_sec5_p2_menu_item ${
-                  item.includes(selectedLeague) ? "active" : ""
-                } d-flex justify-content-between align-items-center`}
+                className={`home_sec5_p2_menu_item ${item.includes(selectedLeague) ? "active" : ""
+                  } d-flex justify-content-between align-items-center`}
                 onClick={() => handleLeagueClick(item.split(" for ")[1])}
               >
                 {item}
@@ -106,152 +114,95 @@ const HomeSec5P2 = () => {
           <h3 className="home_sec5_p2_heading">Live Football Betting Odds</h3>
           <p className="home_sec5_p2_subheading">Showing matches for: {selectedLeague}</p>
 
-          {/* {matches
-            .filter((m) => m.league === selectedLeague)
-            .map((match, idx) => (
-              <Card key={idx} className="home_sec5_p2_card">
-                <Card.Body>
-                  <div className="d-flex justify-content-between align-items-center mb-3">
-                    <div className="d-flex align-items-center">
-                      <img src={match.homeLogo} alt={match.homeTeam} width={40} height={40} className="me-2" />
-                      <div className="text-uppercase fw-bold">{match.homeTeam}</div>
-                    </div>
 
-                    <div className="home_sec5_p2_vs">VS</div>
+          <div className="home_sec5_card_uper_div">
+              {/* <h3 >Premier League Live Score </h3> */}
+            {matches
+              .filter((m) => m.league === selectedLeague)
+              .map((match, idx) => (
+                
+                
+                  <Card key={idx} className="home_sec5_p2_card ">
+                    <Card.Body>
+                      {/* Header Row */}
+                      <div className="d-flex justify-content-between align-items-center mb-3">
+                        <div className="d-flex align-items-center home_sec5_p2_card_logo_team_div ">
+                          <img
+                            src={match.homeLogo}
+                            alt={match.homeTeam}
+                            width={40}
+                            height={40}
+                            className="me-2"
+                          />
+                          <div className="text-uppercase home_sec5_homeTeam">{match.homeTeam}</div>
+                        </div>
 
-                    <div className="d-flex align-items-center">
-                      <img src={match.awayLogo} alt={match.awayTeam} width={40} height={40} className="me-2" />
-                      <div className="text-uppercase fw-bold">{match.awayTeam}</div>
-                    </div>
+                        <div className="home_sec5_p2_vs text-muted">VS</div>
 
-                    <Badge bg={statusColors[match.status]}>{match.status}</Badge>
-                  </div>
+                        <div className="d-flex align-items-center home_sec5_p2_card_logo_team_div">
+                          <img
+                            src={match.awayLogo}
+                            alt={match.awayTeam}
+                            width={40}
+                            height={40}
+                            className="me-2"
+                          />
+                          <div className="text-uppercase home_sec5_homeTeam">{match.awayTeam}</div>
+                        </div>
 
-                  <Row className="mb-3 text-center">
-                    <Col>
-                      <Button
-                        variant="dark"
-                        onClick={() => handleBetClick(match, "HOME WIN", match.odds.home)}
-                      >
-                        HOME WIN {match.odds.home.toFixed(2)}
-                      </Button>
-                    </Col>
-                    <Col>
-                      <Button
-                        variant="dark"
-                        onClick={() => handleBetClick(match, "DRAW", match.odds.draw)}
-                      >
-                        DRAW {match.odds.draw.toFixed(2)}
-                      </Button>
-                    </Col>
-                    <Col>
-                      <Button
-                        variant="dark"
-                        onClick={() => handleBetClick(match, "ALWAYS WIN", match.odds.away)}
-                      >
-                        AWAY WIN {match.odds.away.toFixed(2)}
-                      </Button>
-                    </Col>
-                  </Row>
+                        <Badge bg={statusColors[match.status]} className="text-uppercase ">
+                          {match.status}
+                        </Badge>
+                      </div>
 
-                  <div className="text-center small text-muted">
-                    Match Date: {match.matchDate} &nbsp;|&nbsp; Kick-off: {match.kickOff}{" "}
-                    {match.score ? `&nbsp;|&nbsp; Score: ${match.score}` : ""}
-                  </div>
-                </Card.Body>
-              </Card>
-            ))}
+                      {/* Odds Row */}
+                      <Row className="mb-3 text-center">
+                        <Col>
+                          <Button
+                            className="home_sec5_p2_odds_btn"
+                            onClick={() => handleBetClick(match, "HOME WIN", match.odds.home)}
+                          >
+                            <div className="label">HOME WIN</div>
+                            <div className="odd">{match.odds.home.toFixed(2)}</div>
+                          </Button>
+                        </Col>
+                        <Col>
+                          <Button
+                            className="home_sec5_p2_odds_btn"
+                            onClick={() => handleBetClick(match, "DRAW", match.odds.draw)}
+                          >
+                            <div className="label">DRAW</div>
+                            <div className="odd">{match.odds.draw.toFixed(2)}</div>
+                          </Button>
+                        </Col>
+                        <Col>
+                          <Button
+                            className="home_sec5_p2_odds_btn"
+                            onClick={() => handleBetClick(match, "AWAY WIN", match.odds.away)}
+                          >
+                            <div className="label">ALWAYS WIN</div>
+                            <div className="odd">{match.odds.away.toFixed(2)}</div>
+                          </Button>
+                        </Col>
+                      </Row>
 
-          
-          {selectedBet && (
-            <div className="alert alert-info mt-3">
-              You selected: <strong>{selectedBet.betType}</strong> for{" "}
-              <em>{selectedBet.match}</em> at odd <strong>{selectedBet.odd}</strong>
-            </div>
-          )} */}
+                      {/* Call-to-action Button */}
+                      <div className="text-center mb-3">
+                        <Button variant="dark" className="home_sec5_p2_cta_btn" data-bs-placement="top">
+                          Click on an odd to place a bet.
+                        </Button>
+                      </div>
 
-          {matches
-  .filter((m) => m.league === selectedLeague)
-  .map((match, idx) => (
-    <Card key={idx} className="home_sec5_p2_card mb-4">
-      <Card.Body>
-        {/* Header Row */}
-        <div className="d-flex justify-content-between align-items-center mb-3">
-          <div className="d-flex align-items-center">
-            <img
-              src={match.homeLogo}
-              alt={match.homeTeam}
-              width={40}
-              height={40}
-              className="me-2"
-            />
-            <div className="text-uppercase fw-bold">{match.homeTeam}</div>
+                      {/* Footer Info */}
+                      <div className="text-center small text-muted border-top  home_sec5_match_date_kick_off_div">
+                        Match Date: {match.matchDate} &nbsp;|&nbsp; Kick-off: {match.kickOff}{" "}
+                        {match.score ? `| Score: ${match.score}` : ""}
+                      </div>
+                    </Card.Body>
+                  </Card>
+                 
+              ))}
           </div>
-
-          <div className="home_sec5_p2_vs text-muted">VS</div>
-
-          <div className="d-flex align-items-center">
-            <img
-              src={match.awayLogo}
-              alt={match.awayTeam}
-              width={40}
-              height={40}
-              className="me-2"
-            />
-            <div className="text-uppercase fw-bold">{match.awayTeam}</div>
-          </div>
-
-          <Badge bg={statusColors[match.status]} className="text-uppercase">
-            {match.status}
-          </Badge>
-        </div>
-
-        {/* Odds Row */}
-        <Row className="mb-3 text-center">
-          <Col>
-            <Button
-              className="home_sec5_p2_odds_btn"
-              onClick={() => handleBetClick(match, "HOME WIN", match.odds.home)}
-            >
-              <div className="label">HOME WIN</div>
-              <div className="odd">{match.odds.home.toFixed(2)}</div>
-            </Button>
-          </Col>
-          <Col>
-            <Button
-              className="home_sec5_p2_odds_btn"
-              onClick={() => handleBetClick(match, "DRAW", match.odds.draw)}
-            >
-              <div className="label">DRAW</div>
-              <div className="odd">{match.odds.draw.toFixed(2)}</div>
-            </Button>
-          </Col>
-          <Col>
-            <Button
-              className="home_sec5_p2_odds_btn"
-              onClick={() => handleBetClick(match, "AWAY WIN", match.odds.away)}
-            >
-              <div className="label">ALWAYS WIN</div>
-              <div className="odd">{match.odds.away.toFixed(2)}</div>
-            </Button>
-          </Col>
-        </Row>
-
-        {/* Call-to-action Button */}
-        <div className="text-center mb-3">
-          <Button variant="dark" className="home_sec5_p2_cta_btn">
-            Click on an odd to place a bet.
-          </Button>
-        </div>
-
-        {/* Footer Info */}
-        <div className="text-center small text-muted border-top pt-2">
-          Match Date: {match.matchDate} &nbsp;|&nbsp; Kick-off: {match.kickOff}{" "}
-          {match.score ? `| Score: ${match.score}` : ""}
-        </div>
-      </Card.Body>
-    </Card>
-  ))}
 
         </Col>
       </Row>
