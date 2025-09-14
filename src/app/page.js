@@ -5,7 +5,7 @@ import HomeNavbar from "./components/HomeNavbar/HomeNavbar";
 import Image from "next/image";
 import { FaAngleRight, FaAngleLeft } from "react-icons/fa6";
 
-import Sec4P1 from './components/sec4/sec4_p1.jsx';
+import Sec4P1 from './components/sec4/home_sec4_p1.jsx';
 import HomeSec5P2 from './components/sec5/home_sec5_p2';
 import HomeSec6P1 from './components/sec6/home_sec6_p1';
 import HomeSec6P2 from './components/sec6/home_sec6_p2';
@@ -550,7 +550,7 @@ export default function Home() {
 
             <div>
 
-              <h1 className='home_sec3_h1'>Football Betting ODDS</h1>
+              <h2 className='home_sec3_h1'>Football Betting ODDS</h2>
               <p className='home_sec3_p_24_hour'>24-Hour Over/Under Markets</p>
               <div>
 
@@ -571,7 +571,7 @@ export default function Home() {
         <section>
 
           <div className='container home_sec5'>
-            <h1 className='home_sec2_title fw-medium'>Today's Football Accumulator</h1>
+            <h2 className='home_sec2_title fw-medium'>Today's Football Accumulator</h2>
             <p className='home_sec2_p'>Boost your chances of winning by combining multiple bets into one! An accumulator (or "acca") links several selections together, with all results needing to win for you to land a payout.</p>
 
             <div className='home_sec5_p1'>

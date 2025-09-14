@@ -1,13 +1,9 @@
 // Sec4P1.js
 import { useState } from 'react';
-import './sec4_p1.css';
+import './home_sec4_p1.css';
 import Image from 'next/image';
 
-// import allMarketsIcon from '/images/home/sec4/global--markets--bar_1_.png';
-// import leaguesIcon from '/images/home/sec4/Group 87272.png';
-// import teamsIcon from '/images/home/sec4/Vector.png';
-// import othersIcon from '/images/home/sec4/Vector (1).png';
-
+ 
 
 const matchData = [
   {

@@ -841,7 +841,6 @@
   padding: 30px;
   border-radius: 10px;
   margin-top: 40px;
-  
 }
 
 /* Accordion Wrapper */
@@ -867,6 +866,10 @@
   transition: background-color 0.3s ease;
   box-shadow: none;
 }
+.home_sec7_button:hover{
+  background-color: #3f3c3c;
+  color: white;
+}
 
 /* Accordion Button Expanded (Open) */
 .home_sec7_button:not(.collapsed) {
@@ -874,6 +877,7 @@
   color: #f6c453;
   border-bottom: none;
   border-radius: 8px 8px 0 0;
+
 }
 
 /* Accordion Icon */
@@ -1155,7 +1159,7 @@
   color: #BA8C4E;
   background-color: #FFFCF6;
   box-shadow: none;
-  padding: 25px 25px 20px;
+  /* padding: 25px 25px 20px; */
 }
 
 .home_home_sec8_accordion .accordion-body {
@@ -1212,7 +1216,7 @@ margin: 25px;
 
 /* Remove Bootstrap's default caret from accordion button */
 .home_home_sec8_accordion .accordion-button::after {
-  display: none !important;
+  /* display: none !important; */
 }
 
 /* Align your plus/minus icon on the right */
