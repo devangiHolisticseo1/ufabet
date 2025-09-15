@@ -14,10 +14,10 @@ const poppins = Poppins({
   display: 'swap',
 });
 
-const geistMono = Geist_Mono({
-  subsets: ['latin'],
-  variable: '--font-geist-mono',
-});
+// const geistMono = Geist_Mono({
+//   subsets: ['latin'],
+//   variable: '--font-geist-mono',
+// });
 
 export const metadata = {
   title: 'Create Next App',
@@ -30,7 +30,7 @@ export default function RootLayout({ children }) {
        <head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </head>
-      <body className={`${poppins.variable} ${geistMono.variable}`}>
+      <body className={`${poppins.variable}  }`}>
         {children}
         <BootstrapLoader />
       </body>

@@ -77,8 +77,8 @@
 }
 
 .home_sec4_p1_filter_icon img {
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
   filter: brightness(0) saturate(100%);
   transition: filter 0.2s;
 }
@@ -130,9 +130,10 @@
 
 
 .home_sec4_p1_team_name {
-  color: #d4a574;
-  font-size: 16px;
+  color: #EBC76E;
+  font-size: 18px;
   margin-bottom: 2px;
+  font-weight: 600;
 }
 
 .home_sec4_p1_league_name {

@@ -93,7 +93,7 @@ const HomeSec5P2 = () => {
             Live Football <br /> Betting Odds
           </h5>
           <hr className="home_sec5_p2_sidebar_divider" />
-          <ListGroup variant="flush">
+          <ListGroup variant="flush" className="home_sec5_p2_sidebar_divider_flush">
             {menuItems.map((item, idx) => (
               <ListGroup.Item
                 key={idx}
@@ -123,7 +123,7 @@ const HomeSec5P2 = () => {
                 
                 
                   <Card key={idx} className="home_sec5_p2_card ">
-                    <Card.Body>
+                    <Card.Body className="home_sec5_card-body">
                       {/* Header Row */}
                       <div className="d-flex justify-content-between align-items-center mb-3">
                         <div className="d-flex align-items-center home_sec5_p2_card_logo_team_div ">

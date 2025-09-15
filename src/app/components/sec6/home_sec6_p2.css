@@ -60,6 +60,7 @@
   color: #ebc76e;
   font-weight: 700;
   margin-bottom: 10px;
+
 }
 
 .home_sec6_p2_description {
@@ -116,4 +117,24 @@
   font-size: 1rem;
   color: #fff3d5;
   text-align: center;
+}
+
+
+.home_sec6_p2_heading_bottom_line{
+  border-bottom: 2px solid white;
+}
+
+.home_sec6_p2_shadow-left {
+  /* box-shadow: -5px 0 10px rgba(0, 0, 0, 0.3); */
+ 
+ background-color: #ffffff;
+  border-radius: 12px;
+  border-left: 9px solid #1A1A1A;  
+   
+}
+
+
+
+.home_sec6_p2_shadow-left .card-body{
+  padding: 0px;
 }

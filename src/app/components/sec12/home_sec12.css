@@ -24,7 +24,7 @@
 
 .home_sec12_sidebar_item.active {
   background-color: rgba(255, 221, 144, 0.05);
-  border-left: 4px solid #f0c75e;
+  /* border-left: 4px solid #f0c75e; */
   color: #f0c75e;
 }
 
@@ -33,10 +33,10 @@
 }
 
 .home_sec12_content {
-  background-color: #1e1e1e;
-  border: 1px solid #f0c75e;
-  border-radius: 6px;
-  min-height: 400px;
+  background-color: #313131;
+  /* border: 1px solid #f0c75e; */
+  border-radius: 5px;
+  /* min-height: 400px; */
 }
 
 .home_sec12_header h5 {
@@ -64,8 +64,23 @@
 }
 
 .accordion-button {
-  font-size: 0.95rem;
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: #FFFFFF;
 }
+
+/* .accordion-body.active{
+  color: #EBC76E;
+} */
+ .accordion-button.active {
+  color: #f0c75e; /* golden text color */
+}
+
+/* .accordion-button:not(.active) {
+  color: white;
+} */
+
+
 
 /* .accordion-button::after {
   filter: invert(1);
@@ -79,8 +94,14 @@
 
 .accordion-button i {
   font-size: 1.2rem;
-  color: #f0c75e;
+  color: #FFFFFF;
 }
+
+.accordion-button i.active {
+  
+  color: gold;
+}
+
 
 
 .accordion-button {

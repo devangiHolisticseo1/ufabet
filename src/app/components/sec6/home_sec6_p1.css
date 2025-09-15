@@ -100,6 +100,7 @@
 .home_sec6_p1_list {
   list-style: none;
   padding-left: 0;
+  margin-top: 15px;
 }
 
 .home_sec6_p1_list li {
@@ -129,4 +130,25 @@
   font-size: 1rem;
   color:#FFF3D5;
     text-align: center;
+}
+
+
+.home_sec6_title{
+  font-size: 22px;
+  color: #BA8C4E;
+  font-weight: 600;
+}
+
+.home_sec6_shadow-left {
+  /* box-shadow: -5px 0 10px rgba(0, 0, 0, 0.3); */
+ 
+ background-color: #ffffff;
+  border-radius: 12px;
+  border-left: 9px solid #EBC76E;  
+   
+}
+ 
+
+.home_sec6_shadow-left .card-body{
+  padding: 0px;
 }

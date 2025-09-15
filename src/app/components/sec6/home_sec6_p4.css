@@ -27,3 +27,9 @@
   background-color: #FFFFFF;
   color: #BA8C4E;
 }
+
+.home_sec6_p4_button:hover{
+  color:#FFFFFF;
+  background-color: transparent;
+  border:1px solid #FFFFFF;
+}
