@@ -140,6 +140,7 @@
   }
 
   .custom-navbar {
+    
     flex-direction: column;
     align-items: flex-start;
     height: auto;
@@ -161,4 +162,31 @@
     text-align: center;
     margin-top: 10px;
   }
+    .home_nav_mx {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+  }
+
+  /* Logo center */
+  .navbar-brand {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  /* Toggle left */
+  .navbar-toggler {
+    margin-left: 0;
+    order: -1; /* ensures it's always leftmost */
+  }
+
+  /* Auth button right */
+  .auth-section {
+    margin-left: auto;
+  }
+
 }
+
+

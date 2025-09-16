@@ -211,7 +211,7 @@ const HomeSec10 = () => {
                 alt={data[activeIndex].title}
                 width={400}
                 height={400}
-                className="home_sec10_image"
+                className="home_sec10_image img-fluid"
               />
             </figure>
           </div>

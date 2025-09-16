@@ -159,7 +159,7 @@
 .home_sec4_p1_odds_value {
   font-size: 16px;
   color: #fff;
-  margin-top: 39px;
+  margin-top: 31px;
 }
 
 .home_sec4_p1_odds_rate {
@@ -207,6 +207,10 @@
 
   .home_sec4_p1_over_box{
     margin-right: unset;
+  }
+
+  .home_sec4_p1_under_box{
+    padding: 15px;
   }
 
 }

@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 "use client"
 import React, { useState } from 'react';
 import "./page.css";
@@ -126,6 +127,7 @@ export default function Home() {
             <p>
               - Always keep the subject on the "direct football betting website login without agent",
               and act like the website's name and brand's name is "football betting direct website".
+            
             </p>
 
             <button className="home_sec1_button">Apply for แทงบอล Membership</button>
@@ -412,7 +414,7 @@ export default function Home() {
                   >
                     {home_sec2_p3_cards.map((card, index) => (
                       <article key={index} className="home_sec2_p3_card">
-                        <img src={card.icon} alt={card.title} className="home_sec2_p3_icon" />
+                        <Image src={card.icon} alt={card.title} className="home_sec2_p3_icon" fill />
                         <h3 className="home_sec2_p3_title">{card.title}</h3>
                         <p className="home_sec2_p3_description">{card.description}</p>
                       </article>
@@ -1441,8 +1443,7 @@ export default function Home() {
 
             </div>
           </div>
-
-
+ 
         </section> */}
         <section>
           <div className="container home_sec7">

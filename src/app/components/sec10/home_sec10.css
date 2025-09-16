@@ -96,3 +96,8 @@
 .home_sec10_desc.show {
   display: block;
 }
+
+
+@media (max-width: 767px) {
+ 
+}
