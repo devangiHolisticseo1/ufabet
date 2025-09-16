@@ -123,3 +123,12 @@
 .home_sec6_p3_shadow-left .card-body{
   padding: 0px;
 }
+
+
+/* Mobile Devices (up to 767px) */
+@media (max-width: 767px) {
+    .home_sec6_p3_title
+    {
+      font-size: 24px;
+    }
+}

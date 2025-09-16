@@ -152,3 +152,16 @@
 .home_sec6_shadow-left .card-body{
   padding: 0px;
 }
+
+
+/* Mobile Devices (up to 767px) */
+@media (max-width: 767px) {
+    .home_sec6_p1_title{
+      font-size: 24px;
+      margin-bottom: 12px;
+    }
+
+    .home_sec6_p1_container{
+      margin-top: 40px;
+    }
+}
