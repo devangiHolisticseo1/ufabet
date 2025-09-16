@@ -1,4 +1,4 @@
-.custom-navbar {
+/* .custom-navbar {
   background-color: #1A1A1A;
   height: 80px;
 }
@@ -22,28 +22,7 @@
 .navbar-nav .nav-link:hover {
   color: #d4af37;
 }
-/* 
-.btn-gold { 
-  background: linear-gradient(90deg, #EBC76E, #BA8C4E, #d4af37);
-
-  color: #000;
-  font-size: 13px;
-  font-weight: 600;
-  padding: 5px 15px;
-  border-radius: 5px;
-  border: none;
-    transition: all 0.3s ease; 
-}
-
-.btn-gold:hover {
-  background: transparent;
-  color: #FFFFFF;
-  border-color: #EBC76E;
-  border: 1px solid #EBC76E;
-
-  
-
-} */
+ 
 
 .btn-gold {
   background: linear-gradient(90deg, #EBC76E, #BA8C4E, #d4af37);
@@ -53,7 +32,7 @@
   padding: 5px 15px;
   border-radius: 5px;
   border: none;
-  /* transition: all 0.3s ease;  */
+   
 }
 
 .btn-gold:hover {
@@ -69,3 +48,117 @@
   margin-inline:300px;
 }
 
+  */
+
+
+
+  .custom-navbar {
+  background-color: #1A1A1A;
+  height: 80px;
+  padding: 0 20px;
+}
+
+/* Logo Text */
+.logo-text {
+  font-weight: 700;
+  font-size: 24px;
+  color: white;
+}
+
+/* Gold Text */
+.text-gold {
+  color: #d4af37;
+}
+
+/* Navbar Links */
+.navbar-nav .nav-link {
+  color: #FFFFFF;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #d4af37;
+}
+
+/* Gold Button */
+.btn-gold {
+  background: linear-gradient(90deg, #EBC76E, #BA8C4E, #d4af37);
+  color: #000;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 5px 15px;
+  border-radius: 5px;
+  border: none;
+}
+
+.btn-gold:hover {
+  background: transparent;
+  color: #FFFFFF;
+  border: 1px solid #EBC76E;
+}
+
+/* Inline Margin for Desktop */
+.home_nav_mx {
+  margin-inline: 300px;
+}
+
+/* -----------------------------------
+   Responsive Styling for Tablet & Mobile
+------------------------------------ */
+
+/* Tablets (up to 991px) */
+@media (max-width: 991px) {
+  .home_nav_mx {
+    margin-inline: 50px;
+  }
+
+  .custom-navbar {
+    height: auto;
+    padding: 10px 20px;
+  }
+
+  .logo-text {
+    font-size: 20px;
+  }
+
+  .btn-gold {
+    font-size: 12px;
+    padding: 4px 12px;
+  }
+}
+
+/* Mobile Devices (up to 767px) */
+@media (max-width: 767px) {
+  .home_nav_mx {
+    margin-inline: 0px;
+  }
+
+  .logo-text {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .custom-navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+  }
+
+  .navbar-nav {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .navbar-nav .nav-link {
+    padding: 10px 0;
+    width: 100%;
+    text-align: left;
+  }
+
+  .btn-gold {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+  }
+}

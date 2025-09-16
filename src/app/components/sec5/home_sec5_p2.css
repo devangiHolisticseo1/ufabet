@@ -201,3 +201,34 @@
 .home_sec5_p2_sidebar_divider_flush{
   background-color: #C9A646;
 }
+
+.home_sec5_row_to_flex_col{
+      flex-direction: uset;
+    gap: unset;
+
+}
+
+
+@media (max-width: 767px) {
+  .home_sec4_p1_filters {
+    
+  }
+  .home_sec5_homeTeam{
+    font-size: 0.813rem;
+  }
+
+  .home_sec5_card_uper_div{
+    padding: 0px;
+  }
+
+  .home_sec5_card-body{
+    padding: 15px ;
+  }
+
+  .home_sec5_row_to_flex_col{
+      flex-direction: column;
+    gap: 10px;
+
+}
+
+}

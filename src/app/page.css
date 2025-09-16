@@ -235,6 +235,7 @@ margin-top: 30px;
 
 .home_sec2_p2_steps {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   gap: 1rem;
 }
@@ -306,6 +307,7 @@ margin-top: 30px;
 .home_sec2_p3_cards {
   position: relative;
   min-height: 200px;
+  max-width: 314px;
 }
 
 
@@ -392,7 +394,7 @@ margin-top: 30px;
   text-align: left;
   box-sizing: border-box;
   
-  /* width: 314px; */
+  width: 314px;
   /* height: 257px; */
 }
 
@@ -842,6 +844,12 @@ margin-top: 30px;
 }
 
 
+
+
+
+
+
+
 /* Accordion Container */
 .home_sec7_accordion_container {
   background-color: #313131;
@@ -870,41 +878,69 @@ margin-top: 30px;
   font-size: 1rem;
   padding: 1rem;
   border-radius: 8px;
-  transition: background-color 0.3s ease;
+  transition: all 0.3s ease;
   box-shadow: none;
+  border: none;
+  width: 100%;
+  text-align: left;
+  position: relative;
+  background-image: none !important;
 }
-.home_sec7_button:hover{
+
+.home_sec7_button:hover {
   background-color: #3f3c3c;
   color: white;
 }
 
- 
-  .home_sec7_button:not(.collapsed) {
-  background-color: #1A1A1A;
-  color: #f6c453;
-  border-bottom: none;
-  border-radius: 8px 8px 0 0;
+.home_sec7_button:focus {
+  box-shadow: none;
+  border: none;
 }
 
+/* Active/Open state */
 .home_sec7_button:not(.collapsed) {
   background-color: #1A1A1A;
   color: #f6c453;
   border-radius: 8px 8px 0 0;
 }
 
-.accordion-collapse {
-  transition: height 0.3s ease;
+/* COMPLETELY OVERRIDE Bootstrap accordion button */
+.home_sec7_button.accordion-button::after {
+  display: none !important;
+  content: none !important;
+  background-image: none !important;
 }
 
+.home_sec7_button::before {
+  display: none !important;
+}
 
-/* Restore default Bootstrap caret */
- 
- 
-/* .home_sec7_button::after {
-  filter: brightness(0) saturate(100%) invert(89%) sepia(77%) saturate(723%) hue-rotate(1deg) brightness(94%) contrast(87%);
-  color: #ffffff;
-}  
-  */
+/* Add our custom triangle with span inside button - SVG Version */
+.home_sec7_triangle {
+  position: absolute;
+  right: 1.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 16px;
+  height: 16px;
+  background-image: url('/images/home/arrrow_svg.svg');
+  background-position: center;
+  background-size: contain;
+  transition: all 0.3s ease;
+  border: none;
+  background-repeat: no-repeat;
+}
+
+/* Rotate triangle when expanded - point up */
+.home_sec7_button:not(.collapsed) .home_sec7_triangle {
+  transform: translateY(-50%) rotate(180deg);
+  background-image:  url('/images/home/arrrow_svg.svg');
+}
+
+/* Accordion collapse transition */
+.accordion-collapse {
+  transition: height 0.35s ease;
+}
 
 /* Accordion Body */
 .home_sec7_body {
@@ -919,11 +955,35 @@ margin-top: 30px;
 .home_sec7_list {
   list-style-type: disc;
   padding-left: 1.5rem;
+  margin-top: 1rem;
 }
 
 .home_sec7_list li {
   margin-bottom: 10px;
 }
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .home_sec7_accordion_container {
+    padding: 20px;
+    margin-top: 30px;
+  }
+  
+  .home_sec7_button {
+    font-size: 0.9rem;
+    padding: 0.8rem;
+  }
+  
+  .home_sec7_body {
+    padding: 1rem;
+    font-size: 0.9rem;
+  }
+}
+
+
+
+
+
 
 
 
@@ -1064,6 +1124,7 @@ margin-top: 30px;
   align-items: flex-start;
   gap: 8px;
   transition: all 0.3s ease;
+   
 }
 
 .home_sec7_p3_advantage_item:hover {
@@ -1277,4 +1338,23 @@ margin: 0px 25px 25px 25px;
 
 .home_sec7_list li ::marker{
   color:#EBC76E;
+}
+
+
+
+
+/* Mobile Devices (up to 767px) */
+@media (max-width: 767px) {
+    .home_sec2_title{
+      font-size: 1.5rem;
+    }
+
+    .home_sec2_p2_steps{
+      flex-direction: column;
+    }
+
+    
+
+    
+    
 }

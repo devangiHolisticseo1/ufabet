@@ -4,4 +4,9 @@ body {
 }
 
 
- 
+/* Mobile Devices (up to 767px) */
+@media (max-width: 767px) {
+    .mobile_d_flex{
+      flex-direction:column;
+    }
+}

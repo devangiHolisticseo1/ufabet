@@ -125,7 +125,7 @@ const HomeSec5P2 = () => {
                   <Card key={idx} className="home_sec5_p2_card ">
                     <Card.Body className="home_sec5_card-body">
                       {/* Header Row */}
-                      <div className="d-flex justify-content-between align-items-center mb-3">
+                      <div className="d-flex justify-content-between align-items-start mb-3">
                         <div className="d-flex align-items-center home_sec5_p2_card_logo_team_div ">
                           <img
                             src={match.homeLogo}
@@ -156,7 +156,7 @@ const HomeSec5P2 = () => {
                       </div>
 
                       {/* Odds Row */}
-                      <Row className="mb-3 text-center">
+                      <Row className="mb-3 text-center home_sec5_row_to_flex_col">
                         <Col>
                           <Button
                             className="home_sec5_p2_odds_btn"

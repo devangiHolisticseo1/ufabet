@@ -84,11 +84,7 @@ export default function Home() {
   };
 
 
-  // const [is_home_sec8_Open, setIs_home_sec8_Open] = useState(false);
 
-  // const toggleAccordion = () => {
-  //   setIs_home_sec8_Open(!is_home_sec8_Open);
-  // };
 
   const [openAccordion, setOpenAccordion] = useState(null);
 
@@ -108,6 +104,11 @@ export default function Home() {
     setShowPassword2((prev) => !prev);
   };
 
+  const [openItem, setOpenItem] = useState('collapseOne'); // First item open by default
+
+  const toggleAccordion2 = (targetId) => {
+    setOpenItem(openItem === targetId ? null : targetId);
+  };
 
 
 
@@ -404,7 +405,7 @@ export default function Home() {
                 <div className="home_sec2_p3_slider-wrapper">
                   <div
                     className="home_sec2_p3_slider"
-                    style={{ transform: `translateX(-${current * 100}%)` }}
+                    style={{ transform: `translateX(-${current * 23}%)` }}
                     onTouchStart={handleTouchStart}
                     onTouchMove={handleTouchMove}
                     onTouchEnd={handleTouchEnd}
@@ -636,7 +637,7 @@ export default function Home() {
               </p>
             </header>
 
-            <section className="d-flex justify-content-center home_sec3__features-wrapper">
+            <section className="d-flex justify-content-center home_sec3__features-wrapper mobile_d_flex">
               {[
                 { title: "Higher Odds", text: "UFABET consistently provides better payout odds compared to SBOBET, meaning you can maximize your winnings on the same bets." },
                 { title: "Faster Transactions", text: "With UFABET, deposits and withdrawals are almost instant. SBOBET often takes longer, especially during peak hours." },
@@ -737,7 +738,7 @@ export default function Home() {
               </p>
             </header>
 
-            <section className="d-flex justify-content-center home_sec3__features-wrapper">
+            <section className="d-flex justify-content-center home_sec3__features-wrapper mobile_d_flex">
               {[
                 { title: "Wider Sports Coverage", text: "SBOBET offers betting not only on football but also on basketball, tennis, e-sports, and more, making it a top choice for multi-sport bettors." },
                 { title: "Faster International Access", text: "SBOBET is well-established globally, allowing international users to log in and play seamlessly, often with quicker access in some regions compared to UFABET." },
@@ -1470,10 +1471,10 @@ export default function Home() {
           </div>
 
           {/* Accordion FAQ Section */}
-          <section className="container home_sec7_accordion_container" aria-label="FAQs">
+          {/* <section className="container home_sec7_accordion_container" aria-label="FAQs">
             <div className="accordion home_sec7_accordion" id="homeSec7Accordion">
 
-              {/* Accordion Item 1 */}
+           
               <article className="accordion-item home_sec7_item">
                 <h3 className="accordion-header" id="headingOne">
                   <button
@@ -1506,7 +1507,7 @@ export default function Home() {
                 </div>
               </article>
 
-              {/* Accordion Item 2 */}
+          
               <article className="accordion-item home_sec7_item">
                 <h3 className="accordion-header" id="headingTwo">
                   <button
@@ -1532,7 +1533,7 @@ export default function Home() {
                 </div>
               </article>
 
-              {/* Accordion Item 3 */}
+              
               <article className="accordion-item home_sec7_item">
                 <h3 className="accordion-header" id="headingThree">
                   <button
@@ -1558,7 +1559,7 @@ export default function Home() {
                 </div>
               </article>
 
-              {/* Accordion Item 4 */}
+               
               <article className="accordion-item home_sec7_item">
                 <h3 className="accordion-header" id="headingFour">
                   <button
@@ -1588,7 +1589,138 @@ export default function Home() {
 
 
 
+          </section>   */}
+          <section className="container home_sec7_accordion_container" aria-label="FAQs">
+            <div className="accordion home_sec7_accordion" id="homeSec7Accordion">
+
+              {/* Accordion Item 1 */}
+              <article className="accordion-item home_sec7_item">
+                <h3 className="accordion-header" id="headingOne">
+                  <button
+                    className={`accordion-button home_sec7_button ${openItem === 'collapseOne' ? '' : 'collapsed'}`}
+                    type="button"
+                    onClick={() => toggleAccordion2('collapseOne')}
+                    aria-expanded={openItem === 'collapseOne'}
+                    aria-controls="collapseOne"
+                  >
+                    What are the Deposit Conditions for แทงบอล?
+                    <span className="home_sec7_triangle"></span>
+                  </button>
+                </h3>
+                <div
+                  id="collapseOne"
+                  className={`accordion-collapse collapse ${openItem === 'collapseOne' ? 'show' : ''}`}
+                  aria-labelledby="headingOne"
+                >
+                  <div className="accordion-body home_sec7_body text-white">
+                    <p>Our deposit conditions are designed for your convenience:</p>
+                    <ul className="home_sec7_list">
+                      <li><strong>Instant Processing</strong>: Deposits are processed instantly, so you can start betting without delay.</li>
+                      <li><strong>Multiple Payment Gateways</strong>: We support various payment methods including bank transfers, e-wallets, and QR payments.</li>
+                      <li><strong>No Hidden Fees</strong>: We believe in transparency; there are no hidden fees on deposits.</li>
+                      <li><strong>24/7 Support</strong>: Our customer service is available around the clock to assist with any deposit-related queries.</li>
+                    </ul>
+                  </div>
+                </div>
+              </article>
+
+              {/* Accordion Item 2 */}
+              <article className="accordion-item home_sec7_item">
+                <h3 className="accordion-header" id="headingTwo">
+                  <button
+                    className={`accordion-button home_sec7_button ${openItem === 'collapseTwo' ? '' : 'collapsed'}`}
+                    type="button"
+                    onClick={() => toggleAccordion2('collapseTwo')}
+                    aria-expanded={openItem === 'collapseTwo'}
+                    aria-controls="collapseTwo"
+                  >
+                    What are the Withdrawal Conditions for แทงบอล?
+                    <span className="home_sec7_triangle"></span>
+                  </button>
+                </h3>
+                <div
+                  id="collapseTwo"
+                  className={`accordion-collapse collapse ${openItem === 'collapseTwo' ? 'show' : ''}`}
+                  aria-labelledby="headingTwo"
+                >
+                  <div className="accordion-body home_sec7_body text-white">
+                    <p>Our withdrawal process is secure and efficient:</p>
+                    <ul className="home_sec7_list">
+                      <li><strong>Fast Processing</strong>: Withdrawals are processed within 24 hours on business days.</li>
+                      <li><strong>Secure Verification</strong>: We use advanced security measures to protect your transactions.</li>
+                      <li><strong>Multiple Options</strong>: Choose from various withdrawal methods that suit your needs.</li>
+                      <li><strong>Minimum Amount</strong>: Low minimum withdrawal amounts for your convenience.</li>
+                    </ul>
+                  </div>
+                </div>
+              </article>
+
+              {/* Accordion Item 3 */}
+              <article className="accordion-item home_sec7_item">
+                <h3 className="accordion-header" id="headingThree">
+                  <button
+                    className={`accordion-button home_sec7_button ${openItem === 'collapseThree' ? '' : 'collapsed'}`}
+                    type="button"
+                    onClick={() => toggleAccordion2('collapseThree')}
+                    aria-expanded={openItem === 'collapseThree'}
+                    aria-controls="collapseThree"
+                  >
+                    What are the Payment Options for แทงบอล?
+                    <span className="home_sec7_triangle"></span>
+                  </button>
+                </h3>
+                <div
+                  id="collapseThree"
+                  className={`accordion-collapse collapse ${openItem === 'collapseThree' ? 'show' : ''}`}
+                  aria-labelledby="headingThree"
+                >
+                  <div className="accordion-body home_sec7_body text-white">
+                    <p>We offer a wide range of payment options:</p>
+                    <ul className="home_sec7_list">
+                      <li><strong>Bank Transfer</strong>: Direct bank transfers from major Thai banks.</li>
+                      <li><strong>E-Wallets</strong>: Popular e-wallet services like TrueMoney, Rabbit LINE Pay.</li>
+                      <li><strong>QR Code</strong>: Quick and easy QR code payments via mobile banking apps.</li>
+                      <li><strong>Credit/Debit Cards</strong>: Secure card payments with instant processing.</li>
+                    </ul>
+                  </div>
+                </div>
+              </article>
+
+              {/* Accordion Item 4 */}
+              <article className="accordion-item home_sec7_item">
+                <h3 className="accordion-header" id="headingFour">
+                  <button
+                    className={`accordion-button home_sec7_button ${openItem === 'collapseFour' ? '' : 'collapsed'}`}
+                    type="button"
+                    onClick={() => toggleAccordion2('collapseFour')}
+                    aria-expanded={openItem === 'collapseFour'}
+                    aria-controls="collapseFour"
+                  >
+                    What is the Payment Duration for แทงบอล?
+                    <span className="home_sec7_triangle"></span>
+                  </button>
+                </h3>
+                <div
+                  id="collapseFour"
+                  className={`accordion-collapse collapse ${openItem === 'collapseFour' ? 'show' : ''}`}
+                  aria-labelledby="headingFour"
+                >
+                  <div className="accordion-body home_sec7_body text-white">
+                    <p>Our payment processing times are industry-leading:</p>
+                    <ul className="home_sec7_list">
+                      <li><strong>Instant Deposits</strong>: All deposits are processed immediately and reflected in your account.</li>
+                      <li><strong>Quick Withdrawals</strong>: Withdrawals processed within 1-24 hours depending on the method.</li>
+                      <li><strong>Real-time Updates</strong>: Get instant notifications for all transaction updates.</li>
+                      <li><strong>Business Hours</strong>: Support available 24/7 for any payment-related queries.</li>
+                    </ul>
+                  </div>
+                </div>
+              </article>
+
+            </div>
           </section>
+
+
 
           {/* Direct Website Explanation */}
           <section className="home_sec7_p2_section container text-center">
@@ -1653,18 +1785,21 @@ export default function Home() {
                   <div className="home_sec7_p3_advantages_wrapper">
                     {[...Array(5)].map((_, index) => (
                       <div key={index} className="home_sec7_p3_advantage_item">
-                        <span className="home_sec7_p3_advantage_number">{index + 1}.</span>
-                        <span className="home_sec7_p3_advantage_title">
-                          {
-                            [
-                              "Transparency :",
-                              "Faster Transactions :",
-                              "Better Security :",
-                              "Real-Time Odds :",
-                              "Higher Trust :"
-                            ][index]
-                          }
-                        </span>
+                         
+
+                          <span className="home_sec7_p3_advantage_number">{index + 1}.</span>
+                          <span className="home_sec7_p3_advantage_title">
+                            {
+                              [
+                                "Transparency :",
+                                "Faster Transactions :",
+                                "Better Security :",
+                                "Real-Time Odds :",
+                                "Higher Trust :"
+                              ][index]
+                            }
+                          </span>
+                      
                         <span className="home_sec7_p3_advantage_text">
                           {
                             [
