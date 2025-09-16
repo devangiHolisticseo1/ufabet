@@ -414,7 +414,7 @@ export default function Home() {
                   >
                     {home_sec2_p3_cards.map((card, index) => (
                       <article key={index} className="home_sec2_p3_card">
-                        <Image src={card.icon} alt={card.title} className="home_sec2_p3_icon" fill />
+                        <Image src={card.icon} alt={card.title} className="home_sec2_p3_icon img-fluid" width={44} height={44} />
                         <h3 className="home_sec2_p3_title">{card.title}</h3>
                         <p className="home_sec2_p3_description">{card.description}</p>
                       </article>
