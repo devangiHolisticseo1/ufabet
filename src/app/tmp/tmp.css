@@ -1,0 +1,12 @@
+.card-header {
+  cursor: pointer;
+  background-color: #f0c040 !important;
+  color: #000;
+  font-weight: 600;
+}
+.card-body {
+  background-color: #fffdf5;
+}
+button {
+  font-size: 12px;
+}
