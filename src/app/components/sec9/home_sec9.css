@@ -263,3 +263,17 @@
       text-align: center;
 
   }
+
+
+/* Mobile Devices (up to 767px) */
+@media (max-width: 767px) {
+    .home_sec9_upper_div{
+        padding: 25px 20px;
+    }
+    .home_sec9_upper_div_title{
+        font-size: 24px;
+    }
+    .home_sec9_container{
+        padding: 25px 20px;
+    }
+}

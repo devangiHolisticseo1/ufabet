@@ -140,12 +140,12 @@ const HomeSec5P2 = () => {
 
 
             <div className="home_sec5_card_uper_div">
-              {/* <h3 >Premier League Live Score </h3> */}
+             <h3 className="home_sec5_dynamic_live_score">{selectedLeague} Live Score</h3>
               {matches
                 .filter((m) => m.league === selectedLeague)
                 .map((match, idx) => (
-
-
+                  
+                  
                   <Card key={idx} className="home_sec5_p2_card ">
                     <Card.Body className="home_sec5_card-body">
                       {/* Header Row */}
@@ -224,7 +224,7 @@ const HomeSec5P2 = () => {
                       </div>
                     </Card.Body>
                   </Card>
-
+ 
                 ))}
             </div>
 
@@ -241,6 +241,7 @@ const HomeSec5P2 = () => {
           <h3 className="home_sec5_p2_heading">Live Football Betting Odds</h3>
           <div className="home_sec5_mobile_view_hor_line"></div>
         <div className="accordion home_sec7_reuse_5_accordion accordion-flush" id="homeSec7Accordion">
+          
           {menuItems.map((item, idx) => {
             const league = item.split(" for ")[1];
             const leagueMatches = matches.filter((m) => m.league === league);
@@ -272,6 +273,7 @@ const HomeSec5P2 = () => {
                   className={`accordion-collapse collapse ${openItem === league ? "show" : ""}`}
                 >
                   <div className="accordion-body home_sec7_reuse_5_body text-white">
+                     {/* <h3 className="home_sec5_dynamic_live_score">{selectedLeague} Live Score</h3> */}
                     {leagueMatches.length > 0 ? (
                       leagueMatches.map((match, idx) => (
                         <Card key={idx} className="home_sec5_p2_card ">

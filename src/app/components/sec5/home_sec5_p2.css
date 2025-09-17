@@ -118,14 +118,7 @@
   border-radius: 5px;
 }
 
-.home_sec5_card_uper_div h3 {
-  color: #1A1A1A;
-  font-size: 1.75rem;
-  margin-bottom: 25px;
-  text-align: center;
-  font-weight: 600;
-}
-
+ 
 
 .home_sec5_p2_card {
   border: 1px solid #e0e0e0;
@@ -207,6 +200,8 @@
   gap: unset;
 
 }
+
+
 
 
 @media (max-width: 767px) {
@@ -373,7 +368,15 @@
   margin-bottom: 10px;
 }
 
+.home_sec5_dynamic_live_score{
 
+
+    color: #1A1A1A;
+  font-size: 1.75rem;
+  margin-bottom: 25px;
+  text-align: center;
+  font-weight: 600;  
+}
 
 
 

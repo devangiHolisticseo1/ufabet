@@ -99,5 +99,21 @@
 
 
 @media (max-width: 767px) {
- 
+  .home_sec10_heading{
+    font-size: 24px;
+    font-size: 500;
+  }
+
+  .home_sec_10{
+    padding: 25px 15px;
+    border-radius: 5px;
+  }
+
+  .home_sec10_subtext{
+    margin-top: 12px;
+  }
+  .home_sec10_wrapper{
+    margin-top: 50px;
+    
+  }
 }
