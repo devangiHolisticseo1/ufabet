@@ -213,14 +213,13 @@
   }
 
   .home_sec4_p1_over_box{
-    margin-right: unset;
+    margin-right: 0px;
   }
 
   .home_sec4_p1_under_box{
     padding: 15px;
+    margin-left: 0px;
   }
-  home_sec4_p1_filters {
-    
-  }
+ 
 
 }

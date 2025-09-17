@@ -1440,12 +1440,10 @@
 
   .home_sec3_take_advantage {
     margin-top: 24.71px;
-    margin-left: 36.21px;
+    
   }
 
-  .home_sec3_list {
-    margin-left: 36.21px;
-  }
+   
 
   .home_sec3_p_24_hour {
     margin-bottom: 25px;
@@ -1453,6 +1451,7 @@
 
   .home_sec3_h1 {
     margin-bottom: 10.29px;
+    margin-top: 30px;
   }
 
   .home_sec2_sec {
@@ -1506,5 +1505,24 @@
    .home_home_sec8_accordion .accordion-button{
     font-size: 1.125rem;
    }
+
+   .home_sec4_card{
+    padding: 15px;
+   }
+
+   .home_sec7_p2_title{
+    font-size: 24px;
+    font-weight: 500;
+   }
+
+   .home_sec7_p2_question{
+    font-size: 18px;
+    margin-block: 25px;
+   }
+
+
+
+   
+ 
 
 }
