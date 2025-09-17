@@ -637,22 +637,7 @@
   height: 23px;
 }
 
-/* 
-.home_sec3_login-btn {
-  background: linear-gradient(to right, #EBC76E, #d6b45f);
-  border: none;
-  color: #000;
-  font-weight: 600;
-  width: 100%;
-  padding: 0.75rem;
-  border-radius: 5px;
-  margin-top: 0.5rem;
-  cursor: pointer;
-}
-
-.home_sec3_login-btn:hover {
-  background: #e0b65c;
-} */
+ 
 
 .home_sec3_login-btn {
   background: linear-gradient(to right, #ECCA77, #BA8C4E);
@@ -1360,15 +1345,24 @@
 
 
   .home_sec3_login-card {
-    width: unset;
+ 
     /* padding: 34px 20px 18px; */
     margin-left: auto;
     margin-right: auto;
   }
 
   .home_sec3_input-group {
-    width: unset;
+    width: 276px;
+    padding: 14px 18px 15px 15px;
   }
+  .home_sec3_links{
+    justify-content: space-around;
+  }
+  .home_sec3_login-btn{
+    width: auto;
+  }
+
+   
 
   .home_sec1_title {
     font-size: 32px;
@@ -1413,10 +1407,12 @@
   .home_sec3_login-btn {
     /* padding: 13.82px 20.14px 15.19px 15.18px; */
     margin-inline: 20px;
+    width: 280px;
   }
 
   .home_sec3_login-card {
     min-height: 358px;
+    width: unset;
   }
 
   .home_sec3 {
@@ -1426,6 +1422,8 @@
   .home_sec3__features-wrapper {
     padding-top: 25px;
     padding-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
 

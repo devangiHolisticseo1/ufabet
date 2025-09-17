@@ -237,8 +237,9 @@ const HomeSec5P2 = () => {
 
   return (
     <div>
-      <h1>mobile view</h1>
       <section className="container home_sec7_reuse_5_accordion_container " aria-label="Matches by League">
+          <h3 className="home_sec5_p2_heading">Live Football Betting Odds</h3>
+          <div className="home_sec5_mobile_view_hor_line"></div>
         <div className="accordion home_sec7_reuse_5_accordion accordion-flush" id="homeSec7Accordion">
           {menuItems.map((item, idx) => {
             const league = item.split(" for ")[1];
@@ -256,14 +257,14 @@ const HomeSec5P2 = () => {
                       <span className="home_sec7_reuse_5_triangle"></span>
                   </button> */}
                   <button
-  className={`accordion-button home_sec7_reuse_5_button ${openItem === league ? "" : "collapsed"}`}
-  type="button"
-  onClick={() => toggleAccordion(league)}
-  aria-expanded={openItem === league}   // for accessibility
->
-  {item}
-  <span className="home_sec7_reuse_5_triangle"></span>
-</button>
+                    className={`accordion-button home_sec7_reuse_5_button ${openItem === league ? "" : "collapsed"}`}
+                    type="button"
+                    onClick={() => toggleAccordion(league)}
+                    aria-expanded={openItem === league}   // for accessibility
+                  >
+                    {item}
+                    <span className="home_sec7_reuse_5_triangle"></span>
+                  </button>
 
 
                 </h3>

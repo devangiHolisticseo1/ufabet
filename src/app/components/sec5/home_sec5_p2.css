@@ -22,7 +22,7 @@
 
 .home_sec5_p2_sidebar_divider {
   /* border-color: #D4D4D4; */
-   border: 1px solid  #D4D4D4;
+  border: 1px solid #D4D4D4;
 }
 
 /* .home_sec5_p2_menu_item {
@@ -42,7 +42,7 @@
 .home_sec5_p2_menu_item.active{
     background-color: #EBC76E !important;
 } */
- .home_sec5_p2_menu_item {
+.home_sec5_p2_menu_item {
   background-color: transparent;
   border: none;
   color: #FFFFFF;
@@ -112,13 +112,13 @@
 
 
 
-.home_sec5_card_uper_div{
+.home_sec5_card_uper_div {
   padding: 25px;
   background-color: #FFFFFF;
   border-radius: 5px;
 }
 
-.home_sec5_card_uper_div h3{
+.home_sec5_card_uper_div h3 {
   color: #1A1A1A;
   font-size: 1.75rem;
   margin-bottom: 25px;
@@ -179,57 +179,56 @@
 }
 
 
-.home_sec5_p2_card_logo_team_div{
+.home_sec5_p2_card_logo_team_div {
   flex-direction: column;
 }
 
-.home_sec5_card-body{
+.home_sec5_card-body {
   padding: 25px 26.5px 25px 24.5px;
 }
 
-.home_sec5_homeTeam{
+.home_sec5_homeTeam {
   font-weight: 600;
   font-size: 1.375rem;
   margin-top: 15px;
 
 }
 
-.home_sec5_match_date_kick_off_div{
+.home_sec5_match_date_kick_off_div {
   padding-top: 15px;
 }
 
-.home_sec5_p2_sidebar_divider_flush{
+.home_sec5_p2_sidebar_divider_flush {
   background-color: #C9A646;
 }
 
-.home_sec5_row_to_flex_col{
-      flex-direction: uset;
-    gap: unset;
+.home_sec5_row_to_flex_col {
+  flex-direction: uset;
+  gap: unset;
 
 }
 
 
 @media (max-width: 767px) {
-  .home_sec4_p1_filters {
-    
-  }
-  .home_sec5_homeTeam{
+  .home_sec4_p1_filters {}
+
+  .home_sec5_homeTeam {
     font-size: 0.813rem;
   }
 
-  .home_sec5_card_uper_div{
+  .home_sec5_card_uper_div {
     padding: 0px;
   }
 
-  .home_sec5_card-body{
-    padding: 15px ;
+  .home_sec5_card-body {
+    padding: 15px;
   }
 
-  .home_sec5_row_to_flex_col{
-      flex-direction: column;
+  .home_sec5_row_to_flex_col {
+    flex-direction: column;
     gap: 10px;
 
-}
+  }
 
 }
 
@@ -244,6 +243,26 @@
 /* sec 7 to 5 converted  */
 
 
+/* Accordion Button Styling */
+.home_sec7_reuse_5_button {
+  background-color: #C9A646;
+  color: #FFFFFF !important;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 1rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  border: none;
+  width: 100%;
+  text-align: left;
+  position: relative;
+  background-image: none !important;
+}
+
+/* Remove Bootstrap default chevron */
+.home_sec7_reuse_5_button.accordion-button::after {
+  display: none !important;
+}
 
 /* Accordion Container */
 .home_sec7_reuse_5_accordion_container {
@@ -262,30 +281,9 @@
 .home_sec7_reuse_5_item {
   background-color: transparent;
   border: none;
-  margin-bottom: 15px;
+  
 }
-
-/* Accordion Button Styling */
-.home_sec7_reuse_5_button {
-  background-color: #EBC76E;
-  color: #1A1A1A !important;
-  font-weight: bold;
-  font-size: 1rem;
-  padding: 1rem;
-  border-radius: 8px;
-  transition: all 0.3s ease;
-  box-shadow: none;
-  border: none;
-  width: 100%;
-  text-align: left;
-  position: relative;
-  background-image: none !important;
-}
-
-.home_sec7_reuse_5_button:hover {
-  background-color: #3f3c3c;
-  color: white;
-}
+ 
 
 .home_sec7_reuse_5_button:focus {
   box-shadow: none;
@@ -294,9 +292,10 @@
 
 /* Active/Open state */
 .home_sec7_reuse_5_button:not(.collapsed) {
-  background-color: #f6c453;
-  color: black;
+  background-color: #EBC76E;
+  color: black !important;
   border-radius: 8px 8px 0 0;
+  border-left: 3px solid #1A1A1A;
 }
 
 /* COMPLETELY OVERRIDE Bootstrap accordion button */
@@ -310,59 +309,43 @@
   display: none !important;
 }
 
-/* Add our custom triangle with span inside button - SVG Version */
-/* .home_sec7_reuse_5_triangle {
-  position: absolute;
-  right: 1.5rem;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 16px;
-  height: 16px;
-  background-color: black;
-  background-image: url('/images/home/arrrow_svg.svg');
-  background-position: center;
-  background-size: contain;
-  transition: all 0.3s ease;
-  border: none;
-  background-repeat: no-repeat;
-  color: black;
-} */
-
-/* Rotate triangle when expanded - point up */
-/* .home_sec7_reuse_5_button:not(.collapsed) .home_sec7_triangle {
-  transform: translateY(-50%) rotate(180deg);
-  background-image:  url('/images/home/arrrow_svg.svg');
-} */
-
-/* Triangle element */
+/* Custom Triangle (using inline SVG background) */
 .home_sec7_reuse_5_triangle {
   position: absolute;
-  right: 1.5rem;
+  right: 1rem;
   top: 50%;
   transform: translateY(-50%);
   width: 16px;
   height: 16px;
-  background-image: url('/images/home/arrrow_svg.svg');
+  background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  background-repeat: no-repeat;
+
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512'><path fill='%23212121' d='M201.4 342.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 282.7 86.6 145.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z'/></svg>");
   transition: transform 0.3s ease;
+  transform: translateY(-50%) rotate(269deg);
+  color: #FFFFFF;
 }
 
 /* Rotate when expanded */
 .home_sec7_reuse_5_button:not(.collapsed) .home_sec7_reuse_5_triangle {
-  transform: translateY(-50%) rotate(180deg);
+  transform: translateY(-50%) rotate(358deg);
 }
 
+/* Accordion Body */
+.home_sec7_reuse_5_body {
+  background-color: #313131;
+  border-radius: 0 0 8px 8px;
+  padding: 1.5rem;
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+ 
 
 
 
 
-/* Rotate triangle when expanded - point up */
-/* .home_sec7_reuse_5_button:not(.collapsed) .home_sec7_reuse_5_triangle {
-  transform: translateY(-50%) rotate(180deg);
-  background-image: url('/images/home/arrrow_svg.svg');
-} */
 
 
 /* Accordion collapse transition */
@@ -390,23 +373,43 @@
   margin-bottom: 10px;
 }
 
+
+
+
+
+
+
 /* Mobile responsiveness */
 @media (max-width: 768px) {
   .home_sec7_reuse_5_accordion_container {
     padding: 20px;
     margin-top: 30px;
   }
-  
+
   .home_sec7_reuse_5_button {
     font-size: 0.9rem;
     padding: 0.8rem;
   }
-  
+
   .home_sec7_reuse_5_body {
     padding: 0px;
     font-size: 0.9rem;
     margin-top: 10px;
   }
+
+  .home_sec5_p2_heading {
+    font-size: 24px;
+  }
+
+  .home_sec5_mobile_view_hor_line {
+    color: #D4D4D4;
+    width: 285px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    background: #D4D4D4;
+    height: 2px;
+
+  }
+
+
 }
-
-

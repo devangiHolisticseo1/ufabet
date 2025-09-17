@@ -433,201 +433,6 @@ export default function Home() {
         </section>
 
 
-
-        {/* sec-3 */}
-        {/* <section>
-          <div className='home_sec3 container'>
-            <h2 className='home_sec2_title'>Why is Ufabet Better than SBOBET for แทงบอล?</h2>
-            <p className='home_sec2_p my-3'>Both UFABET and SBOBET are trusted platforms for football betting, but UFABET offers unique advantages that make it the top choice for many players.</p>
-
-
-
-            <div className="d-flex   justify-content-center home_sec3__features-wrapper">
-              <div className="card home_sec3__card">
-                <div className="card-body">
-                  <h3 className="home_sec3__title">Higher Odds</h3>
-                  <p className="home_sec3__text">
-                    UFABET consistently provides better payout odds compared to SBOBET, meaning you can maximize your winnings on the same bets.
-                  </p>
-                </div>
-              </div>
-
-              <div className="card home_sec3__card">
-                <div className="card-body">
-                  <h3 className="home_sec3__title">Faster Transactions</h3>
-                  <p className="home_sec3__text">
-                    With UFABET, deposits and withdrawals are almost instant. SBOBET often takes longer, especially during peak hours.
-                  </p>
-                </div>
-              </div>
-
-              <div className="card home_sec3__card">
-                <div className="card-body">
-                  <h3 className="home_sec3__title">User Experience</h3>
-                  <p className="home_sec3__text">
-                    UFABET has a simple interface, mobile-friendly design, and easy navigation, making betting smooth for both beginners and professionals.
-                  </p>
-                </div>
-              </div>
-
-              <div className="card home_sec3__card">
-                <div className="card-body">
-                  <h3 className="home_sec3__title">Stability</h3>
-                  <p className="home_sec3__text">
-                    The UFABET system is known for strong servers and fewer downtimes, ensuring uninterrupted play during live matches.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-
-
-
-
-
-
-            <div className='home_sec3_divide d-flex flex-wrap justify-content-between align-items-start'>
-       
-              <div className='home_sec3_content'>
-                <h3 className='home_sec3_title'>Newest UFABET Log in</h3>
-                <p className='home_sec3_text'>
-                  The latest UFABET login system gives players fast, secure, and direct access to all football betting markets. No agents are required — you connect directly to the platform for the best odds, real-time updates, and safe transactions.
-                </p>
-                <p className='home_sec3_subtitle'>With this login, you can :</p>
-                <ul className='home_sec3_list'>
-                  <li>Enter instantly with your username and password.</li>
-                  <li>Access แทงบอล markets like goals, corners, assists, and over/under.</li>
-                  <li>Use mobile, tablet, or desktop without extra apps.</li>
-                  <li>Enjoy 24/7 secure connections with encrypted protection.</li>
-                </ul>
-                <p className='home_sec3_text'>
-                  Whether you are a new member or an experienced bettor, the newest UFABET login makes แทงบอล simple, direct, and reliable.
-                </p>
-              </div>
-
-              
-              <div className='home_sec3_login-card'>
-                
-                <Image src="/images/home/ubet-logo 1.png" alt="logo" className='img-fluid mx-auto home_sec3_logo_img' width={116} height={27} />
-                <div className='home_sec3_input-group'>
-                  <span className='home_sec3_input-icon'><Image className='img-fluid' alt="username" src="/images/home/sec3/Group 8727.png" width={23} height={23} /> </span>
-                  <input type="text" placeholder="username" className='home_sec3_input' />
-                </div>
-                <div className='home_sec3_input-group'>
-                  <span className='home_sec3_input-icon'><Image className='img-fluid' alt="password" src="/images/home/sec3/Group 8728.png" width={23} height={23} /></span>
-                  <input type="password" placeholder="password" className='home_sec3_input' />
-                  <span className='home_sec3_eye-icon'>👁️</span>
-                </div>
-                <button className='home_sec3_login-btn'>Login</button>
-                <div className='home_sec3_links'>
-                  <a href="# " className='home_sec3_join'>Join Now</a>
-                  <a href="#" className='home_sec3_forgot_pw'>Forgot Password?</a>
-                </div>
-              </div>
-            </div>
-
-
-
-
-
-            <h3 className='home_sec2_title'>Why is SBOBET Better than Ufabet for แทงบอล?</h3>
-            <p className='home_sec2_p my-3'>While UFABET is popular, SBOBET also has strong advantages that make it a preferred choice for many bettors, especially those looking for international coverage and diverse sports options.</p>
-
-
-
-            <div className="d-flex  justify-content-center home_sec3__features-wrapper">
-              <div className="card home_sec3__card">
-                <div className="card-body">
-                  <h3 className="home_sec3__title">Wider Sports Coverage</h3>
-                  <p className="home_sec3__text">
-                    SBOBET offers betting not only on football but also on basketball, tennis, e-sports, and more, making it a top choice for multi-sport bettors.
-                  </p>
-                </div>
-              </div>
-
-              <div className="card home_sec3__card">
-                <div className="card-body">
-                  <h3 className="home_sec3__title">Faster International Access</h3>
-                  <p className="home_sec3__text">
-                    SBOBET is well-established globally, allowing international users to log in and play seamlessly, often with quicker access in some regions compared to UFABET.
-
-                  </p>
-                </div>
-              </div>
-
-              <div className="card home_sec3__card">
-                <div className="card-body">
-                  <h3 className="home_sec3__title">User Experience</h3>
-                  <p className="home_sec3__text">
-                    UFABET has a simple interface, mobile-friendly design, and easy navigation, making betting smooth for both beginners and professionals.
-                  </p>
-                </div>
-              </div>
-
-              <div className="card home_sec3__card">
-                <div className="card-body">
-                  <h3 className="home_sec3__title">Professional Betting Interface</h3>
-                  <p className="home_sec3__text">
-                    The platform provides a detailed betting slip, customizable views, and professional layouts that appeal to advanced bettors.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-
-
-
-
-
-
-
-
-
-            <div className='home_sec3_divide d-flex flex-wrap justify-content-between align-items-start'>
-              
-              <div className='home_sec3_content'>
-                <h3 className='home_sec3_title'>Newest SBOBET Log in</h3>
-                <p className='home_sec3_text'>
-                  The newest SBOBET login system gives users faster access to football betting and a wide range of sports markets. Designed for international players, SBOBET ensures smooth connections, stable performance, and secure transactions.
-
-                </p>
-                <p className='home_sec3_subtitle'>With this login, you can :</p>
-                <ul className='home_sec3_list'>
-                  <li>Enter quickly with your username and password.</li>
-                  <li>Access football odds, live betting, and multi-sport markets instantly.</li>
-                  <li>Use mobile, tablet, or desktop without extra apps.</li>
-                  <li>Benefit from SBOBET’s strong global reputation for safety and fair play.</li>
-                </ul>
-                <p className='home_sec3_text'>
-                  The newest SBOBET login makes แทงบอล and other sports betting faster, safer, and globally accessible.
-                </p>
-              </div>
-
-           
-              <div className='home_sec3_login-card'>
-                
-                <Image src="/images/home/ubet-logo 1.png" alt="logo" className='img-fluid mx-auto home_sec3_logo_img' width={116} height={27} />
-                <div className='home_sec3_input-group'>
-                  <span className='home_sec3_input-icon'><Image className='img-fluid' alt="username" src="/images/home/sec3/Group 8727.png" width={23} height={23} /> </span>
-                  <input type="text" placeholder="username" className='home_sec3_input' />
-                </div>
-                <div className='home_sec3_input-group'>
-                  <span className='home_sec3_input-icon'><Image className='img-fluid' alt="password" src="/images/home/sec3/Group 8728.png" width={23} height={23} /></span>
-                  <input type="password" placeholder="password" className='home_sec3_input' />
-                  <span className='home_sec3_eye-icon'>👁️</span>
-                </div>
-                <button className='home_sec3_login-btn'>Login</button>
-                <div className='home_sec3_links'>
-                  <a href="# " className='home_sec3_join'>Join Now</a>
-                  <a href="#" className='home_sec3_forgot_pw'>Forgot Password?</a>
-                </div>
-              </div>
-            </div>
-
-
-
-          </div>
-        </section> */}
         <section>
           <div className="home_sec3 container">
 
@@ -655,7 +460,7 @@ export default function Home() {
               ))}
             </section>
 
-            <section className="home_sec3_divide d-flex flex-wrap justify-content-between align-items-start">
+            {/* <section className="home_sec3_divide d-flex flex-wrap justify-content-between align-items-start">
               <div className="home_sec3_content">
                 <h3 className="home_sec3_title">Newest UFABET Log in</h3>
                 <p className="home_sec3_text">
@@ -681,13 +486,7 @@ export default function Home() {
                   </span>
                   <input type="text" placeholder="username" className="home_sec3_input" />
                 </div>
-                {/* <div className="home_sec3_input-group">
-                  <span className="home_sec3_input-icon">
-                    <Image className="img-fluid" alt="password" src="/images/home/sec3/Group 8728.png" width={23} height={23} />
-                  </span>
-                  <input type="password" placeholder="password" className="home_sec3_input" />
-                  <span className="home_sec3_eye-icon">👁️</span>
-                </div> */}
+                
                 <div className="home_sec3_input-group">
                   <span className="home_sec3_input-icon">
                     <Image
@@ -730,7 +529,78 @@ export default function Home() {
               </form>
 
 
-            </section>
+            </section> */}
+            <section className="container my-5">
+  <div className="row align-items-start gx-5 gy-4">
+    {/* Left Content */}
+    <div className="col-12 col-lg-7">
+      <div className="home_sec3_content">
+        <h3 className="home_sec3_title">Newest UFABET Log in</h3>
+        <p className="home_sec3_text">
+          The latest UFABET login system gives players fast, secure, and direct access to all football betting markets. No agents are required — you connect directly to the platform for the best odds, real-time updates, and safe transactions.
+        </p>
+        <p className="home_sec3_subtitle">With this login, you can :</p>
+        <ul className="home_sec3_list">
+          <li>Enter instantly with your username and password.</li>
+          <li>Access แทงบอล markets like goals, corners, assists, and over/under.</li>
+          <li>Use mobile, tablet, or desktop without extra apps.</li>
+          <li>Enjoy 24/7 secure connections with encrypted protection.</li>
+        </ul>
+        <p className="home_sec3_text">
+          Whether you are a new member or an experienced bettor, the newest UFABET login makes แทงบอล simple, direct, and reliable.
+        </p>
+      </div>
+    </div>
+
+    {/* Right Login Card */}
+    <div className="col-12 col-lg-5">
+      <form className="home_sec3_login-card mx-auto">
+        <Image
+          src="/images/home/ubet-logo 1.png"
+          alt="logo"
+          className="img-fluid mx-auto home_sec3_logo_img"
+          width={116}
+          height={27}
+        />
+
+        <div className="home_sec3_input-group">
+          <span className="home_sec3_input-icon">
+            <Image className="img-fluid" alt="username" src="/images/home/sec3/Group 8727.png" width={23} height={23} />
+          </span>
+          <input type="text" placeholder="username" className="home_sec3_input" />
+        </div>
+
+        <div className="home_sec3_input-group">
+          <span className="home_sec3_input-icon">
+            <Image className="img-fluid" alt="password" src="/images/home/sec3/Group 8728.png" width={23} height={23} />
+          </span>
+          <input
+            type={showPassword ? "text" : "password"}
+            placeholder="password"
+            className="home_sec3_input"
+          />
+          <span
+            className="home_sec3_eye-icon"
+            onClick={togglePasswordVisibility}
+            style={{ cursor: "pointer" }}
+            role="button"
+            aria-label={showPassword ? "Hide password" : "Show password"}
+          >
+            <Image src="/images/home/eye.svg" alt="password" width={24} height={24} />
+          </span>
+        </div>
+
+        <button type="submit" className="home_sec3_login-btn">Login</button>
+
+        <nav className="home_sec3_links" aria-label="Login navigation">
+          <a href="#" className="home_sec3_join">Join Now</a>
+          <a href="#" className="home_sec3_forgot_pw">Forgot Password?</a>
+        </nav>
+      </form>
+    </div>
+  </div>
+</section>
+
 
             {/* SBOBET Section */}
             <header>

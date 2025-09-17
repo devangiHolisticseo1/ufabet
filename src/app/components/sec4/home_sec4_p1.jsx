@@ -69,7 +69,7 @@ function Sec4P1() {
   return (
     <section className="home_sec4_p1_container">
       {/* Filter Buttons */}
-      <nav className="home_sec4_p1_filters d-flex justify-content-center mb-4" aria-label="Match filters">
+      {/* <nav className="home_sec4_p1_filters d-flex justify-content-center mb-4" aria-label="Match filters">
         {['all', 'leagues', 'teams', 'others'].map(type => (
           <button
             key={type}
@@ -80,7 +80,27 @@ function Sec4P1() {
             {getFilterLabel(type)}
           </button>
         ))}
-      </nav>
+      </nav> */}
+
+      <nav
+  className="home_sec4_p1_filters container mb-4"
+  aria-label="Match filters"
+>
+  <div className="row">
+    {['all', 'leagues', 'teams', 'others'].map(type => (
+      <div key={type} className="col-6 col-md-3 mb-3 d-flex justify-content-center">
+        <button
+          className={`home_sec4_p1_filter_btn ${filter === type ? 'active' : ''} btn d-flex align-items-center`}
+          onClick={() => setFilter(type)}
+        >
+          <span className="home_sec4_p1_filter_icon">{getFilterIcon(type)}</span>
+          <p>{getFilterLabel(type)}</p>
+        </button>
+      </div>
+    ))}
+  </div>
+</nav>
+
 
       {/* Match Cards */}
       <section className="container">

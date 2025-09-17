@@ -154,6 +154,154 @@
 }
 
 
+
+
+
+
+
+
+
+
+/* sec 7 to 5 converted  */
+
+
+/* Accordion Button Styling */
+.home_sec7_reuse_6_button {
+  background-color: #C9A646;
+  color: #FFFFFF !important;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 1rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  border: none;
+  width: 100%;
+  text-align: left;
+  position: relative;
+  background-image: none !important;
+}
+
+/* Remove Bootstrap default chevron */
+.home_sec7_reuse_6_button.accordion-button::after {
+  display: none !important;
+}
+
+/* Accordion Container */
+.home_sec7_reuse_6_accordion_container {
+  background-color: #313131;
+  padding: 30px;
+  border-radius: 10px;
+  margin-top: 40px;
+}
+
+/* Accordion Wrapper */
+.home_sec7_reuse_6_accordion {
+  background-color: transparent;
+}
+
+/* Individual Accordion Item */
+.home_sec7_reuse_6_item {
+  background-color: transparent;
+  border: none;
+  
+}
+ 
+
+.home_sec7_reuse_6_button:focus {
+  box-shadow: none;
+  border: none;
+}
+
+/* Active/Open state */
+.home_sec7_reuse_6_button:not(.collapsed) {
+  background-color: #EBC76E;
+  color: black !important;
+  border-radius: 8px 8px 0 0;
+  border-left: 3px solid #1A1A1A;
+}
+
+/* COMPLETELY OVERRIDE Bootstrap accordion button */
+.home_sec7_reuse_6_button.accordion-button::after {
+  display: none !important;
+  content: none !important;
+  background-image: none !important;
+}
+
+.home_sec7_reuse_6_button::before {
+  display: none !important;
+}
+
+/* Custom Triangle (using inline SVG background) */
+.home_sec7_reuse_6_triangle {
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 16px;
+  height: 16px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512'><path fill='%23212121' d='M201.4 342.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 282.7 86.6 145.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z'/></svg>");
+  transition: transform 0.3s ease;
+  transform: translateY(-50%) rotate(269deg);
+  color: #FFFFFF;
+}
+
+/* Rotate when expanded */
+.home_sec7_reuse_6_button:not(.collapsed) .home_sec7_reuse_6_triangle {
+  transform: translateY(-50%) rotate(358deg);
+}
+
+/* Accordion Body */
+.home_sec7_reuse_6_body {
+  background-color: #313131;
+  border-radius: 0 0 8px 8px;
+  padding: 1.5rem;
+  font-size: 1rem;
+  color: #ffffff;
+  
+}
+
+ 
+
+
+
+
+
+
+/* Accordion collapse transition */
+.accordion-collapse {
+  transition: height 0.35s ease;
+}
+
+/* Accordion Body */
+/* .home_sec7_reuse_6_body {
+  background-color: #313131;
+  border-radius: 0 0 8px 8px;
+  padding: 1.5rem;
+  font-size: 1rem;
+  color: #ffffff;
+} */
+
+/* List Styling */
+.home_sec7_reuse_6_list {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  margin-top: 1rem;
+}
+
+.home_sec7_reuse_6_list li {
+  margin-bottom: 10px;
+}
+
+
+
+
+
+
+
 /* Mobile Devices (up to 767px) */
 @media (max-width: 767px) {
     .home_sec6_p1_title{
@@ -164,4 +312,27 @@
     .home_sec6_p1_container{
       margin-top: 40px;
     }
+
+    .home_sec6_mobile_div_color{
+      background-color: #C9A646;  
+      padding: 20px 0px;
+    }
+
+
+     
+    .home_sec7_reuse_6_body{
+        background: #313131 !important;
+      padding-inline: 12px;
+      padding-block:20px;
+      border-radius: 5px;
+      margin-top: 10px;
+    }
+    .home_sec7_reuse_6_accordion_container{
+      border-radius: 0px;
+    }
+
+    .home_sec6_shadow-left{
+      border-left: 9px solid #1A1A1A;
+    }
+    
 }
