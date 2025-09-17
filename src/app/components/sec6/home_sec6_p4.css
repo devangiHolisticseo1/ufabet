@@ -1,6 +1,7 @@
 .home_sec6_p4_container {
   background-color: #2d2d2d; /* Dark gray background */
   padding-block: 76px;
+  margin-top: 100px;
 }
 
 .home_sec6_p4_heading {
@@ -42,6 +43,10 @@
     }
     .home_sec6_p4_subheading{
       font-size: 18px;
+    }
+    .home_sec6_p4_container{  
+      margin-top:50px;
+
     }
   }
 

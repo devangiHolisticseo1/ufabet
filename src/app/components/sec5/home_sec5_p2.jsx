@@ -247,14 +247,25 @@ const HomeSec5P2 = () => {
             return (
               <article className="accordion-item home_sec7_reuse_5_item" key={idx}>
                 <h3 className="accordion-header">
-                  <button
+                  {/* <button
                     className={`accordion-button home_sec7_reuse_5_button ${openItem === league ? "" : "collapsed"}`}
                     type="button"
                     onClick={() => toggleAccordion(league)}
                   >
                     {item}
                       <span className="home_sec7_reuse_5_triangle"></span>
-                  </button>
+                  </button> */}
+                  <button
+  className={`accordion-button home_sec7_reuse_5_button ${openItem === league ? "" : "collapsed"}`}
+  type="button"
+  onClick={() => toggleAccordion(league)}
+  aria-expanded={openItem === league}   // for accessibility
+>
+  {item}
+  <span className="home_sec7_reuse_5_triangle"></span>
+</button>
+
+
                 </h3>
                 <div
                   className={`accordion-collapse collapse ${openItem === league ? "show" : ""}`}

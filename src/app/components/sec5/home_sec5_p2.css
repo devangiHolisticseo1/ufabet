@@ -311,7 +311,7 @@
 }
 
 /* Add our custom triangle with span inside button - SVG Version */
-.home_sec7_reuse_5_triangle {
+/* .home_sec7_reuse_5_triangle {
   position: absolute;
   right: 1.5rem;
   top: 50%;
@@ -326,13 +326,44 @@
   border: none;
   background-repeat: no-repeat;
   color: black;
-}
+} */
 
 /* Rotate triangle when expanded - point up */
-.home_sec7_reuse_5_button:not(.collapsed) .home_sec7_triangle {
+/* .home_sec7_reuse_5_button:not(.collapsed) .home_sec7_triangle {
   transform: translateY(-50%) rotate(180deg);
   background-image:  url('/images/home/arrrow_svg.svg');
+} */
+
+/* Triangle element */
+.home_sec7_reuse_5_triangle {
+  position: absolute;
+  right: 1.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 16px;
+  height: 16px;
+  background-image: url('/images/home/arrrow_svg.svg');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: transform 0.3s ease;
 }
+
+/* Rotate when expanded */
+.home_sec7_reuse_5_button:not(.collapsed) .home_sec7_reuse_5_triangle {
+  transform: translateY(-50%) rotate(180deg);
+}
+
+
+
+
+
+/* Rotate triangle when expanded - point up */
+/* .home_sec7_reuse_5_button:not(.collapsed) .home_sec7_reuse_5_triangle {
+  transform: translateY(-50%) rotate(180deg);
+  background-image: url('/images/home/arrrow_svg.svg');
+} */
+
 
 /* Accordion collapse transition */
 .accordion-collapse {

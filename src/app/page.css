@@ -1124,6 +1124,7 @@
   align-items: flex-start;
   gap: 8px;
   transition: all 0.3s ease;
+  
 
 }
 
@@ -1498,6 +1499,10 @@
 
   .home_sec7_p2_section {
     margin-top: 50px
+  }
+
+  .home_sec7_accordion_container {
+    margin-inline: 20px;
   }
 
 }

@@ -1127,7 +1127,7 @@ export default function Home() {
           <div className='HomeSec6P1_my'>
             <HomeSec6P3 />
           </div>
-          <div className='HomeSec6P1_my'>
+          <div  >
             <HomeSec6P4 />
           </div>
 
