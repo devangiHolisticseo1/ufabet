@@ -358,13 +358,11 @@ const bettingContent = {
     types: [
       {
         name: 'Total Goals',
-        description:
-          'Bet on whether the total goals scored by both teams will be over or under a specific number (e.g., Over 2.5 goals).'
+        description: 'Bet on whether the total number of goals in a match will be over or under a set number.'
       },
       {
         name: 'Team Total Goals',
-        description:
-          'Bet on whether a specific team will score over or under a certain number of goals.'
+        description: 'Bet on whether a specific team will score over or under a certain number of goals.'
       },
       {
         name: 'Half-Time Over/Under',
@@ -395,7 +393,6 @@ const HomeSec9 = () => {
   };
 
   const currentContent = bettingContent[selectedBetting] || bettingContent['Handicap Betting (HDP)'];
-
   return (
     <div>
       <header className="home_sec9_upper_div">
@@ -417,9 +414,7 @@ const HomeSec9 = () => {
               {bettingTypes.map((type, index) => (
                 <button
                   key={index}
-                  className={`home_sec9_betting_item ${
-                    selectedBetting === type ? 'home_sec9_active' : ''
-                  }`}
+                  className={`home_sec9_betting_item ${selectedBetting === type ? 'home_sec9_active' : ''}`}
                   onClick={() => handleBettingClick(type)}
                 >
                   {type}
@@ -427,7 +422,6 @@ const HomeSec9 = () => {
               ))}
             </nav>
           </aside>
-
           {/* Main Content */}
           <article className="col-md-9 home_sec9_main_content">
             <div className="home_sec9_content_wrapper">
@@ -440,12 +434,10 @@ const HomeSec9 = () => {
 
                 {/* Types of Handicap as Accordion */}
                 {currentContent.types && (
-                  <section className="home_sec9_expandable_sections">
+                  <div className="home_sec9_expandable_sections">
                     <div className="home_sec9_expandable_item">
                       <button
-                        className={`home_sec9_expandable_header ${
-                          expandedSections['Types of Handicap'] ? 'home_sec9_expanded' : ''
-                        }`}
+                        className={`home_sec9_expandable_header ${expandedSections['Types of Handicap'] ? 'home_sec9_expanded' : ''}`}
                         onClick={() => toggleExpanded('Types of Handicap')}
                         aria-expanded={expandedSections['Types of Handicap'] || false}
                       >
@@ -457,8 +449,7 @@ const HomeSec9 = () => {
                       {expandedSections['Types of Handicap'] && (
                         <div className="home_sec9_expandable_content">
                           <p className="home_sec9_types_intro">
-                            Handicap betting comes in several forms, each designed to balance the
-                            odds and provide more exciting betting opportunities:
+                            Handicap betting comes in several forms, each designed to balance the odds and provide more exciting betting opportunities:
                           </p>
                           <ul className="home_sec9_types_list">
                             {currentContent.types.map((type, index) => (
@@ -471,12 +462,12 @@ const HomeSec9 = () => {
                         </div>
                       )}
                     </div>
-                  </section>
+                  </div>
                 )}
 
                 {/* Other Expandable Sections */}
                 {currentContent.expandable && (
-                  <section className="home_sec9_expandable_sections">
+                  <div className="home_sec9_expandable_sections">
                     {currentContent.expandable.map((section, index) => (
                       <div key={index} className="home_sec9_expandable_item">
                         <button
@@ -498,20 +489,20 @@ const HomeSec9 = () => {
                         )}
                       </div>
                     ))}
-                  </section>
+                  </div>
                 )}
 
                 {/* When to Use Section */}
                 {currentContent.when && (
-                  <section className="home_sec9_when_section">
+                  <div className="home_sec9_when_section">
                     <h4 className="home_sec9_when_title">When to Use Handicap Betting</h4>
                     <p className="home_sec9_when_content">{currentContent.when}</p>
-                  </section>
+                  </div>
                 )}
 
                 {/* Example Section */}
                 {currentContent.example && (
-                  <section className="home_sec9_example_section">
+                  <div className="home_sec9_example_section">
                     <h4 className="home_sec9_example_title">{currentContent.example.title}</h4>
                     <p className="home_sec9_example_content">{currentContent.example.content}</p>
                     {currentContent.example.scenarios && (
@@ -526,15 +517,15 @@ const HomeSec9 = () => {
                     {currentContent.example.explanation && (
                       <p className="home_sec9_explanation">{currentContent.example.explanation}</p>
                     )}
-                  </section>
+                  </div>
                 )}
 
                 {/* Key Takeaway */}
                 {currentContent.takeaway && (
-                  <section className="home_sec9_takeaway_section">
+                  <div className="home_sec9_takeaway_section">
                     <h4 className="home_sec9_takeaway_title">Key Takeaway</h4>
                     <p className="home_sec9_takeaway_content">{currentContent.takeaway}</p>
-                  </section>
+                  </div>
                 )}
               </div>
             </div>

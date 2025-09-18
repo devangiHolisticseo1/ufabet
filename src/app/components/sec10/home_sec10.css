@@ -40,6 +40,8 @@
 .home_sec10_image {
   /* border-radius: 50%; */
   object-fit: cover;
+  height: auto;
+  width: auto;
 }
 
 /* List Styling */

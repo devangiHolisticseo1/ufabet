@@ -48,11 +48,16 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    domains: ['3b1a0d61453f.ngrok-free.app'],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: '3b1a0d61453f.ngrok-free.app',
+        port: '',
+        pathname: '/**',
+      },
+    ],
   },
-   rules: {
-    'react/no-unescaped-entities': 'off',
-  },
+  outputFileTracingRoot: import.meta.dirname,
 
   // Optionally, add CORS headers if you're calling an API hosted on ngrok from your app
   async headers() {

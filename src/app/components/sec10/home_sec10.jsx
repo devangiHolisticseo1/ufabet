@@ -191,7 +191,7 @@ const HomeSec10 = () => {
   const [activeIndex, setActiveIndex] = useState(0);
 
   return (
-    <section className="home_sec10_wrapper" aria-labelledby="home-sec10-heading">
+  <div className="home_sec10_wrapper" aria-labelledby="home-sec10-heading">
       <div className="container home_sec_10">
         <header>
           <h2 id="home-sec10-heading" className="home_sec10_heading">
@@ -242,12 +242,12 @@ const HomeSec10 = () => {
                       <span className="home_sec10_number">{item.id}.</span> {item.title}
                     </header>
 
-                    <section
+                    <div
                       className={`home_sec10_desc ${activeIndex === index ? 'show' : ''}`}
                       aria-hidden={activeIndex !== index}
                     >
                       <p>{item.description}</p>
-                    </section>
+                    </div>
                   </article>
                 </li>
               ))}
@@ -255,7 +255,7 @@ const HomeSec10 = () => {
           </div>
         </div>
       </div>
-    </section>
+  </div>
   );
 };
 

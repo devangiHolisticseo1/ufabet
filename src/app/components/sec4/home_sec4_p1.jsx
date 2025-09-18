@@ -67,7 +67,7 @@ function Sec4P1() {
   };
 
   return (
-    <section className="home_sec4_p1_container">
+    <div className="home_sec4_p1_container">
       {/* Filter Buttons */}
       {/* <nav className="home_sec4_p1_filters d-flex justify-content-center mb-4" aria-label="Match filters">
         {['all', 'leagues', 'teams', 'others'].map(type => (
@@ -103,7 +103,7 @@ function Sec4P1() {
 
 
       {/* Match Cards */}
-      <section className="container">
+      <div className="container">
         {filteredMatches.map(match => (
           <article key={match.id} className="home_sec4_p1_match_card card mb-3">
             {/* Match Header */}
@@ -136,7 +136,7 @@ function Sec4P1() {
             </p>
 
             {/* Odds Section */}
-            <section className="home_sec4_p1_odds_section d-flex">
+            <div className="home_sec4_p1_odds_section d-flex">
               {/* Over Section */}
               <div className="home_sec4_p1_odds_box home_sec4_p1_over_box d-flex flex-column justify-content-center align-items-center position-relative">
                 <div className="home_sec4_p1_odds_label position-absolute">OVER</div>
@@ -156,7 +156,7 @@ function Sec4P1() {
                 <div className="home_sec4_p1_odds_value fw-bold mb-1">2.5</div>
                 <div className="home_sec4_p1_odds_rate fw-bold">{match.under}</div>
               </div>
-            </section>
+            </div>
 
             {/* Match Footer */}
             <footer className="visually-hidden">
@@ -170,8 +170,8 @@ function Sec4P1() {
             No matches found for this category.
           </aside>
         )}
-      </section>
-    </section>
+      </div>
+    </div>
   );
 }
 

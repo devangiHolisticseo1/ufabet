@@ -72,7 +72,7 @@ const HomeSec6P1 = () => {
   };
 
   return (
-    <section className="home_sec6_p1">
+    <div className="home_sec6_p1">
       <header className="text-center mb-4">
         <h2 className="home_sec6_p1_title">แทงบอล for Football Tournaments</h2>
         <p className="home_sec6_p1_p">
@@ -137,7 +137,7 @@ const HomeSec6P1 = () => {
         </Container>
       ) : (
         // ✅ Mobile Accordion Layout
-        <section
+        <div
           className="container home_sec7_reuse_6_accordion_container home_sec6_mobile_div_color"
           aria-label="Tournament Betting Guides"
         >
@@ -197,9 +197,9 @@ const HomeSec6P1 = () => {
               </article>
             ))}
           </div>
-        </section>
+        </div>
       )}
-    </section>
+    </div>
   );
 };
 

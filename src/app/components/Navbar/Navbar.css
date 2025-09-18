@@ -44,14 +44,16 @@
   text-decoration: none;
 }
 
+/* Responsive margin for navbar container */
 .home_nav_mx {
-  margin-inline: 300px;
+  margin-inline: 10vw;
+  max-width: 1400px;
 }
 
 /* Tablets (up to 991px) - Your existing tablet styles */
 @media (max-width: 991px) {
   .home_nav_mx {
-    margin-inline: 50px;
+    margin-inline: 5vw;
   }
 
   .custom-navbar {

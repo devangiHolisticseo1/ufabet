@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Badge, Button, Card, ListGroup, Container, Row, Col } from "react-bootstrap";
+import Image from "next/image";
 import "./home_sec5_p2.css";
 
 const menuItems = [
@@ -25,8 +26,8 @@ const matches = [
     league: "Premiere League",
     homeTeam: "GO AHEAD EAGLES",
     awayTeam: "FORTUNA SITTARD",
-    homeLogo: "/images/home/sec5/Image 132.png",
-    awayLogo: "/images/home/sec5/sec5_2.png",
+  homeLogo: "/images/home/sec5/Image 132.png",
+  awayLogo: "/images/home/sec5/sec5_2.png",
     odds: { home: 1.85, draw: 3.20, away: 4.50 },
     status: "LIVE",
     matchDate: "2024-05-15",
@@ -37,8 +38,8 @@ const matches = [
     league: "Premiere League",
     homeTeam: "LUSITANIA ACRORES",
     awayTeam: "ACADEMICA COIMBRA",
-    homeLogo: "/images/home/sec5/Image 132 (1).png",
-    awayLogo: "/images/home/sec5/Mask group.png",
+  homeLogo: "/images/home/sec5/Image 132 (1).png",
+  awayLogo: "/images/home/sec5/Mask group.png",
     odds: { home: 1.85, draw: 3.20, away: 4.50 },
     status: "UPCOMING",
     matchDate: "2024-05-15",
@@ -49,8 +50,8 @@ const matches = [
     league: "Premiere League",
     homeTeam: "FC UTRECHT",
     awayTeam: "PEC ZWOLLE",
-    homeLogo: "/images/home/sec5/Image 132 (2).png",
-    awayLogo: "/images/home/sec5/Image 133.png",
+  homeLogo: "/images/home/sec5/Image 132 (2).png",
+  awayLogo: "/images/home/sec5/Image 133.png",
     odds: { home: 1.85, draw: 3.20, away: 4.50 },
     status: "FINISHED",
     matchDate: "2024-05-15",
@@ -109,7 +110,7 @@ const HomeSec5P2 = () => {
   if (!isMobile) {
     return (
 
-      <Container fluid className="home_sec5_p2_container">
+      <Container fluid className="home_sec5_p2_container centered-section">
         <Row>
           {/* Sidebar */}
           <Col md={3} className="home_sec5_p2_sidebar">
@@ -151,12 +152,13 @@ const HomeSec5P2 = () => {
                       {/* Header Row */}
                       <div className="d-flex justify-content-between align-items-start mb-3">
                         <div className="d-flex align-items-center home_sec5_p2_card_logo_team_div ">
-                          <img
+                          <Image
                             src={match.homeLogo}
                             alt={match.homeTeam}
                             width={40}
                             height={40}
                             className="me-2"
+                            unoptimized={false}
                           />
                           <div className="text-uppercase home_sec5_homeTeam">{match.homeTeam}</div>
                         </div>
@@ -164,12 +166,13 @@ const HomeSec5P2 = () => {
                         <div className="home_sec5_p2_vs text-muted">VS</div>
 
                         <div className="d-flex align-items-center home_sec5_p2_card_logo_team_div">
-                          <img
+                          <Image
                             src={match.awayLogo}
                             alt={match.awayTeam}
                             width={40}
                             height={40}
                             className="me-2"
+                            unoptimized={false}
                           />
                           <div className="text-uppercase home_sec5_homeTeam">{match.awayTeam}</div>
                         </div>
@@ -237,7 +240,7 @@ const HomeSec5P2 = () => {
 
   return (
     <div>
-      <section className="container home_sec7_reuse_5_accordion_container " aria-label="Matches by League">
+  <div className="container home_sec7_reuse_5_accordion_container " aria-label="Matches by League">
           <h3 className="home_sec5_p2_heading">Live Football Betting Odds</h3>
           <div className="home_sec5_mobile_view_hor_line"></div>
         <div className="accordion home_sec7_reuse_5_accordion accordion-flush" id="homeSec7Accordion">
@@ -281,12 +284,13 @@ const HomeSec5P2 = () => {
                             {/* Header Row */}
                             <div className="d-flex justify-content-between align-items-start mb-3">
                               <div className="d-flex align-items-center home_sec5_p2_card_logo_team_div ">
-                                <img
+                                <Image
                                   src={match.homeLogo}
                                   alt={match.homeTeam}
                                   width={40}
                                   height={40}
                                   className="me-2"
+                                  unoptimized={false}
                                 />
                                 <div className="text-uppercase home_sec5_homeTeam">{match.homeTeam}</div>
                               </div>
@@ -294,12 +298,13 @@ const HomeSec5P2 = () => {
                               <div className="home_sec5_p2_vs text-muted">VS</div>
 
                               <div className="d-flex align-items-center home_sec5_p2_card_logo_team_div">
-                                <img
+                                <Image
                                   src={match.awayLogo}
                                   alt={match.awayTeam}
                                   width={40}
                                   height={40}
                                   className="me-2"
+                                  unoptimized={false}
                                 />
                                 <div className="text-uppercase home_sec5_homeTeam">{match.awayTeam}</div>
                               </div>
@@ -364,7 +369,7 @@ const HomeSec5P2 = () => {
             );
           })}
         </div>
-      </section>
+  </div>
     </div>
   );
 }

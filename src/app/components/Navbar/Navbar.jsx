@@ -1,9 +1,10 @@
 'use client';
 import React, { useState } from 'react';
 import Image from 'next/image';
-import './HomeNavbar.css';
+import './Navbar.css';
+import Link from 'next/link';
 
-export default function HomeNavbar() {
+export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleNavbar = () => {
@@ -33,7 +34,7 @@ export default function HomeNavbar() {
           {/* Logo - Center */}
           <a className="navbar-brand" href="#" aria-label="Homepage">
             <figure className="m-0">
-              <Image src="/images/home/ubet-logo 1.png" alt="UBet Logo" width={134} height={22} />
+              <Image src="/images/home/ubet-logo 1.png" alt="UBet Logo" width={143} height={30} />
               <figcaption className="visually-hidden">
                 <strong>UBet</strong> - Home Logo
               </figcaption>
@@ -43,13 +44,19 @@ export default function HomeNavbar() {
           <div className={`collapse navbar-collapse justify-content-center ${isOpen ? 'show' : ''}`} id="navbarNav">
             <ul className="navbar-nav gap-4">
               <li className="nav-item">
-                <a className="nav-link" href="#" onClick={closeNavbar}>HOME</a>
+                <Link className="nav-link" role="link" href="/" passHref onClick={closeNavbar}>
+                  HOME
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#" onClick={closeNavbar}>ABOUT US</a>
+                <Link className="nav-link" role="link" href="/about" passHref onClick={closeNavbar}>
+                  ABOUT US
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#" onClick={closeNavbar}>LIVE SCORE</a>
+                <Link className="nav-link" role="link" href="#" passHref onClick={closeNavbar}>
+                  LIVE SCORE
+                </Link>
               </li>
             </ul>
           </div>

@@ -154,7 +154,7 @@ const HomeSec6P2 = () => {
         </Container>
       ) : (
         // ✅ Mobile Accordion Layout
-        <section
+        <div
           className="container home_sec7_reuse_6_accordion_container home_sec6_mobile_div_color"
           aria-label="Betting Markets Accordion"
         >
@@ -225,7 +225,7 @@ const HomeSec6P2 = () => {
               </article>
             ))}
           </div>
-        </section>
+        </div>
       )}
     </main>
   );

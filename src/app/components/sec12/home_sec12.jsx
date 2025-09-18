@@ -127,7 +127,7 @@ const HomeSec12 = () => {
   };
 
   return (
-    <section className="container home_sec12_section py-5">
+  <div className="container home_sec12_section py-5">
       <div className="row">
 
         {/* Sidebar Navigation */}
@@ -158,7 +158,7 @@ const HomeSec12 = () => {
             <div className="accordion" role="tablist">
 
               {/* Main Heading Accordion Item */}
-              <section className="accordion-item bg-transparent border-bottom">
+              <div className="accordion-item bg-transparent border-bottom">
                 <h3 className="accordion-header" id="heading-main">
                   
                   <button
@@ -196,11 +196,11 @@ const HomeSec12 = () => {
                     )}
                   </div>
                 </div>
-              </section>
+              </div>
 
               {/* FAQ Items */}
               {activeTopic.content.faqs.map((faq, index) => (
-                <section key={index} className="accordion-item bg-transparent border-bottom">
+                <div key={index} className="accordion-item bg-transparent border-bottom">
                   <h3 className="accordion-header" id={`heading-${index}`}>
                      
                     <button
@@ -225,14 +225,14 @@ const HomeSec12 = () => {
                       This is a sample answer for: <strong>{faq}</strong>
                     </div>
                   </div>
-                </section>
+                </div>
               ))}
 
             </div>
           </div>
         </article>
       </div>
-    </section>
+  </div>
   );
 };
 

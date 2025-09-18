@@ -28,7 +28,7 @@ import "./home_sec6_p4.css";
 
 export default function HomeSec6P4() {
   return (
-    <section className="home_sec6_p4_container">
+    <div className="home_sec6_p4_container">
       <div className="text-center text-white">
         {/* ✅ Heading should remain inside <h2> */}
         <h2 className="home_sec6_p4_heading">
@@ -48,7 +48,7 @@ export default function HomeSec6P4() {
           Watch Live Now
         </button>
       </div>
-    </section>
+    </div>
   );
 }
 
