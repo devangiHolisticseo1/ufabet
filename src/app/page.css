@@ -48,7 +48,7 @@ h1 {
 }
 
 .home_sec1 p {
-  color: #fff3d5;
+  color: #fff;
   font-size: 16px;
   max-width: 700px;
   margin-bottom: 25px;
@@ -86,9 +86,28 @@ h1 {
 
 .home_sec2_p {
   text-align: center;
-  color: #fff3d5;
+  color: #fff;
   font-size: 1rem;
   margin-top: 15px;
+}
+
+/* Read More/Less Button Styling */
+.read-more-btn {
+  background: none !important;
+  border: none !important;
+  color: #ebc76e !important;
+  cursor: pointer;
+  text-decoration: underline;
+  margin-left: 5px;
+  padding: 0 !important;
+  font-size: inherit;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.read-more-btn:hover {
+  color: #d6b45f !important;
+  text-decoration: none;
 }
 
 .home_sec2_row_div {
