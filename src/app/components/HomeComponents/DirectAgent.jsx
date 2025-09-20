@@ -33,7 +33,7 @@ const DirectAgent = () => {
         <p className="Advantages-heading">What does "แทงบอล without Agent" mean?</p>
         <div className="direct-agent-wrap row justify-content-center">
           {membershipData.map((item) => (
-            <div className='col-md-4' ket={item.title}>
+            <div className='col-md-4' key={item.title}>
               <MembershipCard title={item.title} description={item.description} />
             </div>
           ))}

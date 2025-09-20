@@ -61,72 +61,46 @@ const data = [
   },
 ];
 
-
 const Advantages = () => {
-  const [activeIndex, setActiveIndex] = useState(0);
-
+const [activeIndex, setActiveIndex] = useState(0);
   return (
     <div className="advantages-wrapper" aria-labelledby="home-sec10-heading">
-      <div className="container home_sec_10">
-        <header>
-          <h2 id="home-sec10-heading" className="home_sec10_heading">
-            What are the Advantages of แทงบอล?
-          </h2>
-          <p className="home_sec10_subtext">
-            Discover the benefits of online football betting, offering a secure, transparent, and exciting platform with a wide range of options and competitive odds for every bettor.
-          </p>
-        </header>
-
+      <div className="container">
+        <h2 className="main-heading">What are the Advantages of แทงบอล?</h2>
+        <p className="heading-para">Discover the benefits of online football betting, offering a secure, transparent, and exciting platform with a wide range of options and competitive odds for every bettor.</p>
         <div className="row align-items-center">
-          {/* Left Side: Image */}
           <div className="col-md-5 text-center mb-4 mb-md-0">
-            <figure className="home_sec10_image-wrapper">
+            <figure>
               <Image
                 src={data[activeIndex].image}
                 alt={data[activeIndex].title}
                 width={400}
                 height={400}
-                className="home_sec10_image img-fluid"
+                className="advantages-image img-fluid"
               />
             </figure>
           </div>
-
-          {/* Right Side: List of Features */}
           <div className="col-md-7">
-            <ul
-              className="home_sec10_list list-unstyled m-0"
-              role="list"
-              aria-label="Advantages list"
-            >
-              {data.map((item, index) => (
-                <li
-                  key={item.id}
-                  className={`home_sec10_item ${activeIndex === index ? 'active' : ''}`}
-                  onClick={() => setActiveIndex(index)}
-                  role="button"
-                  tabIndex={0}
-                  aria-pressed={activeIndex === index}
-                  onKeyDown={(e) => {
-                    if (e.key === 'Enter' || e.key === ' ') {
-                      setActiveIndex(index);
-                    }
-                  }}
-                >
-                  <article>
-                    <header className="home_sec10_title">
-                      <span className="home_sec10_number">{item.id}.</span> {item.title}
-                    </header>
-
-                    <div
-                      className={`home_sec10_desc ${activeIndex === index ? 'show' : ''}`}
-                      aria-hidden={activeIndex !== index}
-                    >
-                      <p>{item.description}</p>
-                    </div>
-                  </article>
-                </li>
-              ))}
-            </ul>
+            <div className="text-collapse">
+                {data.map((item, index) => (
+                  <div
+                    key={item.id}
+                    className={`collapse-item ${activeIndex === index ? 'active' : ''}`}
+                    onClick={() => setActiveIndex(index)}
+                    role="button"
+                    tabIndex={0}
+                    aria-pressed={activeIndex === index}
+                    onKeyDown={(e) => {
+                      if (e.key === 'Enter' || e.key === ' ') {
+                        setActiveIndex(index);
+                      }
+                    }}
+                  >
+                    <h3 className="text-heading">{item.id}.&nbsp;{item.title}</h3>
+                    <p className="text-content">{item.description}</p>
+                  </div>
+                ))}
+              </div>
           </div>
         </div>
       </div>

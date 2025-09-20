@@ -395,9 +395,9 @@ const HomeSec9 = () => {
   const currentContent = bettingContent[selectedBetting] || bettingContent['Handicap Betting (HDP)'];
   return (
     <div>
-      <header className="home_sec9_upper_div">
+      {/* <header className="home_sec9_upper_div">
         <h2 className="home_sec9_upper_div_title">Online Football Betting Strategies</h2>
-      </header>
+      </header> */}
 
       <div className="container home_sec9_container">
         <h2 className="home_sec9_title">What Types of Online Football Betting are There?</h2>
