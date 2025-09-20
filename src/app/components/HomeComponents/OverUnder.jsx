@@ -72,7 +72,7 @@ const OverUnder = () => {
     };
 
     return (
-        <section className="over-under">
+        <div className="over-under">
             <div className="container">
                 <h2 className="main-heading">See แทงบอล Odds for Over/Under</h2>
                 <p className="heading-para">Over/Under football betting presents a method for predicting the total number of goals scored in a match. The bookmaker sets a numerical threshold (goal line). A wager is placed on whether the combined goals from both teams exceed or fall below that number. The final score determines the outcome of the bet, regardless of which team wins.</p>
@@ -218,7 +218,7 @@ const OverUnder = () => {
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
     )
 };
 

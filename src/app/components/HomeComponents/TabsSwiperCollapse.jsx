@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import GradientCollapse from "./GradientCollapse"; // Adjust as needed
 
 const tabsData = [
@@ -76,17 +76,108 @@ const tabsData = [
 
 const TabsSwiperCollapse = () => {
     const [activeIndex, setActiveIndex] = useState(0);
+    const [isTransitioning, setIsTransitioning] = useState(false);
+    const tabHeaderRef = useRef(null);
+    const contentRef = useRef(null);
+    
+    // Touch/Swipe handling
+    const touchStartX = useRef(0);
+    const touchEndX = useRef(0);
+    const minSwipeDistance = 50;
+
+    // Auto-scroll active tab into view
+    useEffect(() => {
+        if (tabHeaderRef.current) {
+            const activeTab = tabHeaderRef.current.children[activeIndex];
+            if (activeTab) {
+                activeTab.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'nearest',
+                    inline: 'center'
+                });
+            }
+        }
+    }, [activeIndex]);
+
+    const handleTabChange = (newIndex) => {
+        if (newIndex >= 0 && newIndex < tabsData.length && newIndex !== activeIndex) {
+            setIsTransitioning(true);
+            setActiveIndex(newIndex);
+            setTimeout(() => setIsTransitioning(false), 300);
+        }
+    };
+
+    const handleTouchStart = (e) => {
+        touchStartX.current = e.targetTouches[0].clientX;
+    };
+
+    const handleTouchMove = (e) => {
+        touchEndX.current = e.targetTouches[0].clientX;
+    };
+
+    const handleTouchEnd = () => {
+        if (!touchStartX.current || !touchEndX.current) return;
+        
+        const distance = touchStartX.current - touchEndX.current;
+        const isLeftSwipe = distance > minSwipeDistance;
+        const isRightSwipe = distance < -minSwipeDistance;
+
+        if (isLeftSwipe) {
+            // Swipe left - go to next tab
+            handleTabChange(activeIndex + 1);
+        } else if (isRightSwipe) {
+            // Swipe right - go to previous tab
+            handleTabChange(activeIndex - 1);
+        }
+
+        // Reset values
+        touchStartX.current = 0;
+        touchEndX.current = 0;
+    };
+
+    const goToPrevious = () => {
+        handleTabChange(activeIndex - 1);
+    };
+
+    const goToNext = () => {
+        handleTabChange(activeIndex + 1);
+    };
 
     return (
-        <div className="container">
+        <div className="container tabs-swiper-container mb-5">
+            {/* Navigation Buttons */}
+            <div className="tabs-navigation">
+                <button 
+                    className="nav-btn nav-btn-prev" 
+                    onClick={goToPrevious}
+                    disabled={activeIndex === 0}
+                    aria-label="Previous tab"
+                >
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M15 18L9 12L15 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                    </svg>
+                </button>
+                
+                <button 
+                    className="nav-btn nav-btn-next" 
+                    onClick={goToNext}
+                    disabled={activeIndex === tabsData.length - 1}
+                    aria-label="Next tab"
+                >
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M9 18L15 12L9 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                    </svg>
+                </button>
+            </div>
+
             <div className="tabs-scrollable-header">
-            {/* Tab Header */}
-                <div className="tab-header-scroll">
+                {/* Tab Header */}
+                <div className="tab-header-scroll" ref={tabHeaderRef}>
                     {tabsData.map((tab, index) => (
                         <button
                             key={index}
                             className={`tab-btn ${index === activeIndex ? 'active' : ''}`}
-                            onClick={() => setActiveIndex(index)}
+                            onClick={() => handleTabChange(index)}
                         >
                             {tab.label}
                         </button>
@@ -94,9 +185,24 @@ const TabsSwiperCollapse = () => {
                 </div>
             </div>
 
-            {/* Tab Content */}
-            <div className="tab-content">
-                <GradientCollapse dataSource={tabsData[activeIndex].items} />
+            {/* Tab Content with Swipe Support */}
+            <div 
+                className={`tab-content ${isTransitioning ? 'transitioning' : ''}`}
+                ref={contentRef}
+                onTouchStart={handleTouchStart}
+                onTouchMove={handleTouchMove}
+                onTouchEnd={handleTouchEnd}
+            >
+                <div className="tab-content-inner">
+                    <GradientCollapse dataSource={tabsData[activeIndex].items} />
+                </div>
+            </div>
+
+            {/* Tab Indicator */}
+            <div className="tab-indicator">
+                <span className="current-tab">{activeIndex + 1}</span>
+                <span className="separator">/</span>
+                <span className="total-tabs">{tabsData.length}</span>
             </div>
         </div>
     );

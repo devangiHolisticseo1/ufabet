@@ -72,7 +72,7 @@ const FootballCorners = () => {
 	};
 
 	return (
-		<section className="vertical-tab">
+		<div className="vertical-tab">
 			<div className="container">
 				<h2 className="main-heading">แทงบอล for Corners, Posessions, Cleansheets</h2>
 				<p className="heading-para">Football betting markets go beyond just goals and results. Many advanced bettors use team performance stats such as corners, possession, and clean sheets to find value.</p>
@@ -193,7 +193,7 @@ const FootballCorners = () => {
 					</div>
 				)}
 			</div>
-		</section>
+		</div>
 	)
 }
 

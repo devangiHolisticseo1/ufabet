@@ -45,7 +45,7 @@ const HowApply = () => {
   const [activeIndex, setActiveIndex] = useState(0);
 
   return (
-    <section className="how-apply">
+    <div className="how-apply">
       <div className="container">
         <h2 className="main-heading">How to Apply for แทงบอล?</h2>
         <p className="heading-para">To apply for แทงบอล, follow the seven steps listed below.</p>
@@ -81,7 +81,7 @@ const HowApply = () => {
           </div>
         </div>
       </div>
-    </section>
+    </div>
   )
 };
 

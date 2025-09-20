@@ -44,7 +44,7 @@ const FootballBetting = () => {
         setShowFullText(!showFullText);
     };
     return (
-        <section className="football-betting">
+        <div className="football-betting">
             <div className="container">
                 <div className="row">
                     <div className="col-md-6">
@@ -76,7 +76,7 @@ const FootballBetting = () => {
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
     )
 }
 

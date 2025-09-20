@@ -43,7 +43,7 @@ const MembershipReq = () => {
     }
   ]
   return (
-    <section className="memb-requirement">
+    <div className="memb-requirement">
       <div className="container">
         <h2 className="main-heading">What are the แทงบอล Membership Requirements?</h2>
         <p className="heading-para">The แทงบอล membership requirements are listed below.</p>
@@ -63,7 +63,7 @@ const MembershipReq = () => {
           </Swiper>
         </div>
       </div>
-    </section>
+    </div>
   )
 };
 

@@ -9,7 +9,7 @@ const TheBest = () => {
     };
 
     return (
-        <section className="the-best-sec">
+        <div className="the-best-sec">
             <div className="container">
                 <h2 className="main-heading">The Best แทงบอล Website</h2>
                 <p>
@@ -30,7 +30,7 @@ const TheBest = () => {
                     )}
                 </p>
             </div>
-        </section>
+        </div>
     )
 };
 

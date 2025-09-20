@@ -72,7 +72,7 @@ const FootballTournament = () => {
 	};
 
 	return (
-		<section className="vertical-tab">
+		<div className="vertical-tab">
 			<div className="container">
 				<h2 className="main-heading">แทงบอล for Football Tournaments</h2>
 				<p className="heading-para">Your ultimate guide to football betting with trusted strategies and insights.</p>
@@ -193,7 +193,7 @@ const FootballTournament = () => {
 					</div>
 				)}
 			</div>
-		</section>
+		</div>
 	)
 }
 

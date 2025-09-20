@@ -25,7 +25,7 @@ const dataSource = [
 const UfabetBetter = () => {
 
     return (
-        <section className="ufabet-better">
+        <div className="ufabet-better">
             <div className="container">
                 <h2 className="main-heading">Why is Ufabet Better than SBOBET for แทงบอล?</h2>
                 <p className="heading-para">UFABET is better than SBOBET for แทงบอล because it presents a more flexible and rewarding platform. UFABET offers faster and more convenient transactions for deposits and withdrawals (credit cards, e-wallets, and online banking), reducing wait times and increasing reliability. The platform has more betting options (Asian Handicap, Mix Parlay, and Double Chance). It runs more promotional campaigns (cashback, daily rewards, and seasonal events). UFABET combines casino games, slot machines, and fishing games on one platform and supports regional football leagues and e-sports, too. SBOBET relies on manual confirmation, causing delays and less convenience. The betting platform offers standard odds and limited bonuses. SBOBET separates casino access from fewer entertainment options and focuses on international matches. \\\แทงบอล Direct Website\\\ works with both, which allows direct access without intermediaries and ensures faster updates and transparent betting activity. The \\\newest UFABET login page works with แทงบอล\\\.</p>
@@ -56,7 +56,7 @@ const UfabetBetter = () => {
                     </li>
                 </ul>
             </div>
-        </section>
+        </div>
     )
 };
 

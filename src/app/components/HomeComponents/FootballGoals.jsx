@@ -72,7 +72,7 @@ const FootballGoals = () => {
 	};
 
 	return (
-		<section className="vertical-tab">
+		<div className="vertical-tab">
 			<div className="container">
 				<h2 className="main-heading">แทงบอล for Goals, Assists and Scores</h2>
 				<p className="heading-para">When betting on football, you are not limited to match outcomes (win/lose/draw). Many betting markets focus on player and match statistics, including:</p>
@@ -193,7 +193,7 @@ const FootballGoals = () => {
 					</div>
 				)}
 			</div>
-		</section>
+		</div>
 	)
 }
 
