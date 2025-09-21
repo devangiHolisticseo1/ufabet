@@ -9,7 +9,7 @@ const TheBest = () => {
     };
 
     return (
-        <div className="the-best-sec">
+        <section className="the-best-sec">
             <div className="container">
                 <h2 className="main-heading">The Best แทงบอล Website</h2>
                 <p>
@@ -24,13 +24,13 @@ const TheBest = () => {
                     protocols reduce risks associated with fraud and unauthorized
                     access.
                     {!showFullText && (
-                        <span className="read-more-btn" onClick={toggleReadMore}>
+                        <button className="read-more-btn" onClick={toggleReadMore} aria-expanded={showFullText}>
                             Read More
-                        </span>
+                        </button>
                     )}
                 </p>
             </div>
-        </div>
+        </section>
     )
 };
 

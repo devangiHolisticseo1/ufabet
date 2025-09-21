@@ -72,17 +72,17 @@ const FootballTournament = () => {
 	};
 
 	return (
-		<div className="vertical-tab">
+		<section className="vertical-tab">
 			<div className="container">
 				<h2 className="main-heading">แทงบอล for Football Tournaments</h2>
 				<p className="heading-para">Your ultimate guide to football betting with trusted strategies and insights.</p>
 				{!isMobile ? (
 					<div className="container">
 						<div className="row">
-							<div className="col-md-3 tab-sidebar">
+							<aside className="col-md-3 tab-sidebar">
 								<h3 className="tab-sidebar-title">Select Tournament</h3>
 								<hr className="tab-sidebar-divider" />
-								<div aria-label="Tournament Navigation">
+								<nav aria-label="Tournament Navigation">
 									<ListGroup variant="flush">
 										{categories.map((item, idx) => (
 											<ListGroup.Item
@@ -96,9 +96,9 @@ const FootballTournament = () => {
 											</ListGroup.Item>
 										))}
 									</ListGroup>
-								</div>
-							</div>
-							<div className="col-md-9 vertical-tab-content">
+								</nav>
+							</aside>
+							<article className="col-md-9 vertical-tab-content">
 								<header>
 									<h3 className="tab-content-heading">{selected.title}</h3>
 									<hr className="tab-content-heading-line" />
@@ -125,7 +125,7 @@ const FootballTournament = () => {
 								{selected.description3 && (
 									<p className="home_sec6_p1_description">{selected.description3}</p>
 								)}
-							</div>
+							</article>
 						</div>
 					</div>
 				) : (
@@ -193,7 +193,7 @@ const FootballTournament = () => {
 					</div>
 				)}
 			</div>
-		</div>
+		</section>
 	)
 }
 

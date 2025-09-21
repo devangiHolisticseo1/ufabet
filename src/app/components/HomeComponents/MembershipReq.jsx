@@ -43,7 +43,7 @@ const MembershipReq = () => {
     }
   ]
   return (
-    <div className="memb-requirement">
+    <section className="memb-requirement">
       <div className="container">
         <h2 className="main-heading">What are the แทงบอล Membership Requirements?</h2>
         <p className="heading-para">The แทงบอล membership requirements are listed below.</p>
@@ -53,17 +53,35 @@ const MembershipReq = () => {
             spaceBetween={30}
             navigation={true}
             modules={[Navigation]}
+            breakpoints={{
+              // when window width is >= 0px
+              0: {
+                slidesPerView: 1,
+              },
+              // when window width is >= 480px
+              480: {
+                slidesPerView: 1,
+              },
+              // when window width is >= 768px
+              768: {
+                slidesPerView: 2,
+              },
+              // when window width is >= 1024px
+              1024: {
+                slidesPerView: 4,
+              },
+            }}
             className="mySwiper sticky-swiper"
           >
-            {membershipData.map((item) => (
-              <SwiperSlide>
+            {membershipData.map((item, index) => (
+              <SwiperSlide key={index}>
                 <MembershipCard title={item.title} description={item.description} imgSrc={item.imgSrc} />
               </SwiperSlide>
             ))}
           </Swiper>
         </div>
       </div>
-    </div>
+    </section>
   )
 };
 

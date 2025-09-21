@@ -1,14 +1,15 @@
 const MembershipCard = ({ description, imgSrc, title}) => {
     return (
-        <div className="memb-card">
-            {imgSrc && <div className="memb-icon">
-                <img src={imgSrc} />
-            </div>}
+        <article className="memb-card">
+            {imgSrc && <figure className="memb-icon">
+                <img src={imgSrc} alt={`${title} requirement illustration`} />
+                <figcaption className="visually-hidden">Visual representation of {title}</figcaption>
+            </figure>}
             <div className="memb-content">
                 <h3>{title}</h3>
                 <p>{description}</p>
             </div>
-        </div>
+        </article>
     )
 }
 

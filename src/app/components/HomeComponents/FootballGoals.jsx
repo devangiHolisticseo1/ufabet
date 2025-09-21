@@ -72,17 +72,17 @@ const FootballGoals = () => {
 	};
 
 	return (
-		<div className="vertical-tab">
+		<section className="vertical-tab">
 			<div className="container">
 				<h2 className="main-heading">แทงบอล for Goals, Assists and Scores</h2>
 				<p className="heading-para">When betting on football, you are not limited to match outcomes (win/lose/draw). Many betting markets focus on player and match statistics, including:</p>
 				{!isMobile ? (
 					<div className="container">
 						<div className="row">
-							<div className="col-md-3 tab-sidebar">
+							<aside className="col-md-3 tab-sidebar">
 								<h3 className="tab-sidebar-title">Select Tournament</h3>
 								<hr className="tab-sidebar-divider" />
-								<div aria-label="Tournament Navigation">
+								<nav aria-label="Tournament Navigation">
 									<ListGroup variant="flush">
 										{categories.map((item, idx) => (
 											<ListGroup.Item
@@ -96,9 +96,9 @@ const FootballGoals = () => {
 											</ListGroup.Item>
 										))}
 									</ListGroup>
-								</div>
-							</div>
-							<div className="col-md-9 vertical-tab-content">
+								</nav>
+							</aside>
+							<article className="col-md-9 vertical-tab-content">
 								<header>
 									<h3 className="tab-content-heading">{selected.title}</h3>
 									<hr className="tab-content-heading-line" />
@@ -125,7 +125,7 @@ const FootballGoals = () => {
 								{selected.description3 && (
 									<p className="home_sec6_p1_description">{selected.description3}</p>
 								)}
-							</div>
+							</article>
 						</div>
 					</div>
 				) : (
@@ -193,7 +193,7 @@ const FootballGoals = () => {
 					</div>
 				)}
 			</div>
-		</div>
+		</section>
 	)
 }
 
