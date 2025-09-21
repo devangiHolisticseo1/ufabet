@@ -321,7 +321,7 @@ export default function HomeClientOld() {
             </nav>
           </div>
         </div>
-        <section>
+        <div>
           <div className="home_sec3 container">
             {/* UFABET Section */}
             <header>
@@ -335,7 +335,7 @@ export default function HomeClientOld() {
               </p>
             </header>
 
-            <section className="d-flex justify-content-center home_sec3__features-wrapper mobile_d_flex">
+            <div className="d-flex justify-content-center home_sec3__features-wrapper mobile_d_flex">
               {[
                 {
                   title: "Higher Odds",
@@ -361,8 +361,8 @@ export default function HomeClientOld() {
                   </div>
                 </article>
               ))}
-            </section>
-            <section className="container my-5">
+            </div>
+            <div className="container my-5">
               <div className="row align-items-start gx-5 gy-4">
                 {/* Left Content */}
                 <div className="col-12 col-lg-7">
@@ -478,7 +478,7 @@ export default function HomeClientOld() {
                   </form>
                 </div>
               </div>
-            </section>
+            </div>
 
             {/* SBOBET Section */}
             <header>
@@ -492,7 +492,7 @@ export default function HomeClientOld() {
               </p>
             </header>
 
-            <section className="d-flex justify-content-center home_sec3__features-wrapper mobile_d_flex">
+            <div className="d-flex justify-content-center home_sec3__features-wrapper mobile_d_flex">
               {[
                 {
                   title: "Wider Sports Coverage",
@@ -518,9 +518,9 @@ export default function HomeClientOld() {
                   </div>
                 </article>
               ))}
-            </section>
+            </div>
 
-            <section className="home_sec3_divide d-flex flex-wrap justify-content-between align-items-start">
+            <div className="home_sec3_divide d-flex flex-wrap justify-content-between align-items-start">
               <div className="home_sec3_content">
                 <h3 className="home_sec3_title">Newest SBOBET Log in</h3>
                 <p className="home_sec3_text">
@@ -626,12 +626,12 @@ export default function HomeClientOld() {
                   </a>
                 </nav>
               </form>
-            </section>
+            </div>
           </div>
-        </section>
+        </div>
         {/* Add more restored sections/components as needed */}
         {/* <Sec4P1 /> */}
-        <section className="home_sec2_sec">
+        <div className="home_sec2_sec">
           <div className="container">
             <header>
               <h2 className="home_sec2_title">
@@ -692,7 +692,7 @@ export default function HomeClientOld() {
               </article>
             </div>
 
-            <section aria-labelledby="advantage-title">
+            <div aria-labelledby="advantage-title">
               <h3
                 id="advantage-title"
                 className="home_sec3_take_advantage fw-medium"
@@ -711,9 +711,9 @@ export default function HomeClientOld() {
                   lines.
                 </li>
               </ul>
-            </section>
+            </div>
 
-            <section aria-labelledby="odds-title">
+            <div aria-labelledby="odds-title">
               <header>
                 <h2 id="odds-title" className="home_sec3_h1">
                   Football Betting ODDS
@@ -725,11 +725,11 @@ export default function HomeClientOld() {
               <div>
                 <Sec4P1 />
               </div>
-            </section>
+            </div>
           </div>
-        </section>
+        </div>
         {/* <HomeSec5P2 /> */}
-        <section>
+        <div>
           <div className="container home_sec5">
             <header>
               <h2 className="home_sec2_title fw-medium">Today's Football Accumulator</h2>
@@ -790,11 +790,11 @@ export default function HomeClientOld() {
               </ol>
             </article>
 
-            <section>
+            <div>
               <HomeSec5P2 />
-            </section>
+            </div>
           </div>
-        </section>
+        </div>
 
         <HomeSec6P1 />
         <HomeSec6P2 />

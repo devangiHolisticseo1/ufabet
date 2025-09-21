@@ -63,7 +63,7 @@ export default function HomeClient() {
             </Swiper>
           </div>
         </div>
-        <section className="hero-sec">
+        <div className="hero-sec">
           <div className="container">
             <div className="hero-wrap">
               <div className="hero-content">
@@ -83,7 +83,7 @@ export default function HomeClient() {
               </div>
             </div>
           </div>
-        </section>
+        </div>
         <TheBest />
         <HowApply />
         <MembershipReq />
