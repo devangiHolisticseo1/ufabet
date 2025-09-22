@@ -45,7 +45,7 @@ const HowApply = () => {
   const [activeIndex, setActiveIndex] = useState(0);
 
   return (
-    <div className="how-apply">
+    <section className="how-apply">
       <div className="container">
         <h2 className="main-heading">How to Apply for แทงบอล?</h2>
         <p className="heading-para">To apply for แทงบอล, follow the seven steps listed below.</p>
@@ -59,29 +59,34 @@ const HowApply = () => {
             <div className="col-md-6">
               <div className="text-collapse">
                 {data.map((item, index) => (
-                  <div
+                  <details
                     key={item.id}
                     className={`collapse-item ${activeIndex === index ? 'active' : ''}`}
-                    onClick={() => setActiveIndex(index)}
-                    role="button"
-                    tabIndex={0}
-                    aria-pressed={activeIndex === index}
-                    onKeyDown={(e) => {
-                      if (e.key === 'Enter' || e.key === ' ') {
-                        setActiveIndex(index);
-                      }
-                    }}
+                    open={activeIndex === index}
                   >
-                    <h3 className="text-heading">{item.id}.&nbsp;{item.title}</h3>
+                    <summary 
+                      className="text-heading"
+                      onClick={() => setActiveIndex(index)}
+                      role="button"
+                      tabIndex={0}
+                      aria-pressed={activeIndex === index}
+                      onKeyDown={(e) => {
+                        if (e.key === 'Enter' || e.key === ' ') {
+                          setActiveIndex(index);
+                        }
+                      }}
+                    >
+                      <strong>{item.id}.&nbsp;{item.title}</strong>
+                    </summary>
                     <p className="text-content">{item.description}</p>
-                  </div>
+                  </details>
                 ))}
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   )
 };
 

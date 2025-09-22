@@ -67,10 +67,6 @@
   background: #161616;
 }
 
-.sticky-top-header .container {
-  padding: 0 45px;
-}
-
 .sticky-top-header .swiper-slide-auto {
   color: #ffffff;
   line-height: 30px;
@@ -293,6 +289,12 @@
   margin-top: 70px;
 }
 
+.read-more-btn {
+  border: 0;
+  background: transparent;
+  outline: 0;
+  color: #EBC76E;
+}
 /* Common css over */
 
 /* the-best-sec css start */
@@ -344,6 +346,10 @@
   font-size: 1.375rem;
   color: #676767;
   font-weight: 500;
+}
+
+.collapse-item .text-heading::marker {
+  content: none;
 }
 
 .collapse-item .text-content {
@@ -493,6 +499,10 @@
   font-weight: 400;
   color: #ffffff;
   font-size: 16px;
+}
+
+.over-under .tab-content {
+  padding: 0;
 }
 
 .tabs-btn {
@@ -652,7 +662,7 @@
 
 /* football-accumulator css start */
 .football-accumulator {
-  padding: 86px 0 100px;
+  padding: 86px 0 50px;
 }
 
 /* football-accumulator css over */
@@ -798,13 +808,13 @@
   text-align: center;
   overflow-x: auto;
   white-space: nowrap;
-  scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none;
+  -ms-overflow-style: none;
   margin-bottom: 15px;
 }
 
 .tab-header-scroll::-webkit-scrollbar {
-  display: none; /* WebKit browsers (Chrome, Safari, Edge) */
+  display: none;
 }
 .tab-header-scroll .tab-btn {
   font-weight: 500;
@@ -925,6 +935,88 @@
   font-weight: 700;
 }
 
+.wallet-sec {
+  padding: 50px 0 100px;
+}
+.wallet-card {
+  background-color: #313131;
+  border-radius: 6px;
+  overflow: hidden;
+  border: 1px solid #2d2d2d;
+  margin-top: 30px;
+}
+
+.wallet-tabs {
+  margin-inline: 10px;
+  padding-top: 8px;
+}
+
+.wallet-tabs .nav-link {
+  color: #fff;
+  font-weight: 500;
+  border: none;
+  background: transparent;
+}
+
+.wallet-tabs .nav-link.active {
+  border-bottom: 4px solid #EBC76E;
+  color: #EBC76E;
+  background-color: transparent;
+}
+
+.wallet-tab-content {
+  background-color: #313131;
+  padding: 1.25rem 1rem;
+}
+
+.wallet-balance-box {
+  background-color: #000;
+  color: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  text-align: center;
+  position: relative;
+}
+
+.wallet-balance-label {
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: #FFFFFF;
+  font-weight: 400;
+}
+
+.wallet-balance-value {
+  font-size: 36px;
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+.wallet-icon {
+  font-size: 60px;
+  color: #EBC76E;
+}
+
+.wallet-title {
+  color: #f2cb6c;
+  font-weight: 600;
+  margin-bottom: 15px;
+  font-size: 1.125rem;
+}
+
+.wallet-content {
+  margin-top: 30px;
+}
+
+.wallet-content .golden-list {
+  overflow: hidden;
+  overflow-y: auto;
+  margin: 0;
+}
+
+.home_sec9_container {
+  padding: 60px 0;
+}
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .tabs-navigation {
@@ -1006,4 +1098,94 @@
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
+}
+
+.types-of-football {
+  padding-top: 100px;
+}
+
+@media (max-width: 1100px) {
+  .hero-sec {
+    height: 350px;
+  }
+}
+
+@media (max-width: 768px) {
+  .the-best-sec, .memb-requirement, .sbobet-better {
+    padding: 50px 0;
+  }
+  .direct-agent, .types-of-football, .watch-vip {
+    padding: 50px 0 0;
+  }
+  .home_sec9_content_wrapper {
+    margin: 0;
+  }
+  .home_sec9_betting_list {
+    padding-right: 12px;
+  }
+  .main-heading {
+    font-size: 32px;
+  }
+  .heading-para {
+    font-size: 14px;
+  }
+  .mt-70 {
+    margin-top: 30px;
+  }
+  .tabs-header {
+    column-gap: 15px;
+  }
+  .vertical-tab + .vertical-tab {
+    padding-top: 0;
+  }
+  .football-accumulator {
+    padding-bottom: 0;
+  }
+  .wallet-sec {
+    padding: 0 0 50px;
+  }
+}
+
+@media (max-width: 767px) {
+  .hero-sec .hero-title {
+    font-size: 32px;
+  }
+  .hero-sec p {
+    font-size: 14px;
+  }
+  .how-apply .steps-img {
+    margin-bottom: 30px;
+  }
+  .over-under .football-odd-card {
+    margin-bottom: 15px;
+  }
+  .football-betting, .row {
+    row-gap: 15px;
+  }
+}
+@media (max-width: 479px) {
+  .gradient-collapse .collapse-header {
+    font-size: 14px;
+  }
+  .gradient-collapse .collapse-header {
+    padding: 8px 0;
+  }
+  .gradient-collapse .collapse-index {
+    font-size: 22px;
+  }
+  .over-under .football-odd-card {
+    margin-bottom: 0;
+  }
+  .mt-65 {
+    margin-top: 30px;
+  }
+  .hero-sec {
+    height: 400px;
+  }
+  .bottom-left-swiper-nav .swiper {
+    padding-bottom: 60px;
+  }
+  .gradient-collapse .arrow {
+    line-height: 34px;
+  }
 }

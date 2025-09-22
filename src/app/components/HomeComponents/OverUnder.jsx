@@ -72,49 +72,49 @@ const OverUnder = () => {
     };
 
     return (
-        <div className="over-under">
+        <section className="over-under">
             <div className="container">
                 <h2 className="main-heading">See แทงบอล Odds for Over/Under</h2>
                 <p className="heading-para">Over/Under football betting presents a method for predicting the total number of goals scored in a match. The bookmaker sets a numerical threshold (goal line). A wager is placed on whether the combined goals from both teams exceed or fall below that number. The final score determines the outcome of the bet, regardless of which team wins.</p>
                 <div className="row football-odd-wrap">
                     <div className="col-md-4">
-                        <div className="football-odd-card">
+                        <article className="football-odd-card">
                             <h3 className="card-title">ODDS</h3>
                             <p>
-                                “Odds” refer to the numerical value assigned to a betting outcome. Decimal odds express the potential return
+                                "Odds" refer to the numerical value assigned to a betting outcome. Decimal odds express the potential return
                                 {!showFullText && (
-                                    <span className="read-more-btn" onClick={toggleReadMore}>
+                                    <button className="read-more-btn" onClick={toggleReadMore} aria-expanded={showFullText}>
                                         Read More
-                                    </span>
+                                    </button>
                                 )}
                             </p>
-                        </div>
+                        </article>
                     </div>
                     <div className="col-md-4">
-                        <div className="football-odd-card">
+                        <article className="football-odd-card">
                             <h3 className="card-title">OVER</h3>
                             <p>
-                                “Over” applies when the total number of goals scored exceeds the goal line. A match ending 3–1, 2–2, or 4–0
+                                "Over" applies when the total number of goals scored exceeds the goal line. A match ending 3–1, 2–2, or 4–0
                                 {!showFullText && (
-                                    <span className="read-more-btn" onClick={toggleReadMore}>
+                                    <button className="read-more-btn" onClick={toggleReadMore} aria-expanded={showFullText}>
                                         Read More
-                                    </span>
+                                    </button>
                                 )}
                             </p>
-                        </div>
+                        </article>
                     </div>
                     <div className="col-md-4">
-                        <div className="football-odd-card">
+                        <article className="football-odd-card">
                             <h3 className="card-title">UNDER</h3>
                             <p>
-                                “Under” applies when the total number of goals remains below the goal line. A score of 1–0, 1–1, or 2–0
+                                "Under" applies when the total number of goals remains below the goal line. A score of 1–0, 1–1, or 2–0
                                 {!showFullText && (
-                                    <span className="read-more-btn" onClick={toggleReadMore}>
+                                    <button className="read-more-btn" onClick={toggleReadMore} aria-expanded={showFullText}>
                                         Read More
-                                    </span>
+                                    </button>
                                 )}
                             </p>
-                        </div>
+                        </article>
                     </div>
                     <div className="col-md-12">
                         <div className="theme-ul-wrapper mt-30">
@@ -148,7 +148,7 @@ const OverUnder = () => {
                         </div>
                         <div className="container">
                             {filteredMatches.map(match => (
-                                <div key={match.id} className="tab-content">
+                                <article key={match.id} className="tab-content">
                                     <header className="header-content">
                                         <div className="d-flex align-items-center">
                                             <figure className="header-team-logo">
@@ -159,17 +159,18 @@ const OverUnder = () => {
                                                     height={32}
                                                     className="rounded-circle img-fluid"
                                                 />
+                                                <figcaption className="visually-hidden">{match.team} team logo</figcaption>
                                             </figure>
                                             <div>
-                                                <div className="header-heading">
+                                                <h4 className="header-heading">
                                                     {match.team}
-                                                </div>
-                                                <div className="header-league">
+                                                </h4>
+                                                <p className="header-league">
                                                     {match.league}
-                                                </div>
+                                                </p>
                                             </div>
                                         </div>
-                                        <time className="match-time">{match.time}</time>
+                                        <time className="match-time" dateTime={`2024-01-15T${match.time}:00`}>{match.time}</time>
                                     </header>
 
                                     {/* Opponent */}
@@ -178,13 +179,13 @@ const OverUnder = () => {
                                     </p>
 
                                     {/* Odds Section */}
-                                    <div className="odds-over-section row">
+                                    <section className="odds-over-section row">
                                         {/* Over Section */}
                                         <div className="col-md-6">
                                             <div className="odds-over-box">
                                                 <div className="odds-over-label">OVER</div>
                                                 <div className="odds-over-trend">
-                                                    <Image src="/images/home/sec4/up.png" className="img-fluid" alt="up" width={14} height={9} />
+                                                    <Image src="/images/home/sec4/up.png" className="img-fluid" alt="odds trending up" width={14} height={9} />
                                                 </div>
                                                 <div className="odds-over-value">2.5</div>
                                                 <div className="odds-over-rate">{match.over}</div>
@@ -194,19 +195,19 @@ const OverUnder = () => {
                                             <div className="odds-over-box">
                                                 <div className="odds-over-label">UNDER</div>
                                                 <div className="odds-over-trend">
-                                                    <Image src="/images/home/sec4/up.png" className="img-fluid" alt="up" width={14} height={9} />
+                                                    <Image src="/images/home/sec4/up.png" className="img-fluid" alt="odds trending up" width={14} height={9} />
                                                 </div>
                                                 <div className="odds-over-value">2.5</div>
                                                 <div className="odds-over-rate">{match.under}</div>
                                             </div>
                                         </div>
-                                    </div>
+                                    </section>
 
                                     {/* Match Footer */}
                                     <footer className="visually-hidden">
-                                        {/* Reserved for semantic closure if needed */}
+                                        <p>Match odds for {match.team} vs {match.opponent} in {match.league}</p>
                                     </footer>
-                                </div>
+                                </article>
                             ))}
 
                             {filteredMatches.length === 0 && (
@@ -218,7 +219,7 @@ const OverUnder = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     )
 };
 
