@@ -27,6 +27,7 @@ import TypesOnlineFootball from "./components/HomeComponents/TypesOnlineFootball
 import 'swiper/css';
 import 'swiper/css/navigation';
 import "./page.css";
+import HomeSec9 from "./components/sec9/home_sec9";
 
 export default function HomeClient() {
 
@@ -97,7 +98,8 @@ export default function HomeClient() {
           <DirectAgent />
           <TrueWallet />
           <FootballBettingGuide />
-          <TypesOnlineFootball />
+          {/* <TypesOnlineFootball /> */}
+          <HomeSec9 />
           <Advantages />
           <CheckCreditScore />
           <TabsSwiperCollapse />

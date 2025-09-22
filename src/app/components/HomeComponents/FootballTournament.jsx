@@ -135,8 +135,8 @@ const FootballTournament = () => {
 						aria-label="Tournament Betting Guides"
 					>
 
-						<h3 className="home_sec6_p1_sidebar_title">Select Tournament</h3>
-						<hr className="home_sec6_p1_sidebar_divider" />
+						{/* <h3 className="home_sec6_p1_sidebar_title">Select Tournament</h3> */}
+						{/* <hr className="home_sec6_p1_sidebar_divider" /> */}
 
 						<div
 							className="accordion home_sec7_reuse_6_accordion accordion-flush"
