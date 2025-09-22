@@ -7,14 +7,14 @@ const FootballBettingGuide = () => {
     setOpenAccordion(openAccordion === index ? null : index);
   };
   return (
-    <div className="home_home_sec8_accordion_section">
-      <div className="container home_home_sec8_accordion">
+    <div className="bet-on-football">
+      <div className="container">
         <div className="accordion" id="accordionExample">
           {/* Accordion Item 1 */}
           <div className="accordion-item">
             <div className="accordion-header" id="headingOne">
               <button
-                className={`accordion-button d-flex justify-content-between align-items-center ${
+                className={`bet-on-football-btn accordion-button ${
                   openAccordion === 1 ? "" : "collapsed"
                 }`}
                 type="button"
@@ -140,7 +140,7 @@ const FootballBettingGuide = () => {
           <div className="accordion-item">
             <div className="accordion-header" id="headingTwo">
               <button
-                className={`accordion-button d-flex justify-content-between align-items-center ${
+                className={`bet-on-football-btn accordion-button ${
                   openAccordion === 2 ? "" : "collapsed"
                 }`}
                 type="button"
@@ -168,7 +168,7 @@ const FootballBettingGuide = () => {
           <div className="accordion-item">
             <div className="accordion-header" id="headingThree">
               <button
-                className={`accordion-button d-flex justify-content-between align-items-center ${
+                className={`bet-on-football-btn accordion-button ${
                   openAccordion === 3 ? "" : "collapsed"
                 }`}
                 type="button"

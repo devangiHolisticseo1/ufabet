@@ -131,7 +131,7 @@ const FootballCorners = () => {
 				) : (
 					// ✅ Mobile Accordion Layout
 					<div
-						className="container home_sec7_reuse_6_accordion_container home_sec6_mobile_div_color"
+						className="container"
 						aria-label="Tournament Betting Guides"
 					>
 
@@ -146,35 +146,35 @@ const FootballCorners = () => {
 								<article className="accordion-item home_sec7_reuse_6_item" key={idx}>
 									<h3 className="accordion-header">
 										<button
-											className={`accordion-button home_sec7_reuse_6_button ${openItem === item.key ? "" : "collapsed"
+											className={`res-tab-menu-item ${openItem === item.key ? "" : "collapsed"
 												}`}
 											type="button"
 											onClick={() => toggleAccordion(item.key)}
 											aria-expanded={openItem === item.key}
 										>
 											{item.title}
-											<span className="home_sec7_reuse_6_triangle"></span>
+											<span className="res-tab-arrow"></span>
 										</button>
 									</h3>
 									<div
 										className={`accordion-collapse collapse ${openItem === item.key ? "show" : ""
 											}`}
 									>
-										<div className="accordion-body home_sec7_reuse_6_body text-white home_sec6_mobile_div_color_accodian">
+										<div className="res-accordion-body">
 
-											<h3 className="home_sec6_p1_heading">แทงบอล for {selected.title}</h3>
+											<h3 className="tab-content-heading">แทงบอล for {selected.title}</h3>
 											<hr className="home_sec6_p2_heading_bottom_line" />
 											{item.description1 && (
-												<p className="home_sec6_p1_description">{item.description1}</p>
+												<p>{item.description1}</p>
 											)}
 											{item.description2 && (
-												<p className="home_sec6_p1_description">{item.description2}</p>
+												<p>{item.description2}</p>
 											)}
 
-											<Card className="home_sec6_p1_card mb-4 home_sec6_shadow-left">
+											<Card className="key-insights-box">
 												<Card.Body>
-													<Card.Title className="home_sec6_title">Key Insights:</Card.Title>
-													<ul className="home_sec6_p1_list">
+													<Card.Title className="key-insights-title">Key Insights:</Card.Title>
+													<ul className="key-insights-list">
 														{item.tips.map((tip, i) => (
 															<li key={i}>{tip}</li>
 														))}
@@ -183,7 +183,7 @@ const FootballCorners = () => {
 											</Card>
 
 											{item.description3 && (
-												<p className="home_sec6_p1_description">{item.description3}</p>
+												<p>{item.description3}</p>
 											)}
 										</div>
 									</div>

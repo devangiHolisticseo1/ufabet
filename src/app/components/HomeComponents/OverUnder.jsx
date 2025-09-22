@@ -286,6 +286,7 @@ const OverUnder = () => {
             <div className="container">
               {filteredMatches.map((match) => (
                 <article key={match.id} className="tab-content">
+                  <span className="trending">TRENDING</span>
                   <header className="header-content">
                     <div className="d-flex align-items-center">
                       <figure className="header-team-logo">

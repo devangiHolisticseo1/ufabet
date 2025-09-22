@@ -197,13 +197,6 @@ const TabsSwiperCollapse = () => {
                     <GradientCollapse dataSource={tabsData[activeIndex].items} />
                 </div>
             </div>
-
-            {/* Tab Indicator */}
-            <div className="tab-indicator">
-                <span className="current-tab">{activeIndex + 1}</span>
-                <span className="separator">/</span>
-                <span className="total-tabs">{tabsData.length}</span>
-            </div>
         </div>
     );
 };

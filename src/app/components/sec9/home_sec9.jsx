@@ -410,11 +410,11 @@ const HomeSec9 = () => {
         <div className="row">
           {/* Sidebar */}
           <aside className="col-md-3 home_sec9_sidebar">
-            <nav className="home_sec9_betting_list" aria-label="Betting types navigation">
+            <nav className="types-of-football-list" aria-label="Betting types navigation">
               {bettingTypes.map((type, index) => (
                 <button
                   key={index}
-                  className={`home_sec9_betting_item ${selectedBetting === type ? 'home_sec9_active' : ''}`}
+                  className={`types-of-football ${selectedBetting === type ? 'active' : ''}`}
                   onClick={() => handleBettingClick(type)}
                 >
                   {type}

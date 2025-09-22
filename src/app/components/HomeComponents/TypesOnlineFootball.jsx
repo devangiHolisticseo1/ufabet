@@ -141,12 +141,12 @@ const TypesOnlineFootball = () => {
 
         <div className="row">
           {/* Sidebar */}
-          <aside className="col-lg-3 col-md-5 home_sec9_sidebar">
-            <nav className="home_sec9_betting_list" aria-label="Betting types navigation">
+          <aside className="col-lg-3 col-md-5">
+            <nav className="types-of-football-list" aria-label="Betting types navigation">
               {bettingTypes.map((type, index) => (
                 <button
                   key={index}
-                  className={`home_sec9_betting_item ${selectedBetting === type ? 'home_sec9_active' : ''}`}
+                  className={`types-of-football-item ${selectedBetting === type ? 'active' : ''}`}
                   onClick={() => handleBettingClick(type)}
                 >
                   {type}
@@ -155,39 +155,39 @@ const TypesOnlineFootball = () => {
             </nav>
           </aside>
           {/* Main Content */}
-          <article className="col-lg-9 col-md-7 home_sec9_main_content">
-            <div className="home_sec9_content_wrapper">
-              <header className="home_sec9_header">
-                <h3 className="home_sec9_content_title">{currentContent.title}</h3>
+          <article className="col-lg-9 col-md-7 types-of-football-content">
+            <div className="types-of-football-wrapper">
+              <header className="">
+                <h3 className="types-of-football-title">{currentContent.title}</h3>
               </header>
 
-              <div className="home_sec9_content_body">
-                <p className="home_sec9_description">{currentContent.description}</p>
+              <div className="">
+                <p className="types-of-football-description">{currentContent.description}</p>
 
                 {/* Types of Handicap as Accordion */}
                 {currentContent.types && (
-                  <div className="home_sec9_expandable_sections">
-                    <div className="home_sec9_expandable_item">
+                  <div className="types-of-football-sections">
+                    <div className="types-of-football-expandable-item">
                       <button
-                        className={`home_sec9_expandable_header ${expandedSections['Types of Handicap'] ? 'home_sec9_expanded' : ''}`}
+                        className={`types-of-football-expandable-header ${expandedSections['Types of Handicap'] ? 'expanded' : ''}`}
                         onClick={() => toggleExpanded('Types of Handicap')}
                         aria-expanded={expandedSections['Types of Handicap'] || false}
                       >
                         <span>Types of Handicap</span>
-                        <span className="home_sec9_expand_icon">
+                        <span className="types-of-football-expand-icon">
                           {expandedSections['Types of Handicap'] ? '−' : '+'}
                         </span>
                       </button>
                       {expandedSections['Types of Handicap'] && (
-                        <div className="home_sec9_expandable_content">
+                        <div className="types-of-football-expandable-content">
                           <p className="home_sec9_types_intro">
                             Handicap betting comes in several forms, each designed to balance the odds and provide more exciting betting opportunities:
                           </p>
-                          <ul className="home_sec9_types_list">
+                          <ul className="types-of-football-list">
                             {currentContent.types.map((type, index) => (
-                              <li key={index} className="home_sec9_type_item">
-                                <strong className="home_sec9_type_name">{type.name}:</strong>
-                                <p className="home_sec9_type_description">{type.description}</p>
+                              <li key={index} className="types-of-football-scenario-item">
+                                <strong className="types-of-football-type-name">{type.name}:</strong>
+                                <p className="types-of-football-description">{type.description}</p>
                               </li>
                             ))}
                           </ul>
@@ -199,22 +199,22 @@ const TypesOnlineFootball = () => {
 
                 {/* Other Expandable Sections */}
                 {currentContent.expandable && (
-                  <div className="home_sec9_expandable_sections">
+                  <div className="types-of-football-expandable-sections">
                     {currentContent.expandable.map((section, index) => (
-                      <div key={index} className="home_sec9_expandable_item">
+                      <div key={index} className="types-of-football-expandable-item">
                         <button
-                          className={`home_sec9_expandable_header ${expandedSections[section.title] ? 'home_sec9_expanded' : ''
+                          className={`types-of-football-expandable-header ${expandedSections[section.title] ? 'expanded' : ''
                             }`}
                           onClick={() => toggleExpanded(section.title)}
                           aria-expanded={expandedSections[section.title] || false}
                         >
                           <span>{section.title}</span>
-                          <span className="home_sec9_expand_icon">
+                          <span className="types-of-football-expand-icon">
                             {expandedSections[section.title] ? '−' : '+'}
                           </span>
                         </button>
                         {expandedSections[section.title] && (
-                          <div className="home_sec9_expandable_content">
+                          <div className="types-of-football-expandable-content">
                             <p>{section.content}</p>
                           </div>
                         )}
@@ -225,37 +225,37 @@ const TypesOnlineFootball = () => {
 
                 {/* When to Use Section */}
                 {currentContent.when && (
-                  <div className="home_sec9_when_section">
-                    <h4 className="home_sec9_when_title">When to Use Handicap Betting</h4>
-                    <p className="home_sec9_when_content">{currentContent.when}</p>
+                  <div className="types-of-football-when-section">
+                    <h4 className="types-of-football-when-title">When to Use Handicap Betting</h4>
+                    <p className="types-of-football-when-content">{currentContent.when}</p>
                   </div>
                 )}
 
                 {/* Example Section */}
                 {currentContent.example && (
-                  <div className="home_sec9_example_section">
-                    <h4 className="home_sec9_example_title">{currentContent.example.title}</h4>
-                    <p className="home_sec9_example_content">{currentContent.example.content}</p>
+                  <div className="types-of-football-when-section">
+                    <h4 className="types-of-football-when-title">{currentContent.example.title}</h4>
+                    <p className="types-of-football-when-content">{currentContent.example.content}</p>
                     {currentContent.example.scenarios && (
-                      <ul className="home_sec9_scenario_list">
+                      <ul className="types-of-football-scenario-list">
                         {currentContent.example.scenarios.map((scenario, index) => (
-                          <li key={index} className="home_sec9_scenario_item">
+                          <li key={index} className="types-of-football-scenario-item">
                             {scenario}
                           </li>
                         ))}
                       </ul>
                     )}
                     {currentContent.example.explanation && (
-                      <p className="home_sec9_explanation">{currentContent.example.explanation}</p>
+                      <p className="types-of-football-when-content">{currentContent.example.explanation}</p>
                     )}
                   </div>
                 )}
 
                 {/* Key Takeaway */}
                 {currentContent.takeaway && (
-                  <div className="home_sec9_takeaway_section">
-                    <h4 className="home_sec9_takeaway_title">Key Takeaway</h4>
-                    <p className="home_sec9_takeaway_content">{currentContent.takeaway}</p>
+                  <div className="types-of-football-when-section">
+                    <h4 className="types-of-football-when-title">Key Takeaway</h4>
+                    <p className="types-of-football-when-content">{currentContent.takeaway}</p>
                   </div>
                 )}
               </div>
