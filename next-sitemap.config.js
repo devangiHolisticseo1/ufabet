@@ -1,6 +1,6 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-  siteUrl: 'https://www.ufabet.com',
+  siteUrl: 'https://ufabet.com',
   generateRobotsTxt: true,
   changefreq: 'daily',
   priority: 0.7,

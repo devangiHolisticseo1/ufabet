@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://www.ufabet.com
+Host: https://ufabet.com
 
 # Sitemaps
-Sitemap: https://www.ufabet.com/sitemap.xml
+Sitemap: https://ufabet.com/sitemap.xml

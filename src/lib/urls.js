@@ -4,9 +4,9 @@
  */
 export function getBaseUrl() {
   if (process.env.NODE_ENV === 'production') {
-    return process.env.NEXT_PUBLIC_PRODUCTION_URL || 'https://www.ufabet.com';
+    return process.env.NEXT_PUBLIC_PRODUCTION_URL || 'https://ufabet.com';
   }
-  return process.env.NEXT_PUBLIC_SITE_URL || 'https://www.ufabet.com';
+  return process.env.NEXT_PUBLIC_SITE_URL || 'https://ufabet.com';
 }
 
 /**
