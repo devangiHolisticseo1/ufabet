@@ -2,5 +2,15 @@
 module.exports = {
   siteUrl: 'https://www.ufabet.com',
   generateRobotsTxt: true,
-  // Add more options as needed
+  changefreq: 'daily',
+  priority: 0.7,
+  exclude: ['/api/*'],
+  robotsTxtOptions: {
+    policies: [
+      {
+        userAgent: '*',
+        allow: '/',
+      },
+    ],
+  },
 };

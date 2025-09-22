@@ -1,10 +1,7 @@
 import { Poppins, Geist_Mono } from 'next/font/google';
 import './globals.css';
-// import 'bootstrap/dist/css/bootstrap.min.css';
-// import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import BootstrapLoader from './components/BootstrapLoader';
-
-// import 'bootstrap-icons/font/bootstrap-icons.css';
+import { getBaseUrl, getCanonicalUrl } from '../lib/urls';
 import "bootstrap/dist/css/bootstrap.min.css";
 
 const poppins = Poppins({
@@ -14,35 +11,28 @@ const poppins = Poppins({
   display: 'swap',
 });
 
-// const geistMono = Geist_Mono({
-//   subsets: ['latin'],
-//   variable: '--font-geist-mono',
-// });
-
 export const metadata = {
-  metadataBase: new URL('https://www.ufabet.com/'),
+  metadataBase: new URL(getBaseUrl()),
   title: {
-    default: 'UFABET - Online แทงบอล Direct Website',
+    default: 'UFABET - Online Football Betting Direct Website',
     template: '%s | UFABET',
   },
-  description: 'UFABET is Thailand’s trusted direct football betting website. Enjoy secure, agent-free online แทงบอล, fast payouts, and 24/7 support.',
+  description: 'UFABET is Thailand trusted direct football betting website. Enjoy secure, agent-free online football betting, fast payouts, and 24/7 support.',
   keywords: [
     'UFABET',
-    'แทงบอล',
     'football betting',
     'online betting',
     'direct website',
     'no agent',
     'Thailand',
     'SBOBET',
-    'สมัครแทงบอล',
     'betting site',
     'sportsbook'
   ],
   openGraph: {
-    title: 'UFABET - Online แทงบอล Direct Website',
-    description: 'UFABET is Thailand’s trusted direct football betting website. Enjoy secure, agent-free online แทงบอล, fast payouts, and 24/7 support.',
-    url: 'https://www.ufabet.com/',
+    title: 'UFABET - Online Football Betting Direct Website',
+    description: 'UFABET is Thailand trusted direct football betting website. Enjoy secure, agent-free online football betting, fast payouts, and 24/7 support.',
+    url: getCanonicalUrl('/'),
     siteName: 'UFABET',
     images: [
       {
@@ -57,13 +47,13 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'UFABET - Online แทงบอล Direct Website',
-    description: 'UFABET is Thailand’s trusted direct football betting website. Enjoy secure, agent-free online แทงบอล, fast payouts, and 24/7 support.',
+    title: 'UFABET - Online Football Betting Direct Website',
+    description: 'UFABET is Thailand trusted direct football betting website. Enjoy secure, agent-free online football betting, fast payouts, and 24/7 support.',
     images: ['/images/home/ubet-logo 1.png'],
     site: '@ufabet',
   },
   alternates: {
-    canonical: 'https://www.ufabet.com/',
+    canonical: getCanonicalUrl('/'),
   },
 };
 
