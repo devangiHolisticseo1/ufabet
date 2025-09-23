@@ -6,7 +6,6 @@ import Navbar from "./components/Navbar/Navbar";
 import { Navigation } from 'swiper/modules';
 import TheBest from "./components/HomeComponents/TheBest";
 import HowApply from "./components/HomeComponents/HowApply";
-// import HomeClientOld from "./---HomeClient";
 import MembershipReq from "./components/HomeComponents/MembershipReq";
 import UfabetBetter from "./components/HomeComponents/UfabetBetter";
 import SbobetBetter from "./components/HomeComponents/SbobetBetter";
@@ -24,6 +23,8 @@ import TabsSwiperCollapse from "./components/HomeComponents/TabsSwiperCollapse";
 import FootballBettingGuide from "./components/HomeComponents/FootballBettingGuide";
 import CheckCreditScore from "./components/HomeComponents/CheckCreditScore";
 import TypesOnlineFootball from "./components/HomeComponents/TypesOnlineFootball";
+import LiveFootballBetting from "./components/HomeComponents/LiveFootballBetting";
+import WhatFootball from "./components/HomeComponents/WhatFootball";
 import 'swiper/css';
 import 'swiper/css/navigation';
 import "./page.css";
@@ -58,7 +59,6 @@ export default function HomeClient() {
             </Swiper>
           </div>
         </nav>
-        
         <article>
           <header className="hero-sec">
             <div className="container">
@@ -89,6 +89,7 @@ export default function HomeClient() {
           <SbobetBetter />
           <OverUnder />
           <FootballAccumulator />
+          <LiveFootballBetting />
           <FootballTournament />
           <FootballGoals />
           <FootballCorners />
@@ -98,11 +99,10 @@ export default function HomeClient() {
           <TrueWallet />
           <FootballBettingGuide />
           <TypesOnlineFootball />
-          {/* <HomeSec9 /> */}
           <Advantages />
+          <WhatFootball />
           <CheckCreditScore />
           <TabsSwiperCollapse />
-          {/* <HomeClientOld /> */}
           
           {/* <footer>
             <h2>Related Resources</h2>
