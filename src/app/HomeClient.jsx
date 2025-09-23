@@ -1,9 +1,9 @@
 "use client";
 
-import React from "react";
-import { Swiper, SwiperSlide } from 'swiper/react';
+import React, { useState } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
 import Navbar from "./components/Navbar/Navbar";
-import { Navigation } from 'swiper/modules';
+import { Navigation } from "swiper/modules";
 import TheBest from "./components/HomeComponents/TheBest";
 import HowApply from "./components/HomeComponents/HowApply";
 // import HomeClientOld from "./---HomeClient";
@@ -24,12 +24,19 @@ import TabsSwiperCollapse from "./components/HomeComponents/TabsSwiperCollapse";
 import FootballBettingGuide from "./components/HomeComponents/FootballBettingGuide";
 import CheckCreditScore from "./components/HomeComponents/CheckCreditScore";
 import TypesOnlineFootball from "./components/HomeComponents/TypesOnlineFootball";
-import 'swiper/css';
-import 'swiper/css/navigation';
+import "swiper/css";
+import "swiper/css/navigation";
 import "./page.css";
 
 export default function HomeClient() {
+  const [showFullText, setShowFullText] = useState({});
 
+  const toggleReadMore = (id) => {
+    setShowFullText((prev) => ({
+      ...prev,
+      [id]: !prev[id],
+    }));
+  };
   return (
     <>
       <Navbar />
@@ -37,28 +44,52 @@ export default function HomeClient() {
         <nav className="sticky-top-header" aria-label="Quick navigation">
           <div className="container">
             <Swiper
-              slidesPerView={'auto'}
+              slidesPerView={"auto"}
               spaceBetween={30}
               navigation={true}
               modules={[Navigation]}
               className="mySwiper sticky-swiper"
             >
-              <SwiperSlide className="swiper-slide-auto">The Best แทงบอล Website UFABET</SwiperSlide>
-              <SwiperSlide className="swiper-slide-auto">How to Apply for แทงบอล?</SwiperSlide>
-              <SwiperSlide className="swiper-slide-auto">See แทงบอล Odds...</SwiperSlide>
-              <SwiperSlide className="swiper-slide-auto">Live Football Accurate...</SwiperSlide>
-              <SwiperSlide className="swiper-slide-auto">Live Football Betting Odds for...</SwiperSlide>
-              <SwiperSlide className="swiper-slide-auto">แทงบอล for Football Tournaments...</SwiperSlide>
-              <SwiperSlide className="swiper-slide-auto">The Best แทงบอล Website UFABET</SwiperSlide>
-              <SwiperSlide className="swiper-slide-auto">How to Apply for แทงบอล?</SwiperSlide>
-              <SwiperSlide className="swiper-slide-auto">See แทงบอล Odds...</SwiperSlide>
-              <SwiperSlide className="swiper-slide-auto">Live Football Accurate...</SwiperSlide>
-              <SwiperSlide className="swiper-slide-auto">Live Football Betting Odds for...</SwiperSlide>
-              <SwiperSlide className="swiper-slide-auto">แทงบอล for Football Tournaments...</SwiperSlide>
+              <SwiperSlide className="swiper-slide-auto">
+                The Best แทงบอล Website UFABET
+              </SwiperSlide>
+              <SwiperSlide className="swiper-slide-auto">
+                How to Apply for แทงบอล?
+              </SwiperSlide>
+              <SwiperSlide className="swiper-slide-auto">
+                See แทงบอล Odds...
+              </SwiperSlide>
+              <SwiperSlide className="swiper-slide-auto">
+                Live Football Accurate...
+              </SwiperSlide>
+              <SwiperSlide className="swiper-slide-auto">
+                Live Football Betting Odds for...
+              </SwiperSlide>
+              <SwiperSlide className="swiper-slide-auto">
+                แทงบอล for Football Tournaments...
+              </SwiperSlide>
+              <SwiperSlide className="swiper-slide-auto">
+                The Best แทงบอล Website UFABET
+              </SwiperSlide>
+              <SwiperSlide className="swiper-slide-auto">
+                How to Apply for แทงบอล?
+              </SwiperSlide>
+              <SwiperSlide className="swiper-slide-auto">
+                See แทงบอล Odds...
+              </SwiperSlide>
+              <SwiperSlide className="swiper-slide-auto">
+                Live Football Accurate...
+              </SwiperSlide>
+              <SwiperSlide className="swiper-slide-auto">
+                Live Football Betting Odds for...
+              </SwiperSlide>
+              <SwiperSlide className="swiper-slide-auto">
+                แทงบอล for Football Tournaments...
+              </SwiperSlide>
             </Swiper>
           </div>
         </nav>
-        
+
         <article>
           <header className="hero-sec">
             <div className="container">
@@ -66,13 +97,39 @@ export default function HomeClient() {
                 <div className="hero-content">
                   <h1 className="hero-title">Online แทงบอล Direct Website</h1>
                   <p>
-                    Online แทงบอล Direct Websites offer structured access to football
-                    betting through regulated platforms. Bets on football include match
-                    results, correct scores, over/under goals, first goal scorers, and
-                    handicap betting. Each type presents distinct odds and payout
-                    structures. For example, correct score betting demands precise
-                    prediction of the final score, which increases difficulty but offers
-                    higher returns.
+                    Online แทงบอล Direct Websites offer structured access to
+                    football betting through regulated platforms. Bets on
+                    football include match results, correct scores, over/under
+                    goals, first goal scorers, and handicap betting. Each type
+                    presents distinct odds and payout structures. For example,
+                    correct score betting demands precise prediction of the
+                    final score, which increases difficulty but offers higher
+                    returns.{" "}
+                    {!showFullText["1"] && (
+                      <span
+                        className="read-more-btn"
+                        onClick={() => toggleReadMore("1")}
+                      >
+                        Read More
+                      </span>
+                    )}
+                    {showFullText["1"] && (
+                      <>
+                        <span>
+                          {" "}
+                          Additional content for the first card can go here.
+                          This is the expanded content that shows when Read More
+                          is clicked. You can add more detailed information
+                          about minimum bet football betting here.
+                        </span>
+                        <span
+                          className="read-more-btn"
+                          onClick={() => toggleReadMore("1")}
+                        >
+                          Read Less
+                        </span>
+                      </>
+                    )}
                   </p>
                   <button className="hero-button">
                     Apply for แทงบอล Membership
@@ -81,7 +138,7 @@ export default function HomeClient() {
               </div>
             </div>
           </header>
-          
+
           <TheBest />
           <HowApply />
           <MembershipReq />
@@ -103,7 +160,7 @@ export default function HomeClient() {
           <CheckCreditScore />
           <TabsSwiperCollapse />
           {/* <HomeClientOld /> */}
-          
+
           {/* <footer>
             <h2>Related Resources</h2>
             <p>Explore more about football betting strategies and platform features.</p>
@@ -116,7 +173,7 @@ export default function HomeClient() {
             </nav>
           </footer> */}
         </article>
-        
+
         {/* <aside>
           <section>
             <h2>Quick Links</h2>

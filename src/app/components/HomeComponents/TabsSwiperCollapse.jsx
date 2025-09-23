@@ -151,7 +151,7 @@ const TabsSwiperCollapse = () => {
     };
 
     return (
-        <div className="container tabs-swiper-container mb-5">
+        <section className="container tabs-swiper-container mb-5">
             {/* Navigation Buttons */}
             <div className="tabs-navigation">
                 <button 
@@ -204,7 +204,7 @@ const TabsSwiperCollapse = () => {
                     <GradientCollapse dataSource={tabsData[activeIndex].items} />
                 </div>
             </div>
-        </div>
+        </section>
     );
 };
 

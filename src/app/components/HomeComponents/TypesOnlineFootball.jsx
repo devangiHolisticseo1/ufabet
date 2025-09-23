@@ -130,7 +130,7 @@ const TypesOnlineFootball = () => {
 
   const currentContent = bettingContent[selectedBetting] || bettingContent['Handicap Betting (HDP)'];
   return (
-    <div className="types-of-football">
+    <section className="types-of-football">
       <div className="container">
         <h2 className="main-heading">What Types of Online Football Betting are There?</h2>
         <p className="heading-para">
@@ -263,7 +263,7 @@ const TypesOnlineFootball = () => {
           </article>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

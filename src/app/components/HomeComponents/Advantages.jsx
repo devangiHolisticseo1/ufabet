@@ -64,7 +64,7 @@ const data = [
 const Advantages = () => {
 const [activeIndex, setActiveIndex] = useState(0);
   return (
-    <div className="advantages-wrapper" aria-labelledby="home-sec10-heading">
+    <section className="advantages-wrapper" aria-labelledby="home-sec10-heading">
       <div className="container">
         <h2 className="main-heading">What are the Advantages of แทงบอล?</h2>
         <p className="heading-para">Discover the benefits of online football betting, offering a secure, transparent, and exciting platform with a wide range of options and competitive odds for every bettor.</p>
@@ -104,7 +104,7 @@ const [activeIndex, setActiveIndex] = useState(0);
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

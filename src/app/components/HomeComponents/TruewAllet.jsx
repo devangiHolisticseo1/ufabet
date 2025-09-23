@@ -12,7 +12,7 @@ const TrueWallet = () => {
   };
 
   return (
-    <div className="the-best-sec">
+    <section className="the-best-sec">
       <div className="container">
         <h2 className="main-heading">
           Football betting website with TrueWallet
@@ -85,7 +85,7 @@ const TrueWallet = () => {
           )}
         </p>
       </div>
-    </div>
+    </section>
   );
 };
 

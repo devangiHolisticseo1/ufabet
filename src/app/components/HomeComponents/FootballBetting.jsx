@@ -60,7 +60,7 @@ const FootballBetting = () => {
     }));
   };
   return (
-    <div className="football-betting">
+    <section className="football-betting">
       <div className="container">
         <div className="row">
           <div className="col-md-6">
@@ -124,7 +124,7 @@ const FootballBetting = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

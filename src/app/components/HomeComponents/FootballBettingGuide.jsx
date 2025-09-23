@@ -7,7 +7,7 @@ const FootballBettingGuide = () => {
     setOpenAccordion(openAccordion === index ? null : index);
   };
   return (
-    <div className="bet-on-football">
+    <section className="bet-on-football">
       <div className="container">
         <div className="accordion" id="accordionExample">
           {/* Accordion Item 1 */}
@@ -195,7 +195,7 @@ const FootballBettingGuide = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

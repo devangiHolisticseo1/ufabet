@@ -26,7 +26,7 @@ const DirectAgent = () => {
     }
   ]
   return (
-    <div className="direct-agent">
+    <section className="direct-agent">
       <div className="container">
         <h2 className="main-heading">แทงบอล Direct Website without Agent</h2>
         <p className="heading-para">“แทงบอล without Agent” (Football Betting Without Agent) means placing bets directly with an official, licensed betting website (เช่น UFABET หรือ SBOBET) instead of using a middleman (agent) to handle registration, deposits, withdrawals, and payouts.</p>
@@ -39,7 +39,7 @@ const DirectAgent = () => {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   )
 };
 
