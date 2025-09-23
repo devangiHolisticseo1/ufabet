@@ -78,6 +78,7 @@ const TabsSwiperCollapse = () => {
     const [activeIndex, setActiveIndex] = useState(0);
     const [isTransitioning, setIsTransitioning] = useState(false);
     const tabHeaderRef = useRef(null);
+    const hasMountedRef = useRef(false);
     const contentRef = useRef(null);
     
     // Touch/Swipe handling
@@ -87,6 +88,12 @@ const TabsSwiperCollapse = () => {
 
     // Auto-scroll active tab into view
     useEffect(() => {
+        // Avoid triggering any scrolling on the very first paint
+        if (!hasMountedRef.current) {
+            hasMountedRef.current = true;
+            return;
+        }
+
         if (tabHeaderRef.current) {
             const activeTab = tabHeaderRef.current.children[activeIndex];
             if (activeTab) {

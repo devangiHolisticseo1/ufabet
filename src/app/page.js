@@ -20,7 +20,7 @@ export async function generateMetadata() {
     openGraph: {
       title: 'UFABET - Online แทงบอล Direct Website',
       description: 'UFABET is Thailand’s trusted direct football betting website. Enjoy secure, agent-free online แทงบอล, fast payouts, and 24/7 support.',
-      url: 'https://ufabet.com/',
+      url: 'https://jarvisclinics.com/',
       siteName: 'UFABET',
       images: [
         {
@@ -41,7 +41,7 @@ export async function generateMetadata() {
       site: '@ufabet',
     },
     alternates: {
-      canonical: 'https://ufabet.com/',
+      canonical: 'https://jarvisclinics.com/',
     },
   };
 }

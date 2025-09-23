@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://ufabet.com
+Host: https://jarvisclinics.com
 
 # Sitemaps
-Sitemap: https://ufabet.com/sitemap.xml
+Sitemap: https://jarvisclinics.com/sitemap.xml
