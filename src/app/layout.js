@@ -55,6 +55,19 @@ export const metadata = {
   alternates: {
     canonical: getCanonicalUrl('/'),
   },
+  // Favicons & PWA
+  icons: {
+    icon: [
+      { url: '/img/favicon-96x96.png', type: 'image/png', sizes: '96x96' },
+      { url: '/favicon.svg', type: 'image/svg+xml' },
+      { url: '/img/favicon.ico', rel: 'shortcut icon' },
+    ],
+    apple: [
+      { url: '/img/apple-touch-icon.png', sizes: '180x180' },
+    ],
+  },
+  manifest: '/img/site.webmanifest',
+  themeColor: '#ffffff',
 };
 
 export default function RootLayout({ children }) {
