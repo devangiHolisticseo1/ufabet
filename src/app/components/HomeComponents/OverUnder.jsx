@@ -148,10 +148,7 @@ const OverUnder = () => {
                   <>
                     <span>
                       {" "}
-                      Additional content for the first card can go here. This is
-                      the expanded content that shows when Read More is clicked.
-                      You can add more detailed information about minimum bet
-                      football betting here.
+                      from a stake. For example, odds of 1.95 for Over 2.5 indicate that a stake of 100 units returns 195 units if the match produces three or more goals. Lower odds reflect a higher probability, while higher odds suggest a lower result. Factors influencing odds (team form, historical scoring patterns, and match conditions).
                     </span>
                     <span
                       className="read-more-btn"
@@ -182,10 +179,7 @@ const OverUnder = () => {
                   <>
                     <span>
                       {" "}
-                      d threshold, providing complete control over your funds.
-                      Enhanced accessibility for users with varying financial
-                      capabilities. Lower barriers to entry encourage more
-                      diverse participation in football betting activities.
+                      confirms an Over result if the line is set at 2.5. The goal line acts as the dividing point between the two outcomes.
                     </span>
                     <span
                       className="read-more-btn"
@@ -216,10 +210,7 @@ const OverUnder = () => {
                   <>
                     <span>
                       {" "}
-                      d threshold, providing complete control over your funds.
-                      Enhanced accessibility for users with varying financial
-                      capabilities. Lower barriers to entry encourage more
-                      diverse participation in football betting activities.
+                      confirms an Under result under the same line. The goal line acts as the dividing point between the two outcomes.
                     </span>
                     <span
                       className="read-more-btn"

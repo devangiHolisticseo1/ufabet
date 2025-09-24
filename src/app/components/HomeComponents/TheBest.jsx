@@ -31,24 +31,30 @@ const TheBest = () => {
               Read More
             </span>
           )}
-          {showFullText["1"] && (
-            <>
-              <span>
-                {" "}
-                Additional content for the first card can go here. This is the
-                expanded content that shows when Read More is clicked. You can
-                add more detailed information about minimum bet football betting
-                here.
-              </span>
+        </p>
+        {showFullText["1"] && (
+          <>
+            <p>
+              {" "}
+              Authenticity plays a vital role in building trust, with licensed
+              operations and transparent odds contributing to fair gameplay.
+              Verified providers display clear terms, consistent payout
+              structures, and regulated betting environments. Customer support
+              ensures smooth resolution of issues through live chat, hotline
+              services, and multilingual assistance. Fast response times and
+              knowledgeable staff improve user satisfaction and reduce downtime
+              during technical or account-related concerns. Each of the elements
+              contributes to a stable, rewarding, and trustworthy betting
+              experience.
               <span
                 className="read-more-btn"
                 onClick={() => toggleReadMore("1")}
               >
                 Read Less
               </span>
-            </>
-          )}
-        </p>
+            </p>
+          </>
+        )}
       </div>
     </section>
   );

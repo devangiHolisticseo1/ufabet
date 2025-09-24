@@ -37,7 +37,7 @@ const bettingContent = {
   'Handicap Betting (HDP)': {
     title: 'Handicap Betting (HDP)',
     description:
-      'Handicap betting is popular for evening out the playing field between two teams of different strengths. A virtual advantage or disadvantage is given to a team to adjust the odds.',
+      'Handicap betting assigns a virtual goal advantage or disadvantage to balance the contest between two teams. For example, Manchester City faces a weaker opponent with a -1 handicap. The team must win by at least two goals for the bet to succeed.',
     types: [
       {
         name: 'Level Handicap',
@@ -134,9 +134,7 @@ const TypesOnlineFootball = () => {
       <div className="container">
         <h2 className="main-heading">What Types of Online Football Betting are There?</h2>
         <p className="heading-para">
-          Understanding the various types of online football betting is crucial for developing
-          effective strategies. Each market offers unique opportunities and risks. Here's a
-          breakdown of common betting types:
+          The types of Online Football Betting are listed below.
         </p>
 
         <div className="row">

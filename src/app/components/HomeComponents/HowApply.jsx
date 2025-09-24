@@ -11,38 +11,42 @@ const data = [
   {
     id: 2,
     title: 'Complete the registration',
-    description: 'Select a licensed and reliable football betting website to ensure safe transactions and fair gameplay. A trusted platform offers better customer support and secure payment options.',
+    description: 'Fill out the sign-up form with accurate personal details (name, email, and password). The step creates the official betting profile on the platform.',
   },
   {
     id: 3,
     title: 'Confirm the identity',
-    description: 'Select a licensed and reliable football betting website to ensure safe transactions and fair gameplay. A trusted platform offers better customer support and secure payment options.',
+    description: 'Upload a valid ID or supporting documents to pass the verification process. It protects against fraud and ensures compliance with gambling regulations.',
   },
   {
     id: 4,
     title: 'Set up a payment method',
-    description: 'Select a licensed and reliable football betting website to ensure safe transactions and fair gameplay. A trusted platform offers better customer support and secure payment options.',
+    description: 'Link a secure payment option (bank account, credit card, or e-wallet). A verified method allows smooth deposits and withdrawals.',
   },
   {
     id: 5,
     title: 'Deposit initial funds',
-    description: 'Select a licensed and reliable football betting website to ensure safe transactions and fair gameplay. A trusted platform offers better customer support and secure payment options.',
+    description: 'Add money to the account using the available payment channels. Football betting sites set a minimum deposit requirement to start betting.',
   },
   {
     id: 6,
     title: 'Accept the terms and conditions',
-    description: 'Select a licensed and reliable football betting website to ensure safe transactions and fair gameplay. A trusted platform offers better customer support and secure payment options.',
+    description: 'Review and agree to the platform’s rules, betting conditions, and responsible gambling guidelines.',
   },
   {
     id: 7,
     title: 'Start placing the bets',
-    description: 'Select a licensed and reliable football betting website to ensure safe transactions and fair gameplay. A trusted platform offers better customer support and secure payment options.',
+    description: 'Exploring football matches and placing wagers once the account is active and funded. Bet responsibly to manage risks effectively.',
   },
 ];
 
 const HowApply = () => {
 
   const [activeIndex, setActiveIndex] = useState(0);
+
+  const handleToggle = (idx) => {
+    setActiveIndex(prev => prev === idx ? -1 : idx);
+  };
 
   return (
     <section className="how-apply">
@@ -64,15 +68,14 @@ const HowApply = () => {
                     className={`collapse-item ${activeIndex === index ? 'active' : ''}`}
                     open={activeIndex === index}
                   >
-                    <summary 
+                    <summary
                       className="text-heading"
-                      onClick={() => setActiveIndex(index)}
-                      role="button"
-                      tabIndex={0}
-                      aria-pressed={activeIndex === index}
+                      onClick={(e) => { e.preventDefault(); handleToggle(index); }}
+                      aria-expanded={activeIndex === index}
                       onKeyDown={(e) => {
                         if (e.key === 'Enter' || e.key === ' ') {
-                          setActiveIndex(index);
+                          e.preventDefault();
+                          handleToggle(index);
                         }
                       }}
                     >

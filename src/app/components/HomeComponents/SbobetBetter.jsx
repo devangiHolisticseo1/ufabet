@@ -7,15 +7,15 @@ const dataSource = [
     },
     {
         title: "Regulatory Compliance",
-        description: "SBOBET is designed with an organized layout that allows smooth navigation across sports, casino, and live betting sections. Its interface reduces confusion and helps users access desired betting options with fewer steps."
+        description: "SBOBET operates under licenses issued by reputable authorities, which strengthens its credibility in the online betting market. The regulatory framework assures users that the platform adheres to international standards of fairness and transparency."
     },
     {
         title: "Accurate Odds",
-        description: "SBOBET is designed with an organized layout that allows smooth navigation across sports, casino, and live betting sections. Its interface reduces confusion and helps users access desired betting options with fewer steps."
+        description: "The platform is recognized for providing competitive and precise odds that reflect real-time market conditions. The accuracy helps bettors make more informed decisions and enhances the reliability of potential returns."
     },
     {
         title: "Sports Betting Focus",
-        description: "SBOBET is designed with an organized layout that allows smooth navigation across sports, casino, and live betting sections. Its interface reduces confusion and helps users access desired betting options with fewer steps."
+        description: "SBOBET places strong emphasis on sports betting, offering a wide selection of matches, leagues, and events worldwide. The specialization makes it appealing to players who prefer a sportsbook-driven experience over casino-heavy platforms."
     }
 ];
 

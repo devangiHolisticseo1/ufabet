@@ -25,8 +25,8 @@ import CheckCreditScore from "./components/HomeComponents/CheckCreditScore";
 import TypesOnlineFootball from "./components/HomeComponents/TypesOnlineFootball";
 import PremierLeague from "./components/HomeComponents/PremierLeague";
 import WhatFootball from "./components/HomeComponents/WhatFootball";
-import 'swiper/css';
-import 'swiper/css/navigation';
+import "swiper/css";
+import "swiper/css/navigation";
 import "./page.css";
 
 export default function HomeClient() {
@@ -95,12 +95,12 @@ export default function HomeClient() {
             <div className="container">
               <div className="hero-wrap">
                 <div className="hero-content">
-                  <h1 className="hero-title">Online แทงบอล Direct Website</h1>
-                  <p>
+                  <h1 className="hero-title" >Online แทงบอล Direct Website</h1>
+                  <p className={showFullText["1"] ? "" : "hero-sec-content-w-750"}>
                     Online แทงบอล Direct Websites offer structured access to
                     football betting through regulated platforms. Bets on
                     football include match results, correct scores, over/under
-                    goals, first goal scorers, and handicap betting. Each type
+                    goals, first goal scorers, and handicap betting). Each type
                     presents distinct odds and payout structures. For example,
                     correct score betting demands precise prediction of the
                     final score, which increases difficulty but offers higher
@@ -113,24 +113,48 @@ export default function HomeClient() {
                         Read More
                       </span>
                     )}
-                    {showFullText["1"] && (
-                      <>
-                        <span>
-                          {" "}
-                          Additional content for the first card can go here.
-                          This is the expanded content that shows when Read More
-                          is clicked. You can add more detailed information
-                          about minimum bet football betting here.
-                        </span>
+                  </p>
+                  {showFullText["1"] && (
+                    <>
+                      <p className={showFullText["1"] ? "" : "hero-sec-content-w-750"}>
+                        The <b>Football Betting Direct website</b> has effective
+                        strategies (statistical analysis, team form evaluation,
+                        and historical performance tracking). A bettor who
+                        studies head-to-head records and recent injuries gains
+                        stronger insight into match outcomes. The <b>แทงบอล</b>{" "}
+                        tips tips (setting a fixed budget, avoiding emotional
+                        decisions, and tracking bets in a logbook) help maintain
+                        discipline. Tricks of identifying value odds and
+                        focusing on niche markets (corner counts or bookings)
+                        provide alternative paths to profit.
+                      </p>
+                      <p className={showFullText["1"] ? "" : "hero-sec-content-w-750"}>
+                        Risks (financial loss, addiction, and exposure) to
+                        fraudulent platforms. Unregulated websites are lack
+                        encryption and fair play standards, increasing
+                        vulnerability to data theft and unfair odds. Steps for
+                        safe participation begin with selecting a licensed
+                        provider, creating an account with verified identity,
+                        and choosing a secure payment method. Requirements
+                        include legal age, valid identification, and access to a
+                        stable internet connection.
+                      </p>
+                      <p className={showFullText["1"] ? "" : "hero-sec-content-w-750"}>
+                        Football betting direct websites demand informed
+                        decision-making, consistent evaluation of match
+                        variables, and adherence to responsible gambling
+                        practices. Each factor contributes to a structured and
+                        transparent experience when approached with preparation
+                        and awareness.
                         <span
                           className="read-more-btn"
                           onClick={() => toggleReadMore("1")}
                         >
                           Read Less
                         </span>
-                      </>
-                    )}
-                  </p>
+                      </p>
+                    </>
+                  )}
                   <button className="hero-button">
                     Apply for แทงบอล Membership
                   </button>
@@ -160,7 +184,7 @@ export default function HomeClient() {
           <WhatFootball />
           <CheckCreditScore />
           <TabsSwiperCollapse />
-          
+
           {/* <footer>
             <h2>Related Resources</h2>
             <p>Explore more about football betting strategies and platform features.</p>
