@@ -65,7 +65,7 @@ const statusColors = {
   FINISHED: "dark",
 };
 
-const LiveFootballBetting = () => {
+const PremierLeague = () => {
   const [selectedLeague, setSelectedLeague] = useState("Premiere League");
   const [isMobile, setIsMobile] = useState(false);
   const [openItem, setOpenItem] = useState('collapseOne');
@@ -94,7 +94,7 @@ const LiveFootballBetting = () => {
           <div className="row">
             <aside className="col-md-3 tab-sidebar">
               <h5 className="tab-sidebar-title">
-                Live Football Betting Odds
+                Premier League
               </h5>
               <hr className="tab-sidebar-divider" />
               <ListGroup variant="flush">
@@ -315,4 +315,4 @@ const LiveFootballBetting = () => {
   );
 }
 
-export default LiveFootballBetting;
+export default PremierLeague;

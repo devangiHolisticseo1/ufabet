@@ -23,7 +23,7 @@ import TabsSwiperCollapse from "./components/HomeComponents/TabsSwiperCollapse";
 import FootballBettingGuide from "./components/HomeComponents/FootballBettingGuide";
 import CheckCreditScore from "./components/HomeComponents/CheckCreditScore";
 import TypesOnlineFootball from "./components/HomeComponents/TypesOnlineFootball";
-import LiveFootballBetting from "./components/HomeComponents/LiveFootballBetting";
+import PremierLeague from "./components/HomeComponents/PremierLeague";
 import WhatFootball from "./components/HomeComponents/WhatFootball";
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -146,7 +146,7 @@ export default function HomeClient() {
           <SbobetBetter />
           <OverUnder />
           <FootballAccumulator />
-          <LiveFootballBetting />
+          <PremierLeague />
           <FootballTournament />
           <FootballGoals />
           <FootballCorners />
