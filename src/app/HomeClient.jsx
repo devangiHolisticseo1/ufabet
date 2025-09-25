@@ -29,6 +29,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "./page.css";
 import TodayFootballAccumulator from "./components/HomeComponents/TodayFootballAccumulator";
+import NavTabsSwiperCollapse from "./components/HomeComponents/NavTabsSwiperCollapse";
 
 export default function HomeClient() {
   const [showFullText, setShowFullText] = useState({});
@@ -45,50 +46,7 @@ export default function HomeClient() {
       <main>
         <nav className="sticky-top-header" aria-label="Quick navigation">
           <div className="container">
-            <Swiper
-              slidesPerView={"auto"}
-              spaceBetween={30}
-              navigation={true}
-              modules={[Navigation]}
-              className="mySwiper sticky-swiper"
-            >
-              <SwiperSlide className="swiper-slide-auto">
-                The Best แทงบอล Website UFABET
-              </SwiperSlide>
-              <SwiperSlide className="swiper-slide-auto">
-                How to Apply for แทงบอล?
-              </SwiperSlide>
-              <SwiperSlide className="swiper-slide-auto">
-                See แทงบอล Odds...
-              </SwiperSlide>
-              <SwiperSlide className="swiper-slide-auto">
-                Live Football Accurate...
-              </SwiperSlide>
-              <SwiperSlide className="swiper-slide-auto">
-                Live Football Betting Odds for...
-              </SwiperSlide>
-              <SwiperSlide className="swiper-slide-auto">
-                แทงบอล for Football Tournaments...
-              </SwiperSlide>
-              <SwiperSlide className="swiper-slide-auto">
-                The Best แทงบอล Website UFABET
-              </SwiperSlide>
-              <SwiperSlide className="swiper-slide-auto">
-                How to Apply for แทงบอล?
-              </SwiperSlide>
-              <SwiperSlide className="swiper-slide-auto">
-                See แทงบอล Odds...
-              </SwiperSlide>
-              <SwiperSlide className="swiper-slide-auto">
-                Live Football Accurate...
-              </SwiperSlide>
-              <SwiperSlide className="swiper-slide-auto">
-                Live Football Betting Odds for...
-              </SwiperSlide>
-              <SwiperSlide className="swiper-slide-auto">
-                แทงบอล for Football Tournaments...
-              </SwiperSlide>
-            </Swiper>
+            <NavTabsSwiperCollapse />
           </div>
         </nav>
         <article>

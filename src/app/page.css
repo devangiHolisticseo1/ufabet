@@ -929,11 +929,21 @@
   margin: 0 20px;
 }
 
-.tab-header-scroll .tab-btn.active {
+.nav-tab-btn {
+  font-weight: 500;
+  font-size: 14px;
+  color: #FFFFFF;
+  background: transparent;
+  border: 0;
+  padding: 0 0 12px;
+  margin: 0 20px;
+}
+
+.tab-header-scroll .tab-btn.active, .tab-header-scroll .nav-tab-btn.active {
   color: #EBC76E;
 }
 
-.tab-header-scroll .tab-btn {
+.tab-header-scroll .tab-btn, .tab-header-scroll .nav-tab-btn {
   padding: 0 0 2px;
 }
 
@@ -943,10 +953,16 @@
   padding-top: 15px;
 }
 
+.nav-tabs-swiper-container {
+  position: relative;
+  padding-top: 0px;
+}
+
 .tabs-scrollable-header {
   margin: 0 60px;
   /* Add space for navigation buttons */
   padding: 0 10px;
+  padding-top: 5px;
 }
 
 .tabs-navigation {
@@ -962,8 +978,13 @@
   padding: 0;
 }
 
+.nav-tabs-navigation {
+  top: 0;
+}
+
+
 .nav-btn {
-  background: rgba(235, 199, 110, 0.15);
+  background: #FFFFFF;
   border: 1px solid rgba(235, 199, 110, 0.4);
   border-radius: 50%;
   width: 40px;
@@ -971,7 +992,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #EBC76E;
+  color: #D4D4D4;
   cursor: pointer;
   transition: all 0.3s ease;
   pointer-events: auto;
@@ -1124,13 +1145,13 @@
 }
 
 /* Enhanced tab button transitions */
-.tab-header-scroll .tab-btn {
+.tab-header-scroll .tab-btn, .tab-header-scroll .nav-tab-btn {
   transition: all 0.3s ease;
   position: relative;
   overflow: hidden;
 }
 
-.tab-header-scroll .tab-btn::after {
+.tab-header-scroll .tab-btn::after, .tab-header-scroll .nav-tab-btn::after {
   content: '';
   position: absolute;
   bottom: 0;
@@ -1142,11 +1163,11 @@
   transform: translateX(-50%);
 }
 
-.tab-header-scroll .tab-btn.active::after {
+.tab-header-scroll .tab-btn.active::after, .tab-header-scroll .nav-tab-btn.active::after {
   width: 100%;
 }
 
-.tab-header-scroll .tab-btn:hover:not(.active) {
+.tab-header-scroll .tab-btn:hover:not(.active), .tab-header-scroll .nav-tab-btn:hover:not(.active) {
   color: rgba(235, 199, 110, 0.7);
 }
 
@@ -1573,6 +1594,7 @@
     margin: 0 50px;
     /* Reduce margin on mobile */
     padding: 0 5px;
+    padding-top: 5px;
   }
 
   .nav-btn {
@@ -1652,7 +1674,7 @@
     margin-top: 0 !important;
   }
 
-  .tab-header-scroll .tab-btn {
+  .tab-header-scroll .tab-btn, .tab-header-scroll .nav-tab-btn {
     font-size: 16px;
     margin: 0 10px;
   }
@@ -1666,6 +1688,7 @@
   .tabs-scrollable-header {
     margin: 0 45px;
     /* Further reduce margin on small screens */
+    padding-top: 5px;
   }
 
   .nav-btn {
