@@ -110,11 +110,10 @@ const FootballCorners = () => {
 								{selected.description2 && (
 									<p>{selected.description2}</p>
 								)}
-
-								<Card className="home_sec6_p1_card mb-4 home_sec6_shadow-left">
+								<Card className="key-insights-box">
 									<Card.Body>
-										<Card.Title className="home_sec6_title">Key Insights:</Card.Title>
-										<ul className="home_sec6_p1_list">
+										<Card.Title className="key-insights-title">Key Insights:</Card.Title>
+										<ul className="key-insights-list">
 											{selected.tips.map((tip, i) => (
 												<li key={i}>{tip}</li>
 											))}

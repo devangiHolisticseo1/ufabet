@@ -328,7 +328,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 50% 0;
+  padding: 40% 0;
 }
 
 .betting-steps {
@@ -402,6 +402,11 @@
   background: linear-gradient(to bottom, #242020, #000000);
   border-radius: 5px;
   border: 1px solid transparent;
+  height: 100%;
+}
+
+.memb-requirement .memb-card {
+  min-height: 309px;
 }
 
 .memb-card:hover {
@@ -742,6 +747,29 @@
   border-color: #ffffff;
 }
 
+.tab-sidebar .list-group {
+  max-height: 300px;
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+.tab-sidebar .list-group::-webkit-scrollbar {
+  width: 10px;
+}
+
+.tab-sidebar .list-group::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.tab-sidebar .list-group::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+}
+
+.tab-sidebar .list-group::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
 .tab-menu-item {
   background-color: transparent;
   border: none;
@@ -790,9 +818,8 @@
 }
 
 .key-insights-box {
-  background-color: #ffffff;
+  background-color: #3F3F3F;
   border-radius: 12px;
-  border-left: 9px solid #EBC76E;
   overflow: hidden;
   padding: 20px;
   margin-bottom: 1.5rem;
@@ -804,7 +831,7 @@
 
 .key-insights-title {
   font-size: 22px;
-  color: #BA8C4E;
+  color: #EBC76E;
   font-weight: 600;
   margin-bottom: 0.5rem;
 }
@@ -819,7 +846,7 @@
   margin-bottom: 10px;
   padding-left: 25px;
   position: relative;
-  color: #333;
+  color: #ffffff;
   font-weight: 500;
 }
 
@@ -1137,7 +1164,7 @@
 }
 
 .bet-on-football-btn {
-  color: #BA8C4E !important;
+  color: #EBC76E !important;
   background: transparent !important;
   border: 0;
   outline: 0;
@@ -1148,10 +1175,24 @@
 }
 
 .bet-on-football .accordion-body {
-  background: #ffffff;
+  background: transparent;
   border: 1px solid #EBC76E;
   border-radius: 5px;
   padding: 20px 0;
+  color: #ffffff;
+}
+
+.bet-on-football .accordion-button::after {
+  content: none;
+}
+
+.bet-on-football .accordion-header {
+  position: relative;
+}
+.bet-on-football .types-of-football-expand-icon {
+  position: absolute;
+  right: 20px;
+  top: 15px;
 }
 
 .bet-on-football .accordion-collapse {
@@ -1159,7 +1200,7 @@
 }
 
 .bet-on-football .accordion-item {
-  background: #FFFCF6;
+  background: linear-gradient(to bottom, #242020, #000000);
   border-radius: 5px !important;
 }
 
@@ -1189,7 +1230,7 @@
 .types-of-football-list {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 4px;
   padding-right: 6px;
   max-height: 500px;
   overflow: hidden;
@@ -1197,9 +1238,9 @@
 }
 
 .types-of-football-item {
-  background: #FFFFFF;
+  background: transparent;
   border: none;
-  color: #313131;
+  color: #ffffff;
   padding: 12px 20px;
   text-align: left;
   cursor: pointer;
@@ -1224,8 +1265,7 @@
 }
 
 .types-of-football-wrapper {
-  background: #FFFFFF;
-  /* margin: 0 20px; */
+  background: #161515;
   margin-left: 20px;
   border-radius: 8px;
   overflow: hidden;
@@ -1234,17 +1274,17 @@
   max-height: 500px;
   overflow: hidden;
   overflow-y: auto;
+  color: #ffffff;
 }
 
 .types-of-football-title {
-  color: #BA8C4E;
+  color: #EBC76E;
   font-size: 1.2rem;
   font-weight: 600;
 }
 
 .types-of-football-description {
-  /* margin-top: 20px; */
-  color: #313131;
+  color: #ffffff;
   font-size: 0.95rem;
   line-height: 1.6;
   margin-bottom: 0;
@@ -1261,8 +1301,8 @@
 
 .types-of-football-expandable-header {
   width: 100%;
-  background: #333;
-  color: #ffffff;
+  background: #000000;
+  color: #EBC76E;
   border: none;
   padding: 12px 20px;
   display: flex;
@@ -1281,7 +1321,7 @@
 .types-of-football-expand-icon {
   font-size: 1.2rem;
   font-weight: 600;
-  color: #fff;
+  color: #EBC76E;
 }
 
 .types-of-football-expandable-content {
@@ -1290,7 +1330,7 @@
 }
 
 .types-of-football-expandable-content p {
-  color: #555;
+  color: #ffffff;
   font-size: 0.9rem;
   line-height: 1.5;
 }
@@ -1300,14 +1340,14 @@
 }
 
 .types-of-football-when-title {
-  color: #BA8C4E;
+  color: #EBC76E;
   font-size: 1rem;
   font-weight: 600;
   margin-bottom: 15px;
 }
 
 .types-of-football-when-content {
-  color: #333;
+  color: #ffffff;
   font-size: 0.9rem;
   line-height: 1.6;
   margin: 0;
@@ -1319,13 +1359,16 @@
 }
 
 .types-of-football-scenario-item {
-  color: #333;
+  color: #ffffff;
   font-size: 0.9rem;
   margin-bottom: 5px;
 }
+.types-of-football-scenario-item::marker {
+  color: #EBC76E;
+}
 
 .types-of-football-type-name {
-  color: #333;
+  color: #ffffff;
   font-size: 0.95rem;
   font-weight: 600;
   display: block;
@@ -1343,7 +1386,7 @@
   width: 100%;
   position: relative;
   padding: 1rem;
-  border-color: var(--bs-list-group-active-border-color);
+  border: 1px solid #000000;
   background-color: #ebc76e !important;
 }
 .res-tab-arrow {
@@ -1503,10 +1546,6 @@
 
   .vertical-tab+.vertical-tab {
     padding-top: 0;
-  }
-
-  .football-accumulator {
-    padding: 50px 0 0;
   }
 
   .wallet-sec {

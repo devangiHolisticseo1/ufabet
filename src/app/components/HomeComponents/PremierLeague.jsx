@@ -22,40 +22,20 @@ const menuItems = [
 
 const matches = [
   {
-    league: "Premiere League",
-    homeTeam: "GO AHEAD EAGLES",
-    awayTeam: "FORTUNA SITTARD",
-    homeLogo: "/images/home/sec5/Image 132.png",
-    awayLogo: "/images/home/sec5/sec5_2.png",
-    odds: { home: 1.85, draw: 3.20, away: 4.50 },
-    status: "LIVE",
-    matchDate: "2024-05-15",
-    kickOff: "19:30 GMT",
-    score: "1 - 0 (HT)",
+    title: "Premiere League",
+    description: "GO AHEAD EAGLES",
   },
   {
-    league: "Premiere League",
-    homeTeam: "LUSITANIA ACRORES",
-    awayTeam: "ACADEMICA COIMBRA",
-    homeLogo: "/images/home/sec5/Image 132 (1).png",
-    awayLogo: "/images/home/sec5/Mask group.png",
-    odds: { home: 1.85, draw: 3.20, away: 4.50 },
-    status: "UPCOMING",
-    matchDate: "2024-05-15",
-    kickOff: "19:30 GMT",
-    score: "",
+    title: "Premiere League",
+    description: "GO AHEAD EAGLES",
   },
   {
-    league: "Premiere League",
-    homeTeam: "FC UTRECHT",
-    awayTeam: "PEC ZWOLLE",
-    homeLogo: "/images/home/sec5/Image 132 (2).png",
-    awayLogo: "/images/home/sec5/Image 133.png",
-    odds: { home: 1.85, draw: 3.20, away: 4.50 },
-    status: "FINISHED",
-    matchDate: "2024-05-15",
-    kickOff: "19:30 GMT",
-    score: "",
+    title: "Premiere League",
+    description: "GO AHEAD EAGLES",
+  },
+  {
+    title: "Premiere League",
+    description: "GO AHEAD EAGLES",
   },
 ];
 
@@ -101,7 +81,7 @@ const PremierLeague = () => {
                   <ListGroup.Item
                     key={idx}
                     action
-                    className={`tab-menu-item ${item.includes(selectedLeague) ? "active" : "" }`}
+                    className={`tab-menu-item ${item.includes(selectedLeague) ? "active" : ""}`}
                     onClick={() => handleLeagueClick(item.split(" for ")[1])}
                   >
                     {item}
@@ -111,86 +91,10 @@ const PremierLeague = () => {
               </ListGroup>
             </aside>
             <article className="col-md-9 vertical-tab-content">
-              <div className="tab-content-uper-div">
-                {matches
-                  .filter((m) => m.league === selectedLeague)
-                  .map((match, idx) => (
-                    <Card key={idx}>
-                      <Card.Body>
-                        {/* Header Row */}
-                        <div className="d-flex-center-between mb-3">
-                          <div className="flex-item">
-                            <Image
-                              src={match.homeLogo}
-                              alt={match.homeTeam}
-                              width={40}
-                              height={40}
-                              className="me-2"
-                              unoptimized={false}
-                            />
-                            <div className="team">{match.homeTeam}</div>
-                          </div>
-                          <div className="text-muted">VS</div>
-                          <div className="flex-item">
-                            <Image
-                              src={match.awayLogo}
-                              alt={match.awayTeam}
-                              width={40}
-                              height={40}
-                              className="me-2"
-                              unoptimized={false}
-                            />
-                            <div className="team">{match.awayTeam}</div>
-                          </div>
-                          <Badge bg={statusColors[match.status]} className="text-uppercase ">
-                            {match.status}
-                          </Badge>
-                        </div>
-                        {/* Odds Row */}
-                        <Row className="mb-3 text-center home_sec5_row_to_flex_col">
-                          <Col>
-                            <Button
-                              className="odds-btn"
-                              onClick={() => handleBetClick(match, "HOME WIN", match.odds.home)}
-                            >
-                              <div className="label">HOME WIN</div>
-                              <div className="odd">{match.odds.home.toFixed(2)}</div>
-                            </Button>
-                          </Col>
-                          <Col>
-                            <Button
-                              className="odds-btn"
-                              onClick={() => handleBetClick(match, "DRAW", match.odds.draw)}
-                            >
-                              <div className="label">DRAW</div>
-                              <div className="odd">{match.odds.draw.toFixed(2)}</div>
-                            </Button>
-                          </Col>
-                          <Col>
-                            <Button
-                              className="odds-btn"
-                              onClick={() => handleBetClick(match, "AWAY WIN", match.odds.away)}
-                            >
-                              <div className="label">ALWAYS WIN</div>
-                              <div className="odd">{match.odds.away.toFixed(2)}</div>
-                            </Button>
-                          </Col>
-                        </Row>
-                        {/* Call-to-action Button */}
-                        <div className="text-center mb-3">
-                          <Button variant="dark" className="hero-button" data-bs-placement="top">
-                            Click on an odd to place a bet.
-                          </Button>
-                        </div>
-                        {/* Footer Info */}
-                        <div className="match-date-kick-off">
-                          Match Date: {match.matchDate} &nbsp;|&nbsp; Kick-off: {match.kickOff}{" "}
-                          {match.score ? `| Score: ${match.score}` : ""}
-                        </div>
-                      </Card.Body>
-                    </Card>
-                  ))}
-              </div>
+              <header>
+                <h3 className="tab-content-heading">แทงบอล for Premier League</h3>
+              </header>
+              <p>แทงบอล on the Premier League is wagering on England’s top-tier football, where matches are fast-paced and unpredictable. Team form, injuries, and home advantage shape odds. For example, the odds are Liverpool 2.00, Draw 3.40, and Chelsea 3.60, in a game of Liverpool vs. Chelsea. Mid-table clashes offer value in markets (Both Teams to Score or Over/Under goals) because of the league’s competitiveness.</p>
             </article>
           </div>
         </div>
@@ -199,118 +103,43 @@ const PremierLeague = () => {
   };
 
   return (
-    <div>
-      <div className="container" aria-label="Matches by League">
-        <h3 className="home_sec5_p2_heading">Live Football Betting Odds</h3>
-        <div className="home_sec5_mobile_view_hor_line"></div>
-        <div className="accordion home_sec7_reuse_5_accordion accordion-flush" id="homeSec7Accordion">
-          {menuItems.map((item, idx) => {
-            const league = item.split(" for ")[1];
-            const leagueMatches = matches.filter((m) => m.league === league);
-            return (
-              <article className="accordion-item home_sec7_reuse_5_item" key={idx}>
-                <h3 className="accordion-header">
-                  <button
-                    className={`accordion-button home_sec7_reuse_5_button ${openItem === league ? "" : "collapsed"}`}
-                    type="button"
-                    onClick={() => toggleAccordion(league)}
-                    aria-expanded={openItem === league}   // for accessibility
-                  >
-                    {item}
-                    <span className="home_sec7_reuse_5_triangle"></span>
-                  </button>
-                </h3>
-                <div
-                  className={`accordion-collapse collapse ${openItem === league ? "show" : ""}`}
+    <section className="live-football">
+      <div className="container">
+        <h2 className="main-heading">Live Football Betting Odds for Leagues and Team Matches</h2>
+        <div
+          className="accordion home_sec7_reuse_6_accordion accordion-flush"
+          id="homeSec6Accordion"
+        >
+          {matches.map((item, idx) => (
+            <article className="accordion-item home_sec7_reuse_6_item" key={idx}>
+              <h3 className="accordion-header">
+                <button
+                  className={`res-tab-menu-item ${openItem === item.key ? "" : "active"
+                    }`}
+                  type="button"
+                  onClick={() => toggleAccordion(item.key)}
+                  aria-expanded={openItem === item.key}
                 >
-                  <div className="tab-content-uper-div">
-                    {leagueMatches.length > 0 ? (
-                      leagueMatches.map((match, idx) => (
-                        <Card key={idx}>
-                          <Card.Body>
-                            <div className="d-flex-center-between mb-3">
-                              <div className="flex-item">
-                                <Image
-                                  src={match.homeLogo}
-                                  alt={match.homeTeam}
-                                  width={40}
-                                  height={40}
-                                  className="me-2"
-                                  unoptimized={false}
-                                />
-                                <div className="team">{match.homeTeam}</div>
-                              </div>
-                              <div className="text-muted">VS</div>
-                              <div className="flex-item">
-                                <Image
-                                  src={match.awayLogo}
-                                  alt={match.awayTeam}
-                                  width={40}
-                                  height={40}
-                                  className="me-2"
-                                  unoptimized={false}
-                                />
-                                <div className="team">{match.awayTeam}</div>
-                              </div>
-                              <Badge bg={statusColors[match.status]} className="text-uppercase ">
-                                {match.status}
-                              </Badge>
-                            </div>
-                            {/* Odds Row */}
-                            <Row className="mb-3 text-center home_sec5_row_to_flex_col">
-                              <Col>
-                                <Button
-                                  className="odds-btn"
-                                  onClick={() => handleBetClick(match, "HOME WIN", match.odds.home)}
-                                >
-                                  <div className="label">HOME WIN</div>
-                                  <div className="odd">{match.odds.home.toFixed(2)}</div>
-                                </Button>
-                              </Col>
-                              <Col>
-                                <Button
-                                  className="odds-btn"
-                                  onClick={() => handleBetClick(match, "DRAW", match.odds.draw)}
-                                >
-                                  <div className="label">DRAW</div>
-                                  <div className="odd">{match.odds.draw.toFixed(2)}</div>
-                                </Button>
-                              </Col>
-                              <Col>
-                                <Button
-                                  className="odds-btn"
-                                  onClick={() => handleBetClick(match, "AWAY WIN", match.odds.away)}
-                                >
-                                  <div className="label">ALWAYS WIN</div>
-                                  <div className="odd">{match.odds.away.toFixed(2)}</div>
-                                </Button>
-                              </Col>
-                            </Row>
-                            {/* Call-to-action Button */}
-                            <div className="text-center mb-3">
-                              <Button variant="dark" className="hero-button" data-bs-placement="top">
-                                Click on an odd to place a bet.
-                              </Button>
-                            </div>
-                            {/* Footer Info */}
-                            <div className="match-date-kick-off">
-                              Match Date: {match.matchDate} &nbsp;|&nbsp; Kick-off: {match.kickOff}{" "}
-                              {match.score ? `| Score: ${match.score}` : ""}
-                            </div>
-                          </Card.Body>
-                        </Card>
-                      ))
-                    ) : (
-                      <p>No matches available</p>
-                    )}
-                  </div>
+                  {item.title}
+                  <span className="res-tab-arrow"></span>
+                </button>
+              </h3>
+              <div
+                className={`accordion-collapse collapse ${openItem === item.key ? "show" : ""
+                  }`}
+              >
+                <div className="res-accordion-body">
+                  <h3 className="tab-content-heading">แทงบอล for Premier League</h3>
+                  {item.description && (
+                    <p>{item.description}</p>
+                  )}
                 </div>
-              </article>
-            );
-          })}
+              </div>
+            </article>
+          ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

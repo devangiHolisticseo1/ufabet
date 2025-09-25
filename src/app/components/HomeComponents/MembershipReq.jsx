@@ -68,7 +68,7 @@ const MembershipReq = () => {
               },
               // when window width is >= 1024px
               1024: {
-                slidesPerView: 4,
+                slidesPerView: 3,
               },
             }}
             className="mySwiper sticky-swiper"
