@@ -28,6 +28,7 @@ import WhatFootball from "./components/HomeComponents/WhatFootball";
 import "swiper/css";
 import "swiper/css/navigation";
 import "./page.css";
+import TodayFootballAccumulator from "./components/HomeComponents/TodayFootballAccumulator";
 
 export default function HomeClient() {
   const [showFullText, setShowFullText] = useState({});
@@ -169,6 +170,7 @@ export default function HomeClient() {
           <UfabetBetter />
           <SbobetBetter />
           <OverUnder />
+          <TodayFootballAccumulator />
           <FootballAccumulator />
           <PremierLeague />
           <FootballTournament />

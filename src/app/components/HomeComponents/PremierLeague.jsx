@@ -89,8 +89,7 @@ const PremierLeague = () => {
     return (
       <section className="live-football">
         <div className="container">
-          <h2 className="main-heading">Live Football Accurate Scores and Results</h2>
-          <p className="heading-para">Live football scores and results provide real-time updates from ongoing matches across domestic and international competitions. Each update includes goal counts, match status, and final outcomes, allowing for precise tracking of performance. Accurate data supports betting decisions, statistical analysis, and fan engagement. Live football betting websites deliver match details from leagues. Immediate access to verified scores, consistent refresh rates, and coverage of fixtures from multiple regions.</p>
+          <h2 className="main-heading">Live Football Betting Odds for Leagues and Team Matches</h2>
           <div className="row">
             <aside className="col-md-3 tab-sidebar">
               <h5 className="tab-sidebar-title">
